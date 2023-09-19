@@ -196,9 +196,9 @@ abc/		# 忽略当前目录下的的abc文件夹
 
 ## git 为指令创建别名
 
-	```shell
-	git config --global alias.<指令名> "被替换的指令"
-	# 例如:
-	git config --global alias.gl "log --all --pretty=oneline --abbrev-commit --graph"
-	# 之后使用 git gl 就可以执行这条命令了
-	```
+```shell
+git config --global alias.<指令名> "被替换的指令"
+# 例如:
+git config --global alias.gl "log --all --pretty=oneline --abbrev-commit --graph"
+# 之后使用 git gl 就可以执行这条命令了
+```
