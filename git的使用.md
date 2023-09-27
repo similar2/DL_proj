@@ -63,7 +63,8 @@
 	
 6. 取消对一个文件的追踪(可以配合.gitignore)
 	```shell
-	git rm [filepath]
+	git rm –-cached [-rf] [filepath] # -rf 代表强制递归取消跟踪
+	# 特别针对与之前忘记写.gitignore的情况,先全部取消跟踪再git add . 就可以了
 	```
 	
 7. 查看提交记录
