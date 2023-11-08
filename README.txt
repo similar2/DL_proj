@@ -1,0 +1,9 @@
+我把vivado的所有资源文件放在了 "./vivado_HDL/source"里面.
+
+GenshinKitchen这个快捷方式是windows客户端
+
+GenshinKitchen_vivado这个快捷方式是打开vivado
+
+那个cmd脚本是windows访问网站
+
+剩余project文件都在"GenshinKitchen_introduction"里面
