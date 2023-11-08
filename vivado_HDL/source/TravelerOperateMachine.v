@@ -1,3 +1,4 @@
+// 想要作为处理任务与机器交互的模块
 `timescale 1ns/1ps
 
 module TravelerOperateMachine(

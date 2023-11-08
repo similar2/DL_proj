@@ -1,3 +1,4 @@
+// 想要用来作为处理脚本的模块
 `timescale 1ns/1ps
 
 module AnalyseScript(

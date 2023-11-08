@@ -1,3 +1,4 @@
+// 想要设置成改变游戏状态的模块
 `timescale 1ns/1ps
 
 module ChangeGameState(

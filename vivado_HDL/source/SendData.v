@@ -1,40 +1,36 @@
-`timescale 1ns/1ps
+// 想要设计成统一处理变化数据并传输给UART的模块
 
 module SendData(
-    input [7:0] data1 = 0,
-    input [7:0] data2 = 0,
-    input clk,
+    input [7:0] MachineTargetData = 0,
+    input [7:0] GameStateData = 0,
+    input uart_clk,
     input data_in_ready,
-    output reg uart_reset,
     output reg [7:0] output_data,
+    output reg uart_reset,
     output reg send_led,
+    output reg ready_led,
     output reg [7:0] leds
 );
 
-reg [7:0] prev_data1;
-reg [7:0] prev_data2;
+reg [7:0] prev_MachineTarget;
+reg [7:0] prev_GameState;
 
-reg start_reset = 0;
 
-always @(posedge clk) begin
-    if(start_reset) begin
-        uart_reset = 1;
-        start_reset = 0;
-    end else if(data_in_ready == 1) begin
-        uart_reset = 0;
-        if(prev_data1!=data1) begin
-            leds = data1;
-            output_data = data1;
-            prev_data1=data1;
+always @(posedge uart_clk) begin
+    if(data_in_ready==1) begin
+        ready_led = 1;
+        if(GameStateData!=prev_GameState) begin
+            prev_GameState = GameStateData;
+            output_data = GameStateData;
             send_led = !send_led;
-            start_reset = 1;
-        end else if(prev_data2 !=data2) begin
-            leds = data2;
-            output_data = data2;
-            prev_data2=data2;
+        end else if(MachineTargetData!= prev_MachineTarget) begin
+            prev_MachineTarget = MachineTargetData;
+            output_data = MachineTargetData;
             send_led = !send_led;
-            start_reset = 1;
         end
+        leds = output_data;
+    end else begin
+        ready_led = 0;
     end
 end
 

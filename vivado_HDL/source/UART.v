@@ -1,6 +1,7 @@
+// 框架提供的UART传输协议
 `timescale 1ns / 1ps
 
-module UARTTransmitter(
+module UARTTransmitter( 
   input        clock,
                reset,
                io_valid,
