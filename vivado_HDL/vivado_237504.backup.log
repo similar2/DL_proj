@@ -1,0 +1,925 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Nov  7 16:40:00 2023
+# Process ID: 237504
+# Current directory: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent115644 C:\Users\Lenovo\Desktop\Digital Logic Project\HDL_Framework\GenshinKitchen.xpr
+# Log file: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/TOOL/Xilinx/Vivado/2017.4/data/ip'.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 16:47:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 16:47:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:08:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:08:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:09:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:09:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:14:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:14:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:19:03 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:19:03 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:24:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:24:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:25:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:25:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:27:59 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:27:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:29:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:29:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:50:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:50:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:55:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:55:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 17:59:20 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 17:59:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 18:03:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 18:03:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 18:06:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 18:06:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 18:12:43 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 18:12:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 18:17:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 18:17:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 18:19:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 18:19:16 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 18:20:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 18:20:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:04:43 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:04:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:20:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:20:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:23:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:23:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:26:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:26:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:27:24 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:27:24 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:32:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:32:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:41:38 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:41:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:45:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:45:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:47:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:47:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:49:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:49:08 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 19:50:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 19:50:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:00:05 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:00:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:06:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:06:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:15:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:15:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:20:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:20:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:22:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:22:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:29:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:29:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:30:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:30:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:39:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:39:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:42:06 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:42:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+add_files {{C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TravelerOperateMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseScript.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeGameState.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseReceiveData.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeTargetMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/SendData.v}}
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TravelerOperateMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseScript.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeGameState.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseReceiveData.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeTargetMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:55:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:55:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:57:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:57:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 20:58:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 20:58:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:04:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:04:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:06:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:06:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:08:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:08:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+add_files {{C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TravelerOperateMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseScript.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeGameState.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TestClock.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseReceiveData.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeTargetMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/SendData.v}}
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TravelerOperateMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseScript.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeGameState.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseReceiveData.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeTargetMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/SendData.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:41:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:41:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:42:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:42:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+add_files {{C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TravelerOperateMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseScript.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeGameState.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TestClock.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseReceiveData.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeTargetMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/DivideClock.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/SendData.v}}
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TravelerOperateMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseScript.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeGameState.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/TestClock.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/AnalyseReceiveData.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/ChangeTargetMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/source/SendData.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:51:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:51:37 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:52:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:52:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 21:52:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 21:52:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 22:00:44 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 22:00:44 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 22:04:44 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 22:04:44 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 22:05:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 22:05:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 22:34:05 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 22:34:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  7 22:37:09 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/synth_1/runme.log
+[Tue Nov  7 22:37:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/impl_1/DemoTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  7 22:43:15 2023...

@@ -32,10 +32,12 @@ module DemoTop(
         wire [15:0] script;
 // The wire above is useful~
 
+        wire uart_reset = 1'b0;
+
 
     ScriptMem script_mem_module(
       .clock(uart_clk_16),   // please use the same clock as UART module
-      .reset(0),           // please use the same reset as UART module
+      .reset(uart_reset),           // please use the same reset as UART module
       
       .dataOut_bits(dataOut_bits), // please connect to io_dataOut_bits of UART module
       .dataOut_valid(dataOut_valid), // please connect to io_dataOut_valid of UART module
@@ -49,7 +51,7 @@ module DemoTop(
         
     UART uart_module(
           .clock(uart_clk_16),     // uart clock. Please use 16 x BultRate. (e.g. 9600 * 16 = 153600Hz
-          .reset(0),               // reset
+          .reset(uart_reset),               // reset
           
           .io_pair_rx(rx),          // rx, connect to R5 please
           .io_pair_tx(tx),         // tx, connect to T4 please
@@ -61,41 +63,15 @@ module DemoTop(
           .io_dataOut_valid(dataOut_valid)  // referring (b)
         );
 
-    wire uart_reset;
-
-    wire 
-    traveler_in_front_of_target_machine,
-    traveler_has_item_in_hand,
-    target_machine_is_processing,
-    target_machine_has_item;
-
-
-    wire [7:0] MachineTargetData;
-    wire [7:0] GameStateData;
 
     wire second_clk;
-
-    ChangeTargetMachine ctm(
-      .button_up(button[3]),  
-      .button_down(button[1]),
-      .clk(clk),
-      .output_data(MachineTargetData)
-    );
-
-    ChangeGameState cgs(
-      .switch_left_0(switches[7]),
-      .output_data(GameStateData)
-    );
-
+    wire millsecond_clk;
 
     SendData sd(
-      .MachineTargetData(MachineTargetData),
-      .GameStateData(GameStateData),
       .uart_clk(uart_clk_16),
+      .test_clk(millsecond_clk),
       .data_in_ready(dataIn_ready),
       .output_data(dataIn_bits),
-      .send_led(led2[0]),
-      .ready_led(led2[1]),
       .leds(led)
     );
 
@@ -103,7 +79,8 @@ module DemoTop(
     DivideClock dc(
       .clk(clk),
       .uart_clk(uart_clk_16),
-      .second_clk(second_clk)
+      .second_clk(second_clk),
+      .millsecond_clk(millsecond_clk)
     );
 
     

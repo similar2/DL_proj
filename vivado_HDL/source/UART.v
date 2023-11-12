@@ -13,25 +13,25 @@ module UARTTransmitter(
 
   reg  [3:0] state = 0;
   reg  [7:0] data = 0;
-  wire       _io_ready_T = state == 4'h1;
+  wire _io_ready_T = (state == 4'h1);
   always @(posedge clock) begin
     if (reset)
-      state <= 4'h0;
+      state <= 4'h0;  // 0000
     else if (tick) begin
-      if (state == 4'h2)
+      if (state == 4'h2)  // 0010
         state <= 4'h0;
-      else if (state == 4'hB)
+      else if (state == 4'hB) // 1011
         state <= 4'h2;
-      else if (state == 4'hA)
+      else if (state == 4'hA) // 1010
         state <= 4'hB;
-      else if (state == 4'h9)
+      else if (state == 4'h9) // 1001
         state <= 4'hA;
-      else if (state == 4'h8)
+      else if (state == 4'h8) // 1000
         state <= 4'h9;
-      else if (state == 4'h7)
-        state <= 4'h8;
+      else if (state == 4'h7) // 0111
+        state <= 4'h8;  
       else
-        state <= {1'h0, state == 4'h6 ? 3'h7 : state == 4'h5 ? 3'h6 : state == 4'h4 ? 3'h5 : state == 4'h1 ? 3'h4 : {2'h0, io_valid}};
+        state <= {1'h0, ((state == 4'h6)? 3'h7 : (state == 4'h5 ? 3'h6 : (state == 4'h4 ? 3'h5 : (state == 4'h1 ? 3'h4 : {2'h0, io_valid}))))};
       
       if (state == 4'h1 & io_valid)
           data <= io_bits;
@@ -41,7 +41,7 @@ module UARTTransmitter(
 
   end // always @(posedge)
   assign io_ready = tick & _io_ready_T;
-  assign tx = (|(state[3:2])) ? data[0] : ~_io_ready_T;
+  assign tx = ((state[3:2])) ? data[0] : ~_io_ready_T;
 endmodule
 
 module UARTReceiver(
@@ -132,7 +132,7 @@ module UART(
                io_pair_rx,        // rx, connect to R5 pin please
   input  [7:0] io_dataIn_bits,    // (a) byte from DevelopmentBoard => GenshinKitchen
   output       io_pair_tx,        // tx, connect to T4 pin please
-               io_dataIn_ready,   // referring (a) £»pulse 1 after a byte tramsmit success.
+               io_dataIn_ready,   // referring (a) pulse 1 after a byte tramsmit success.
            reg io_dataOut_valid,  // referring (b)
   output reg [7:0] io_dataOut_bits    // (b) byte from GenshinKitchen => DevelopmentBoard, only available if io_dataOut_valid=1
 );

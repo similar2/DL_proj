@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Nov  7 22:38:08 2023
+| Date         : Sun Nov 12 17:36:33 2023
 | Host         : LAPTOP-6GMAV85C running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file DemoTop_control_sets_placed.rpt
 | Design       : DemoTop
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    10 |
-| Unused register locations in slices containing registers |    42 |
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    17 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,43 +33,40 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              21 |           11 |
+| No           | No                    | No                     |              16 |            6 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              43 |           11 |
-| Yes          | No                    | No                     |              18 |            7 |
+| No           | Yes                   | No                     |              43 |           10 |
+| Yes          | No                    | No                     |              20 |            6 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              44 |           12 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------+------------------------------------+------------------------------------+------------------+----------------+
-|    Clock Signal   |            Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
-+-------------------+------------------------------------+------------------------------------+------------------+----------------+
-|  uart_clk_16_BUFG | sd/prev_data2_1                    |                                    |                1 |              1 |
-|  uart_clk_16_BUFG | sd/leds[7]_i_2_n_0                 | sd/leds[7]_i_1_n_0                 |                2 |              4 |
-|  uart_clk_16_BUFG | sd/prev_data1_0                    |                                    |                2 |              6 |
-|  clk_IBUF_BUFG    |                                    |                                    |                6 |             10 |
-|  uart_clk_16_BUFG |                                    |                                    |                5 |             11 |
-|  uart_clk_16_BUFG | uart_module/tx/state[3]_i_1_n_0    |                                    |                4 |             11 |
-|  clk_IBUF_BUFG    |                                    | dc/clear                           |                3 |             11 |
-|  clk_IBUF_BUFG    | ctm/button_up_clk_count[0]_i_2_n_0 | ctm/button_up_clk_count[0]_i_1_n_0 |                5 |             20 |
-|  clk_IBUF_BUFG    | ctm/prev_button_up17_out           | ctm/button_up_clk_count[0]_i_1_n_0 |                5 |             20 |
-|  clk_IBUF_BUFG    |                                    | tc/cnt_clk[0]_i_1_n_0              |                8 |             32 |
-+-------------------+------------------------------------+------------------------------------+------------------+----------------+
++---------------------+---------------------------------+----------------------------------+------------------+----------------+
+|     Clock Signal    |          Enable Signal          |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++---------------------+---------------------------------+----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG      |                                 |                                  |                2 |              2 |
+|  data_0_reg_i_2_n_0 |                                 |                                  |                2 |              6 |
+|  dc/CLK             |                                 |                                  |                2 |              8 |
+|  data_0_reg_i_2_n_0 | sd/p_1_in                       |                                  |                2 |              8 |
+|  clk_IBUF_BUFG      |                                 | dc/clear                         |                2 |             11 |
+|  data_0_reg_i_2_n_0 | uart_module/tx/state[3]_i_1_n_0 |                                  |                4 |             12 |
+|  clk_IBUF_BUFG      |                                 | dc/millsecond_clk_cnt[0]_i_1_n_0 |                8 |             32 |
++---------------------+---------------------------------+----------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     1 |
-| 4      |                     1 |
+| 2      |                     1 |
 | 6      |                     1 |
-| 10     |                     1 |
-| 11     |                     3 |
-| 16+    |                     3 |
+| 8      |                     2 |
+| 11     |                     1 |
+| 12     |                     1 |
+| 16+    |                     1 |
 +--------+-----------------------+
 
 
