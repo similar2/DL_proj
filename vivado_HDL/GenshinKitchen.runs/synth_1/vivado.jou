@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Nov 12 17:35:33 2023
-# Process ID: 290972
+# Start of session at: Sun Nov 12 22:08:10 2023
+# Process ID: 374756
 # Current directory: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1
 # Command line: vivado.exe -log DemoTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
 # Log file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.vds

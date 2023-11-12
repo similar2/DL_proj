@@ -3,6 +3,7 @@
 `timescale 1ns / 1ps
 
 
+
 module DemoTop(
     input [4:0] button,
     input [7:0] switches,
@@ -19,7 +20,7 @@ module DemoTop(
 
 
 // The wire below is useful!
-        wire uart_clk_16;
+        wire uart_clk_16; // UART协议使用时钟周期
         
         wire [7:0] dataIn_bits;
         wire dataIn_ready;
@@ -32,7 +33,7 @@ module DemoTop(
         wire [15:0] script;
 // The wire above is useful~
 
-        wire uart_reset = 1'b0;
+        wire uart_reset = 1'b0; // 没想好是否需要复位,应该不用
 
 
     ScriptMem script_mem_module(
@@ -64,23 +65,43 @@ module DemoTop(
         );
 
 
-    wire second_clk;
-    wire millsecond_clk;
+    wire second_clk;  // 1秒的时钟分频
+    wire millisecond_clk; // 1毫秒的时钟分频
+
+    wire [8:0] TravelerOperateMachineData; // 按钮需要标记,最后一位为标记位[8]
+    wire [8:0] TravelerTargetMachineData; // 开关不需要标记,但是统一多一位[8](始终为0)
+
+    TravelerOperateMachine tom(
+      .button_up(button[3]),
+      .button_down(button[1]),
+      .button_center(button[2]),
+      .button_left(button[0]),
+      .button_right(button[4]),
+      .clk(clk),
+      .data(TravelerOperateMachineData)
+    );
+
+    TravelerTargetMachine ttm(
+        .select_switches(switches[5:0]),
+        .clk(clk),
+        .data(TravelerTargetMachineData)
+    );
 
     SendData sd(
+      .TravelerOperateMachineData(TravelerOperateMachineData),
+      .TravelerTargetMachineData(TravelerTargetMachineData),
       .uart_clk(uart_clk_16),
-      .test_clk(millsecond_clk),
       .data_in_ready(dataIn_ready),
       .output_data(dataIn_bits),
-      .leds(led)
+      .leds(led) // 这个用来显示发送的数据
     );
 
 
     DivideClock dc(
       .clk(clk),
-      .uart_clk(uart_clk_16),
-      .second_clk(second_clk),
-      .millsecond_clk(millsecond_clk)
+      .uart_clk(uart_clk_16),   // 时钟分频为UART协议使用的时钟频率
+      .second_clk(second_clk),   // 时钟分频至1秒
+      .millisecond_clk(millisecond_clk)
     );
 
     

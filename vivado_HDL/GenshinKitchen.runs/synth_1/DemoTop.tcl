@@ -39,6 +39,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v}
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v}
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v}
+  {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v}
 }
 read_ip -quiet {{C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram_ooc.xdc}}]

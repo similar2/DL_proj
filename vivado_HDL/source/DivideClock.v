@@ -1,18 +1,21 @@
 // 想要用来获取UART对应时钟分频的模块
 module DivideClock(
     input clk,
-    output reg uart_clk = 0,
-    output reg second_clk = 0,
-    output reg millsecond_clk = 0
+    output reg uart_clk = 0,    // UART协议分频
+    output reg second_clk = 0,  // 秒分频
+    output reg millisecond_clk = 0  // 毫秒分频
 );
 
-reg [10:0] uart_clk_cnt = 0;
-reg [31:0] second_clk_cnt = 0;
-reg [31:0] millsecond_clk_cnt = 0;
+parameter UARTCNT = 325;
+parameter SECONDCNT = 50000000;
+parameter MILLISECONDCNT = 50000 ;
 
+reg [10:0] uart_clk_cnt = 0;    // 分频计数器
+reg [31:0] second_clk_cnt = 0;
+reg [31:0] millisecond_clk_cnt = 0;
 
 always @(posedge clk) begin
-    if(uart_clk_cnt < 325) begin
+    if(uart_clk_cnt < UARTCNT) begin
         uart_clk_cnt <= uart_clk_cnt + 1;
     end else begin
         uart_clk_cnt <= 0;
@@ -21,7 +24,7 @@ always @(posedge clk) begin
 end
 
 always @(posedge clk) begin
-    if(second_clk_cnt < 100000000)
+    if(second_clk_cnt < SECONDCNT)
         second_clk_cnt = second_clk_cnt + 1;
     else begin
         second_clk = !second_clk;
@@ -30,12 +33,13 @@ always @(posedge clk) begin
 end
 
 always @(posedge clk) begin
-    if(millsecond_clk_cnt < 10000000)
-        millsecond_clk_cnt = millsecond_clk_cnt + 1;
+    if(millisecond_clk_cnt < MILLISECONDCNT)
+        millisecond_clk_cnt = millisecond_clk_cnt + 1;
     else begin
-        millsecond_clk = !millsecond_clk;
-        millsecond_clk_cnt = 0;
+        millisecond_clk = !millisecond_clk;
+        millisecond_clk_cnt = 0;
     end
 end
+
 
 endmodule
