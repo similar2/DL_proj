@@ -41,7 +41,7 @@ module UARTTransmitter(
 
   end // always @(posedge)
   assign io_ready = tick & _io_ready_T;
-  assign tx = ((state[3:2])) ? data[0] : ~_io_ready_T;
+  assign tx = ((|state[3:2])) ? data[0] : ~_io_ready_T;
 endmodule
 
 module UARTReceiver(
@@ -121,7 +121,7 @@ module UARTReceiver(
       data_7 <= data_6;
     end
   end // always @(posedge)
-  assign io_valid = state == 4'h2 & tick;
+  assign io_valid = ((state == 4'h2) & tick); //4'h2
   assign io_bits = {data_0, data_1, data_2, data_3, data_4, data_5, data_6, data_7};
   
 endmodule

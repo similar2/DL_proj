@@ -64,13 +64,32 @@ module DemoTop(
           .io_dataOut_valid(dataOut_valid)  // referring (b)
         );
 
+    /* 时钟分频部分 */
 
     wire second_clk;  // 1秒的时钟分频
     wire millisecond_clk; // 1毫秒的时钟分频
 
-    wire [8:0] TravelerOperateMachineData; // 按钮需要标记,最后一位为标记位[8]
-    wire [8:0] TravelerTargetMachineData; // 开关不需要标记,但是统一多一位[8](始终为0)
+    // 时钟分频
+    DivideClock dc(
+      .clk(clk),
+      .uart_clk(uart_clk_16),   // 时钟分频为UART协议使用的时钟频率
+      .second_clk(second_clk),   // 时钟分频至1秒
+      .millisecond_clk(millisecond_clk)
+    );
+    
+    /* 发送数据部分 */
 
+    wire [8:0] TravelerOperateMachineData; // 按钮需要标记,最后一位为标记位[8]
+    wire [7:0] TravelerTargetMachineData; // 开关不需要标记
+    wire [7:0] GameStateChangeData; 
+
+    // 设置游戏状态
+    GameStateChange gsc(  
+      .switch(switches[7]),
+      .data(GameStateChangeData)
+    );
+
+    // 玩家操作机器
     TravelerOperateMachine tom(
       .button_up(button[3]),
       .button_down(button[1]),
@@ -81,28 +100,35 @@ module DemoTop(
       .data(TravelerOperateMachineData)
     );
 
+    // 玩家更改目标机器
     TravelerTargetMachine ttm(
         .select_switches(switches[5:0]),
-        .clk(clk),
-        .data(TravelerTargetMachineData)
+        .data(TravelerTargetMachineData),
+        .clk(clk)
     );
 
+    // UART发送数据
     SendData sd(
       .TravelerOperateMachineData(TravelerOperateMachineData),
       .TravelerTargetMachineData(TravelerTargetMachineData),
+      .GameStateChangeData(GameStateChangeData),
       .uart_clk(uart_clk_16),
-      .data_in_ready(dataIn_ready),
-      .output_data(dataIn_bits),
+      .data_ready(dataIn_ready),
+      .data_send(dataIn_bits),
       .leds(led) // 这个用来显示发送的数据
     );
 
-
-    DivideClock dc(
+    /*  接收数据部分  */
+    
+    // 接受UART返回非脚本数据
+    ReceiveUnScriptData rd(
+      .data_valid(dataOut_valid),
+      .data_receive(dataOut_bits),
+      .uart_clk(uart_clk_16),
       .clk(clk),
-      .uart_clk(uart_clk_16),   // 时钟分频为UART协议使用的时钟频率
-      .second_clk(second_clk),   // 时钟分频至1秒
-      .millisecond_clk(millisecond_clk)
+      .feedback_leds(led2)
     );
+    
 
     
 endmodule
