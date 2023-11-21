@@ -14,23 +14,23 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25096 
+INFO: Helper process launched with PID 28588 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 340.914 ; gain = 100.406
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 340.562 ; gain = 99.293
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DemoTop' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
 INFO: [Synth 8-638] synthesizing module 'ScriptMem' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
-INFO: [Synth 8-638] synthesizing module 'inst_ram' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-12188-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'inst_ram' (1#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-12188-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'inst_ram' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-25108-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'inst_ram' (1#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-25108-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (2#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
-INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:129]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:132]
 INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
 INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (3#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
 INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
 INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (4#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
-INFO: [Synth 8-256] done synthesizing module 'UART' (5#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:129]
+INFO: [Synth 8-256] done synthesizing module 'UART' (5#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:132]
 INFO: [Synth 8-638] synthesizing module 'DivideClock' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
-	Parameter UARTCNT bound to: 326 - type: integer 
+	Parameter UARTCNT bound to: 325 - type: integer 
 	Parameter SECONDCNT bound to: 50000000 - type: integer 
 	Parameter MILLISECONDCNT bound to: 50000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'DivideClock' (6#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
@@ -48,15 +48,31 @@ INFO: [Synth 8-256] done synthesizing module 'SendData' (10#1) [C:/Users/Lenovo/
 INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
 	Parameter MAX bound to: 15 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (11#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
+WARNING: [Synth 8-3848] Net led2 in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:12]
 WARNING: [Synth 8-3848] Net pc in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:32]
 INFO: [Synth 8-256] done synthesizing module 'DemoTop' (12#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
 WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_valid
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[6]
 WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port uart_clk
+WARNING: [Synth 8-3331] design SendData has unconnected port data_ready
 WARNING: [Synth 8-3331] design ScriptMem has unconnected port reset
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
 WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
 WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 393.191 ; gain = 152.684
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 392.656 ; gain = 151.387
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -74,15 +90,15 @@ WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[2] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[1] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
 WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[0] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 393.191 ; gain = 152.684
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 392.656 ; gain = 151.387
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-12188-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
-Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-12188-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-25108-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-25108-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
 Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
 Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
@@ -92,40 +108,38 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 721.758 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 720.848 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 721.758 ; gain = 481.250
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 720.848 ; gain = 479.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 721.758 ; gain = 481.250
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 720.848 ; gain = 479.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for script_mem_module/ram_module. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 721.758 ; gain = 481.250
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 720.848 ; gain = 479.578
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "script_size" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
 INFO: [Synth 8-5544] ROM "spacing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-6014] Unused sequential element spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
-WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:144]
+WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:147]
 WARNING: [Synth 8-6014] Unused sequential element uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
 WARNING: [Synth 8-6014] Unused sequential element second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
 WARNING: [Synth 8-6014] Unused sequential element millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
-INFO: [Synth 8-5545] ROM "mark" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:26]
-INFO: [Synth 8-5545] ROM "mark" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:24]
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -134,7 +148,7 @@ INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:16]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 721.758 ; gain = 481.250
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 720.848 ; gain = 479.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -151,24 +165,25 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               11 Bit    Registers := 1     
-	                9 Bit    Registers := 2     
-	                8 Bit    Registers := 11    
+	                8 Bit    Registers := 7     
 	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
 	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 16    
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 23    
-	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 20    
+	   6 Input      8 Bit        Muxes := 1     
 	   7 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 2     
 	   5 Input      3 Bit        Muxes := 2     
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 29    
+	   2 Input      1 Bit        Muxes := 14    
 	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -205,7 +220,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 11    
+	                1 Bit    Registers := 12    
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 1     
 	   7 Input      4 Bit        Muxes := 1     
@@ -236,14 +251,13 @@ Detailed RTL Component Info :
 Module TravelerOperateMachine 
 Detailed RTL Component Info : 
 +---Registers : 
-	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 10    
-	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 5     
 Module TravelerTargetMachine 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -254,16 +268,19 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 1     
 Module SendData 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 2     
 Module ReceiveUnScriptData 
 Detailed RTL Component Info : 
 +---Registers : 
-	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -283,37 +300,38 @@ WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_reg was removed.
 WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:39]
 WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
 WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
-INFO: [Synth 8-5545] ROM "tom/mark" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "ttm/clk_cnt" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element script_mem_module/script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
 WARNING: [Synth 8-6014] Unused sequential element uart_module/rx/spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
-WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:144]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:147]
 WARNING: [Synth 8-6014] Unused sequential element dc/uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
-WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:26]
+WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:24]
 WARNING: [Synth 8-6014] Unused sequential element ttm/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:16]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
 WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
 WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tom/data_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ttm/data_reg[7] )
-INFO: [Synth 8-3886] merging instance 'ttm/data_reg[0]' (FDE) to 'ttm/data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sd/prev_data_ttm_reg[0]' (FDE) to 'sd/prev_data_ttm_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sd/prev_data_tom_reg[7]' (FDE) to 'sd/prev_data_tom_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/prev_data_gsc_reg[1] )
+INFO: [Synth 8-3886] merging instance 'ttm/data_reg[1]' (FDE) to 'ttm/data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tom/data_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/data_send_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/prev_data_ttm_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/prev_data_tom_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/leds_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_module/tx/data_reg[7] )
-WARNING: [Synth 8-3332] Sequential element (sd/prev_data_gsc_reg[1]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (tom/data_reg[0]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (sd/prev_data_tom_reg[0]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (ttm/data_reg[7]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (sd/prev_data_ttm_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_reg[0]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (sd/data_send_reg[7]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (uart_module/tx/data_reg[7]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (sd/leds_reg[7]) is unused and will be removed from module DemoTop.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 721.758 ; gain = 481.250
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 720.848 ; gain = 479.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,13 +343,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 721.758 ; gain = 481.250
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 720.848 ; gain = 479.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 721.758 ; gain = 481.250
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 720.848 ; gain = 479.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -342,13 +360,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (sd/prev_data_gsc_reg[7]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (sd/prev_data_gsc_reg[6]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (sd/prev_data_gsc_reg[5]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (sd/prev_data_gsc_reg[4]) is unused and will be removed from module DemoTop.
-WARNING: [Synth 8-3332] Sequential element (dc/uart_clk_cnt_reg[10]) is unused and will be removed from module DemoTop.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -372,7 +385,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -385,7 +398,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -397,25 +410,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -434,41 +447,42 @@ Report Cell Usage:
 +------+---------+------+
 |1     |inst_ram |     1|
 |2     |BUFG     |     2|
-|3     |CARRY4   |    18|
+|3     |CARRY4   |    17|
 |4     |LUT1     |     6|
-|5     |LUT2     |    15|
-|6     |LUT3     |    15|
-|7     |LUT4     |    61|
-|8     |LUT5     |    36|
-|9     |LUT6     |    26|
-|10    |FDRE     |   203|
+|5     |LUT2     |    20|
+|6     |LUT3     |    13|
+|7     |LUT4     |    40|
+|8     |LUT5     |    35|
+|9     |LUT6     |    38|
+|10    |FDRE     |   170|
 |11    |IBUF     |    13|
-|12    |OBUF     |    17|
+|12    |OBUF     |     5|
+|13    |OBUFT    |    12|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+--------------------+-----------------------+------+
 |      |Instance            |Module                 |Cells |
 +------+--------------------+-----------------------+------+
-|1     |top                 |                       |   428|
-|2     |  dc                |DivideClock            |    26|
-|3     |  rd                |ReceiveUnScriptData    |    16|
-|4     |  script_mem_module |ScriptMem              |    61|
-|5     |  sd                |SendData               |    41|
-|6     |  tom               |TravelerOperateMachine |    97|
-|7     |  ttm               |TravelerTargetMachine  |    72|
-|8     |  uart_module       |UART                   |    83|
-|9     |    rx              |UARTReceiver           |    38|
-|10    |    tx              |UARTTransmitter        |    26|
+|1     |top                 |                       |   387|
+|2     |  dc                |DivideClock            |    29|
+|3     |  rd                |ReceiveUnScriptData    |     4|
+|4     |  script_mem_module |ScriptMem              |    63|
+|5     |  sd                |SendData               |    18|
+|6     |  tom               |TravelerOperateMachine |    82|
+|7     |  ttm               |TravelerTargetMachine  |    74|
+|8     |  uart_module       |UART                   |    85|
+|9     |    rx              |UARTReceiver           |    40|
+|10    |    tx              |UARTTransmitter        |    25|
 +------+--------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 737.473 ; gain = 168.398
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 737.473 ; gain = 496.965
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 738.250 ; gain = 168.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 496.980
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -476,10 +490,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-64 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+55 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 737.473 ; gain = 507.480
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 739.430 ; gain = 509.656
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 737.473 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 21:33:27 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 739.430 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 22 01:44:43 2023...
