@@ -4,7 +4,9 @@ GenshinKitchen这个快捷方式是windows客户端
 
 GenshinKitchen_vivado这个快捷方式是打开vivado
 
-那个cmd脚本是访问项目网站
+那两个cmd脚本是打开项目网站和示例github仓库
+
+bit文件里放的是助教提供的示例bit文件
 
 剩余projec说明文件都在"GenshinKitchen_introduction"里面
 
