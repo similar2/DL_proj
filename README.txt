@@ -6,6 +6,16 @@ GenshinKitchen_vivado这个快捷方式是打开vivado
 
 那个cmd脚本是访问项目网站
 
-剩余projec说明t文件都在"GenshinKitchen_introduction"里面
+剩余projec说明文件都在"GenshinKitchen_introduction"里面
 
-"检测FPGA通过UART输入的数据(默认串口COM4).exe" 这个是检测FPGA的send的内容
+"测试反馈数据(启动参数为切换毫秒数).exe" 这个是向FPGA发送反馈数据(Feedback Signal)
+启动参数是发送的间隔(单位毫秒)
+比如: ./测试反馈数据(启动参数为切换毫秒数).exe 100	
+是设置发送间隔为100ms
+
+"检测发送数据(启动参数是检测的模式).exe" 这个是检测FPGA版发送到电脑客户端的数据
+启动参数是检测模式(0和1,0是检测所有输入,1是检测变化的输入,默认是1)
+比如: ./检测发送数据(启动参数是检测的模式).exe 1	
+是设置检测模式为1
+
+可能会爆毒,如果你担心的话,源码在others/test里
