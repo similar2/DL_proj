@@ -14,7 +14,7 @@ reg [30:0] clk_cnt = 0; // 建立计数器记录开关拨下时间
 always @(posedge clk) begin
     if(prev_select_switch == select_switches) begin
         if(clk_cnt == ANTISHAKECNT) begin
-            if(select_switches>=1&&select_switches<=20) begin   // 判断机器的id范围
+            if(select_switches<=20) begin   // 判断机器的id范围
                 data[6:2] <= select_switches;    
                 data[1:0] <= 2'b11;
             end else begin  // 不添加else锁存器无法正常生成

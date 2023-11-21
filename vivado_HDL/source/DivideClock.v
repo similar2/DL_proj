@@ -6,9 +6,9 @@ module DivideClock(
     output reg millisecond_clk = 0  // 毫秒分频
 );
 
-parameter UARTCNT = 326;
+parameter UARTCNT = 325;
 parameter SECONDCNT = 50000000;
-parameter MILLISECONDCNT = 50000 ;
+parameter MILLISECONDCNT = 50000;
 
 reg [10:0] uart_clk_cnt = 0;    // 分频计数器
 reg [31:0] second_clk_cnt = 0;

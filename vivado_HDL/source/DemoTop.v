@@ -79,13 +79,13 @@ module DemoTop(
     
     /* 发送数据部分 */
 
-    wire [8:0] TravelerOperateMachineData; // 按钮需要标记,最后一位为标记位[8]
-    wire [7:0] TravelerTargetMachineData; // 开关不需要标记
-    wire [7:0] GameStateChangeData; 
+    wire [7:0] GameStateChangeData;        // 游戏状态
+    wire [7:0] TravelerOperateMachineData; // 机器操作
+    wire [7:0] TravelerTargetMachineData;  // 机器选择
 
     // 设置游戏状态
     GameStateChange gsc(  
-      .switch(switches[7]),
+      .switch(switches[7]),             // 左侧第一个开关控制
       .data(GameStateChangeData)
     );
 
@@ -102,7 +102,7 @@ module DemoTop(
 
     // 玩家更改目标机器
     TravelerTargetMachine ttm(
-        .select_switches(switches[5:0]),
+        .select_switches(switches[5:0]),  // 右侧5个开关控制
         .data(TravelerTargetMachineData),
         .clk(clk)
     );
@@ -114,8 +114,7 @@ module DemoTop(
       .GameStateChangeData(GameStateChangeData),
       .uart_clk(uart_clk_16),
       .data_ready(dataIn_ready),
-      .data_send(dataIn_bits),
-      .leds(led) // 这个用来显示发送的数据
+      .data_send(dataIn_bits)
     );
 
     /*  接收数据部分  */
@@ -126,7 +125,7 @@ module DemoTop(
       .data_receive(dataOut_bits),
       .uart_clk(uart_clk_16),
       .clk(clk),
-      .feedback_leds(led2)
+      .feedback_leds(led[3:0])    // 左侧右4led显示反馈数据
     );
     
 
