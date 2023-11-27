@@ -21,7 +21,7 @@ always @(posedge clk) begin
                 data <= 0;
             end
         end else
-            clk_cnt <= clk_cnt + 1;
+            clk_cnt <= clk_cnt + 1;d
     end else begin
         clk_cnt <= 0;
         prev_select_switch = select_switches;

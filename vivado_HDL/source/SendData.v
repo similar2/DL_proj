@@ -9,26 +9,28 @@ module SendData(
     output reg [7:0] data_send = 0   // 接入UART的输出数据
 );
 
+parameter SEND_GAMESTATE = 2'b00 , SEND_TARGET = 2'b01 , SEND_OPERATE = 2'b10;
+
+
 reg [1:0] send_state = 0;
 
 // 示例bit文件的发送数据是轮询，逆天
 // 我就说为什么只输出一个数据Move会有问题，byd一直传输不怕给软件整爆了
 
 always @(posedge uart_clk) begin
-    if(send_state < 2) 
-            send_state <= send_state + 1;
-        else
-            send_state <= 0;
+    case(send_state)
+        SEND_GAMESTATE : send_state <= SEND_TARGET;
+        SEND_TARGET : send_state <= SEND_OPERATE;
+        SEND_OPERATE : send_state <= SEND_GAMESTATE;
+    endcase
 end
 
 always @(send_state) begin    // 在always块中统一检查数据变化,如果有变化则令output_data设置为当前值
-        if(send_state == 0) begin
-            data_send <= GameStateChangeData;
-        end else if(send_state == 1) begin
-            data_send <= TravelerTargetMachineData; 
-        end else begin
-            data_send <= TravelerOperateMachineData;
-        end
+    case(send_state)
+        SEND_GAMESTATE : send_data = GameStateChangeData;
+        SEND_TARGET : send_data = TravelerTargetMachineData;
+        SEND_OPERATE : send_data = TravelerOperateMachineData;
+    endcase
 end
 
 
