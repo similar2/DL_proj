@@ -67,7 +67,9 @@ module UARTReceiver(
   reg        data_5 = 0;
   reg        data_6 = 0;
   reg        data_7 = 0;
+  // 新增变量
   reg        data_8 = 0;
+  //
   always @(posedge clock) begin
     if (reset) begin
       cnt <= 3'h6;
@@ -121,12 +123,15 @@ module UARTReceiver(
       data_5 <= data_4;
       data_6 <= data_5;
       data_7 <= data_6;
+      // 新增了这一行
       data_8 <= data_7;
+      //
     end
   end // always @(posedge)
   assign io_valid = ((state == 4'h2) & tick); //4'h2
+  // 改变了这一行
   assign io_bits = {data_1, data_2, data_3, data_4, data_5, data_6, data_7,data_8};
-  
+  //
 endmodule
 
 module UART(
