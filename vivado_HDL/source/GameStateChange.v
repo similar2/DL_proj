@@ -1,6 +1,6 @@
 module GameStateChange(
     input switch,
-    output reg [7:0] data = 8'bxxxx_10_01;
+    output reg [7:0] data = 8'bxxxx_10_01
 );
 
 parameter START = 2'b01 , STOP = 2'b10;

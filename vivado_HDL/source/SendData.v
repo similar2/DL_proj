@@ -27,9 +27,9 @@ end
 
 always @(send_state) begin    // 在always块中统一检查数据变化,如果有变化则令output_data设置为当前值
     case(send_state)
-        SEND_GAMESTATE : send_data = GameStateChangeData;
-        SEND_TARGET : send_data = TravelerTargetMachineData;
-        SEND_OPERATE : send_data = TravelerOperateMachineData;
+        SEND_GAMESTATE : data_send = GameStateChangeData;
+        SEND_TARGET : data_send = TravelerTargetMachineData;
+        SEND_OPERATE : data_send = TravelerOperateMachineData;
     endcase
 end
 

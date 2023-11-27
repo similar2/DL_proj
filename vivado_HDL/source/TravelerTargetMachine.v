@@ -5,8 +5,10 @@ module TravelerTargetMachine(
 );
 
 parameter ANTISHAKECNT = 5000000;   // 用于开关的防抖(常量)
-parameter SELECT_IGNORE = 8'b000000_11;
+parameter SELECT_DATA_IGNORE = 8'b000000_11;
 parameter SELECT_VALUE_MAX = 20;
+parameter CHANNEL_TARGET = 2'b11;
+
 reg [4:0] prev_select_switch = 0;
 reg [30:0] clk_cnt = 0; // 建立计数器记录开关拨下时间
 
@@ -14,9 +16,9 @@ reg [30:0] clk_cnt = 0; // 建立计数器记录开关拨下时间
 always @(clk_cnt) begin
     if(clk_cnt == ANTISHAKECNT) begin
         if(select_switches > SELECT_VALUE_MAX) begin
-            data = SELECT_IGNORE;
+            data = SELECT_DATA_IGNORE;
         end else begin
-            data = {0,select_switches,2'b11};
+            data = {0,select_switches,CHANNEL_TARGET};
         end
     end
 end
