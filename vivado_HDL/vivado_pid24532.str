@@ -379,3 +379,9 @@ dismissDialog("Starting Design Runs"); // bs (cj)
 selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:54]. ]", 11, true); // ah (O, cj) - Node
 messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Lenovo\Desktop\Digital Logic Project\vivado_HDL\source\VerifyOperateData.v;-;;-;16;-;line;-;54;-;;-;16;-;"); // ah (O, cj)
 // Launch External Editor: 'D:/TOOL/Microsoft VS Code/Code.exe "C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v" -l54'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 51 MB. Current time: 12/7/23 10:56:18 PM CST
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 52 MB. Current time: 12/7/23 11:26:21 PM CST
+// TclEventType: FILE_SET_CHANGE
