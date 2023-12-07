@@ -1,4 +1,3 @@
-`include "Define.v"
 `timescale 1ns/1ps
 
 module TravelerOperateMachine(

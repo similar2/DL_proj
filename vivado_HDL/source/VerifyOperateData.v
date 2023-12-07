@@ -1,4 +1,4 @@
-`include "Define.v"
+// `include "Define.v"
 module VerifyIfOperateDataCorrect(
     input clk,
     input [7:0] GameStateChangeData,    // data of game state

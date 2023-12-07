@@ -1,9 +1,5 @@
 // Top文件
 
-`timescale 1ns / 1ps
-
-
-
 module DemoTop(
     input [4:0] button,
     input [7:0] switches,

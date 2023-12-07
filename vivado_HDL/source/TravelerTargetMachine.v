@@ -1,4 +1,4 @@
-`include "Define.v"
+// `include "Define.v"
 module TravelerTargetMachine(
     input [4:0] select_switches,    // switches to represent data
     input clk,  // clk to anti-shake

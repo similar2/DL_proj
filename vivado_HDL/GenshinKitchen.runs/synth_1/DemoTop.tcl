@@ -30,6 +30,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo {c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v}
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v}
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/AnalyseScript.v}
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v}

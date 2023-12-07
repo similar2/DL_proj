@@ -1,4 +1,4 @@
-`include "Define.v"
+// `include "Define.v"
 module GameStateChange(
     input switch,
     input [2:0] CompleteCusineNum,

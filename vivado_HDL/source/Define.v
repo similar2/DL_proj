@@ -1,7 +1,7 @@
-bool constant
+// bool constant
 parameter TRUE = 1 , FALSE = 0;
 
-int constant
+// int constant
 parameter ZERO = 0 , ONE = 1 , TWO = 2 , THREE = 3;
 
 // anti-shake constant
