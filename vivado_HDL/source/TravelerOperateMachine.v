@@ -14,8 +14,8 @@ module TravelerOperateMachine(
 reg [30:0] clk_cnt = 0; // 建立计数器记录按钮按下时间
 parameter ANTISHAKECNT = 5000000;   // 用于按钮的防抖(常量)
 
-reg [7:0] data_store;
-parameter OPERATE_GET = 8'bx_00001_10 , OPERATE_PUT = 8'bx_00010_10 , OPERATE_INTERACT = 8'bx_00100_10 , OPERATE_MOVE = 8'bx_01000_10 , OPERATE_THROW = 8'bx_10000_10 , OPERATE_IGNORE = 8'bx_00000_10;
+reg [7:0] data_store;parameter OPERATE_GET = 8'bx_00001_10 , OPERATE_PUT = 8'bx_00010_10 , OPERATE_INTERACT = 8'bx_00100_10 , OPERATE_MOVE = 8'bx_01000_10 , OPERATE_THROW = 8'bx_10000_10 , OPERATE_IGNORE = 8'bx_00000_10;
+
 
 reg [4:0] prev_buttons;
 wire [4:0] buttons;

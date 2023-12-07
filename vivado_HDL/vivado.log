@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Dec  7 21:18:39 2023
+# Process ID: 24532
+# Current directory: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29664 C:\Users\Lenovo\Desktop\Digital Logic Project\vivado_HDL\GenshinKitchen.xpr
+# Log file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/TOOL/Xilinx/Vivado/2017.4/data/ip'.
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Dec  7 21:25:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log
+add_files {{C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Action_script.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/AnalyseScript.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v} {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v}}
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/AnalyseScript.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Dec  7 21:26:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Dec  7 21:27:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Dec  7 21:27:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Dec  7 21:29:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Thu Dec  7 21:30:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Dec  7 21:36:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Dec  7 22:10:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log

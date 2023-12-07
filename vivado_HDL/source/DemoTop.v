@@ -80,8 +80,14 @@ module DemoTop(
     /* 发送数据部分 */
 
     wire [7:0] GameStateChangeData;        // 游戏状态
-    wire [7:0] TravelerOperateMachineData; // 机器操作
+    wire [7:0] OriginTravelerOperateMachineData; // 机器操作
+    wire [7:0] VerifiedOperateMachineData;
     wire [7:0] TravelerTargetMachineData;  // 机器选择
+
+    wire InFrontOfTargetMachine;
+    wire HasItemInHand;
+    wire TargetMachineIsProcessing;
+    wire TargetMachineHasItem;
 
     // 设置游戏状态
     GameStateChange gsc(  
@@ -97,7 +103,17 @@ module DemoTop(
       .button_left(button[0]),
       .button_right(button[4]),
       .clk(clk),
-      .data(TravelerOperateMachineData)
+      .data(OriginTravelerOperateMachineData)
+    );
+
+    VerifyIfOperateDataCorrect vod(
+      .OperateData(OriginTravelerOperateMachineData),
+      .TargetMachine(TravelerTargetMachineData),
+      .InFrontOfTargetMachine(InFrontOfTargetMachine),
+      .HasItemInHand(HasItemInHand),
+      .TargetMachineIsProcessing(TargetMachineIsProcessing),
+      .TargetMachineHasItem(TargetMachineHasItem),
+      .VerifiedOperateData(VerifiedOperateMachineData)
     );
 
     // 玩家更改目标机器
@@ -109,7 +125,7 @@ module DemoTop(
 
     // UART发送数据
     SendData sd(
-      .TravelerOperateMachineData(TravelerOperateMachineData),
+      .TravelerOperateMachineData(VerifiedOperateMachineData),
       .TravelerTargetMachineData(TravelerTargetMachineData),
       .GameStateChangeData(GameStateChangeData),
       .uart_clk(uart_clk_16),
@@ -125,6 +141,10 @@ module DemoTop(
       .data_receive(dataOut_bits),
       .uart_clk(uart_clk_16),
       .clk(clk),
+      .InFrontOfTargetMachine(InFrontOfTargetMachine),
+      .HasItemInHand(HasItemInHand),
+      .TargetMachineIsProcessing(TargetMachineIsProcessing),
+      .TargetMachineHasItem(TargetMachineHasItem),
       .feedback_leds(led[3:0])    // 左侧右4led显示反馈数据
     );
     

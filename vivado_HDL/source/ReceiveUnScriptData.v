@@ -3,6 +3,10 @@ module ReceiveUnScriptData(
     input [7:0] data_receive,
     input uart_clk,
     input clk,
+    output reg InFrontOfTargetMachine,
+    output reg HasItemInHand,
+    output reg TargetMachineIsProcessing,
+    output reg TargetMachineHasItem,
     output reg  [3:0] feedback_leds
 );
 
@@ -15,10 +19,14 @@ parameter MAX = 15;
 
 
 always @(posedge clk) begin
-    if(data_receive[1:0]==2'b01)
+    if(data_receive[1:0]==2'b01) begin
         feedback_leds <= data_receive[5:2];   // led显示反馈数据
-    else
+        {TargetMachineHasItem,TargetMachineIsProcessing,HasItemInHand,InFrontOfTargetMachine} <= data_receive[5:2];
+    end
+    else begin
         feedback_leds <= 0;                   // 若为脚本模式则全灭
+        {TargetMachineHasItem,TargetMachineIsProcessing,HasItemInHand,InFrontOfTargetMachine} <= 4'b0000;
+    end
 end
 
 endmodule                                                                      

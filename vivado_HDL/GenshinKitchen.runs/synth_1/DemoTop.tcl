@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -41,6 +40,8 @@ read_verilog -library xil_defaultlib {
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v}
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v}
   {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v}
+  {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Action_script.v}
+  {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v}
 }
 read_ip -quiet {{C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram_ooc.xdc}}]
