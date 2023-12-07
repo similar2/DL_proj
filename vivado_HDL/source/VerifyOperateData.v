@@ -1,56 +1,58 @@
+`include "Define.v"
 module VerifyIfOperateDataCorrect(
-    input [7:0] OriginOperateData,
-    input [7:0] TargetMachine,
-    input InFrontOfTargetMachine,
-    input HasItemInHand,
-    input TargetMachineIsProcessing,
-    input TargetMachineHasItem,
-    output reg [7:0] VerifiedOperateData
+    input clk,
+    input [7:0] GameStateChangeData,    // data of game state
+    input [7:0] OriginOperateData,      // data of origin operate
+    input [7:0] TargetMachine,          // data of target machine
+    input InFrontOfTargetMachine,       // feedback of player if in front of machine
+    input HasItemInHand,                // feedback of if has item in player's hand
+    input TargetMachineIsProcessing,    // feedback of if Machine processing
+    input TargetMachineHasItem,         // feedback of if Machine has item
+    output reg [7:0] VerifiedOperateData = 0,   // return operate data after verify
+    output reg [2:0] CompleteCusineNum = 0      // return how many cussine finish
 );
 
-parameter OPERATE_GET = 8'bx_00001_10 , OPERATE_PUT = 8'bx_00010_10 , OPERATE_INTERACT = 8'bx_00100_10 , OPERATE_MOVE = 8'bx_01000_10 , OPERATE_THROW = 8'bx_10000_10 , OPERATE_IGNORE = 8'bx_00000_10;
-
-reg [2:0] FinishCusineNums = 0;
-reg [5:0] ItemInHand = 0;
-
-reg [4:0] StoreNums [19:0][3:0] = {{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000},{5'b00000,5'b00000,5'b00000,5'b00000}}; 
-
-parameter ITEM_NUM = 0 ,FIRST_ITEM = 1 ,SECOND_ITEM = 2,THIRD_ITEM = 3;
-
-parameter ONE = 1 , TWO = 2 , THREE = 3;
 
 
-parameter NULL = 0, 
-          SWEET_FLOWER = 1, WHEAT = 2, JUEYUN_CHILI = 3, RAW_MEAT = 4, BERRY = 5, SALT = 6,
-          HAM = 7, SPICE = 8, FLOUR = 9, SLICED_MEAT = 10, SUGAR = 11, CUMIN = 12,
-          SAUSAGE = 13, SWEET_MADAME = 14, CHILI_CHICKEN = 15, BERRY_MISS_MANJUU = 16, COLD_CUT_PLATTER = 17, STICKY_HONEY_ROAST = 18,
-          BAD_CUSINE = 19;
+// variable to memory What cusine is in player's hand
+reg [5:0] ItemInHand = NULL;
 
-parameter CUSINE_START_INDEX = 13 , CUSINE_END_INDEX = 18;
-
-
-
-parameter STORAGE_BEGIN = 1 , SOTRAGE_END = 6;
-parameter STONE_MILL_7 = 7;
-parameter CUTTING_MACHINE_8 = 8;
-parameter TABLE_9 = 9 , TABLE_11 = 11 , TABLE_14 = 14 , TABLE_17 = 17 , TABLE_19 = 19;
-parameter STOVE_10 = 10;
-parameter OVEN_12 = 12 , OVEN_13 = 13;
-parameter WORKBENCH_15 = 15;
-parameter MIXER_16 = 16;
-parameter CUSTOMER_18 = 18;
-parameter TRASH_BIN_20 = 20;
-
-
-
-
-
-parameter MAX_ITEM_NUM = 3 , MIN_ITEM_NUM = 0;
-
-
+// variable to analyse number of machine
 wire [4:0] MachineNumber;
 assign MachineNumber = TargetMachine[6:2];
 
+// 2D array to store every machine status
+reg [4:0] StoreNums [19:0][3:0];
+
+// inital 2D array when game stop
+reg NeedInital = TRUE , i = ZERO, j = ZERO;
+
+always @(GameStateChangeData) begin
+    if(GameStateChangeData == GAME_STOP) begin
+        NeedInital = TRUE;
+        CompleteCusineNum = ZERO;
+    end
+end
+
+always @(posedge clk) begin
+    if(NeedInital == TRUE) begin
+        StoreNums[i][j] <= 5'b00000;
+        if( j == 20 && i == 4 ) begin
+           NeedInital = FALSE;
+        end else begin
+            if( j == 4 ) begin
+                i <= i + 1;
+                j <= 0;
+            end else begin
+                j <= j + 1;
+        end 
+        end
+    end 
+end
+
+
+
+// verify if operate is legal
 always @(OriginOperateData) begin
     if(InFrontOfTargetMachine) begin
 
@@ -123,7 +125,7 @@ always @(OriginOperateData) begin
                     VerifiedOperateData = OriginOperateData;
                 end
             // interact
-            end else(OriginOperateData == OPERATE_INTERACT) begin
+            end else if(OriginOperateData == OPERATE_INTERACT) begin
                 if(StoreNums[MachineNumber][FIRST_ITEM] == RAW_MEAT) begin
                     StoreNums[MachineNumber][FIRST_ITEM] = SLICED_MEAT;
                 end else if(StoreNums[MachineNumber][FIRST_ITEM] == WHEAT) begin
@@ -344,7 +346,7 @@ always @(OriginOperateData) begin
                 VerifiedOperateData = OPERATE_IGNORE;
             end else if(OriginOperateData == OPERATE_PUT) begin
                 if(ItemInHand >= CUSINE_START_INDEX && ItemInHand <= CUSINE_END_INDEX) begin
-                    FinishCusineNums = FinishCusineNums + 1;
+                    CompleteCusineNum = CompleteCusineNum + 1;
                     ItemInHand = NULL;
                 end
             end

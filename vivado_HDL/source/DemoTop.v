@@ -20,7 +20,7 @@ module DemoTop(
 
 
 // The wire below is useful!
-        wire uart_clk_16; // UART协议使用时钟周期
+        wire uart_clk_16; // uart clk period
         
         wire [7:0] dataIn_bits;
         wire dataIn_ready;
@@ -66,33 +66,35 @@ module DemoTop(
 
     /* 时钟分频部分 */
 
-    wire second_clk;  // 1秒的时钟分频
-    wire millisecond_clk; // 1毫秒的时钟分频
+    wire second_clk;  // clk of 1 second
+    wire millisecond_clk; // clk of 1ms
 
     // 时钟分频
     DivideClock dc(
       .clk(clk),
-      .uart_clk(uart_clk_16),   // 时钟分频为UART协议使用的时钟频率
-      .second_clk(second_clk),   // 时钟分频至1秒
-      .millisecond_clk(millisecond_clk)
+      .uart_clk(uart_clk_16),   // uart clk
+      .second_clk(second_clk),   // 1s clk
+      .millisecond_clk(millisecond_clk) // 1ms clk
     );
     
-    /* 发送数据部分 */
 
-    wire [7:0] GameStateChangeData;        // 游戏状态
-    wire [7:0] OriginTravelerOperateMachineData; // 机器操作
-    wire [7:0] VerifiedOperateMachineData;
-    wire [7:0] TravelerTargetMachineData;  // 机器选择
+    wire [7:0] GameStateChangeData;        // state of game
+    wire [7:0] OriginTravelerOperateMachineData; // player origin operate data (receive by buttons)
+    wire [7:0] VerifiedOperateMachineData;  // operate data after verify
+    wire [7:0] TravelerTargetMachineData;  // target machine that player select
 
-    wire InFrontOfTargetMachine;
-    wire HasItemInHand;
-    wire TargetMachineIsProcessing;
-    wire TargetMachineHasItem;
+    wire InFrontOfTargetMachine;        // feedback data of player is in front of target machine
+    wire HasItemInHand;                 // feedback of if player has item in hand 
+    wire TargetMachineIsProcessing;     // feedback of if target machine is processing
+    wire TargetMachineHasItem;          // feedback of if target machine has item
+
+    wire [2:0] CompleteCusineNum;       // variable to memory how many cusines finish
 
     // 设置游戏状态
     GameStateChange gsc(  
       .switch(switches[7]),             // 左侧第一个开关控制
-      .data(GameStateChangeData)
+      .data(GameStateChangeData),
+      .CompleteCusineNum(CompleteCusineNum)
     );
 
     // 玩家操作机器
@@ -107,13 +109,16 @@ module DemoTop(
     );
 
     VerifyIfOperateDataCorrect vod(
-      .OperateData(OriginTravelerOperateMachineData),
+      .clk(clk),
+      .GameStateChangeData(GameStateChangeData),
+      .OriginOperateData(OriginTravelerOperateMachineData),
       .TargetMachine(TravelerTargetMachineData),
       .InFrontOfTargetMachine(InFrontOfTargetMachine),
       .HasItemInHand(HasItemInHand),
       .TargetMachineIsProcessing(TargetMachineIsProcessing),
       .TargetMachineHasItem(TargetMachineHasItem),
-      .VerifiedOperateData(VerifiedOperateMachineData)
+      .VerifiedOperateData(VerifiedOperateMachineData),
+      .CompleteCusineNum(CompleteCusineNum)
     );
 
     // 玩家更改目标机器

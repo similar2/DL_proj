@@ -1,0 +1,177 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 7560
+License: Customer
+
+Current time: 	Fri Dec 08 01:10:08 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 65 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/TOOL/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/TOOL/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Lenovo
+User home directory: C:/Users/Lenovo
+User working directory: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/TOOL/Xilinx/Vivado
+HDI_APPROOT: D:/TOOL/Xilinx/Vivado/2017.4
+RDI_DATADIR: D:/TOOL/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: D:/TOOL/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/TOOL/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/vivado.log
+Vivado journal file location: 	C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/vivado.jou
+Engine tmp dir: 	C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/.Xil/Vivado-7560-LAPTOP-6GMAV85C
+
+GUI allocated memory:	139 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 580 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 46 MB (+46252kb) [00:00:09]
+// [Engine Memory]: 451 MB (+321120kb) [00:00:09]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Lenovo\Desktop\Digital Logic Project\vivado_HDL\GenshinKitchen.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 95 MB (+48131kb) [00:00:12]
+// [Engine Memory]: 560 MB (+90495kb) [00:00:12]
+// [GUI Memory]: 101 MB (+1211kb) [00:00:14]
+// Tcl Message: open_project {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/TOOL/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 586 MB. GUI used memory: 49 MB. Current time: 12/8/23 1:10:09 AM CST
+// Project name: GenshinKitchen; location: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL; part: xc7a35tcsg324-1
+// [Engine Memory]: 595 MB (+7991kb) [00:00:16]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 611 MB. GUI used memory: 49 MB. Current time: 12/8/23 1:14:13 AM CST
+// Elapsed time: 243 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec  8 01:14:15 2023] Launched synth_1... Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_FAILED
+// Elapsed time: 46 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (N, cj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-3966] non-net port CompleteCusineNum cannot be of mode input: `default_nettype is none [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:3]. ]", 2, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Lenovo\Desktop\Digital Logic Project\vivado_HDL\source\GameStateChange.v;-;;-;16;-;line;-;3;-;;-;16;-;"); // ah (O, cj)
+// Launch External Editor: 'D:/TOOL/Microsoft VS Code/Code.exe "C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v" -l3'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec  8 01:15:19 2023] Launched synth_1... Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec  8 01:16:25 2023] Launched synth_1... Run output will be captured here: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 54 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 625 MB (+37kb) [00:13:22]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 52 MB. Current time: 12/8/23 1:26:09 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 107 MB (+866kb) [00:18:58]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILE_SET_CHANGE

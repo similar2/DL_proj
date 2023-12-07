@@ -14,30 +14,2222 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14208 
+INFO: Helper process launched with PID 34796 
 WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:21]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:54]
-ERROR: [Synth 8-2158] illegal operand for operator > [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:54]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-2158] illegal operand for operator - [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-2833] unpacked value/target cannot be used in assignment [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:60]
-ERROR: [Synth 8-2158] illegal operand for operator < [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:60]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-2158] illegal operand for operator + [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-2833] unpacked value/target cannot be used in assignment [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:88]
-ERROR: [Synth 8-2158] illegal operand for operator > [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:88]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-2158] illegal operand for operator - [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-2833] unpacked value/target cannot be used in assignment [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:94]
-Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 352.266 ; gain = 112.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DemoTop' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
+INFO: [Synth 8-638] synthesizing module 'ScriptMem' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'inst_ram' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-27168-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'inst_ram' (1#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-27168-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (2#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:137]
+INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
+INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (3#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
+INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
+INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (4#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
+INFO: [Synth 8-256] done synthesizing module 'UART' (5#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:137]
+INFO: [Synth 8-638] synthesizing module 'DivideClock' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
+	Parameter UARTCNT bound to: 325 - type: integer 
+	Parameter SECONDCNT bound to: 50000000 - type: integer 
+	Parameter MILLISECONDCNT bound to: 50000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DivideClock' (6#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
+INFO: [Synth 8-638] synthesizing module 'GameStateChange' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+	Parameter START bound to: 2'b01 
+	Parameter STOP bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'GameStateChange' (7#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerOperateMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:4]
+	Parameter ANTISHAKECNT bound to: 5000000 - type: integer 
+	Parameter OPERATE_GET bound to: 8'bx0000110 
+	Parameter OPERATE_PUT bound to: 8'bx0001010 
+	Parameter OPERATE_INTERACT bound to: 8'bx0010010 
+	Parameter OPERATE_MOVE bound to: 8'bx0100010 
+	Parameter OPERATE_THROW bound to: 8'bx1000010 
+	Parameter OPERATE_IGNORE bound to: 8'bx0000010 
+	Parameter PRESS_UP bound to: 5'b10000 
+	Parameter PRESS_DOWN bound to: 5'b01000 
+	Parameter PRESS_CENTER bound to: 5'b00100 
+	Parameter PRESS_LEFT bound to: 5'b00010 
+	Parameter PRESS_RIGHT bound to: 5'b00001 
+WARNING: [Synth 8-567] referenced signal 'data_store' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:25]
+INFO: [Synth 8-256] done synthesizing module 'TravelerOperateMachine' (8#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:4]
+INFO: [Synth 8-638] synthesizing module 'VerifyIfOperateDataCorrect' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:1]
+	Parameter OPERATE_GET bound to: 8'bx0000110 
+	Parameter OPERATE_PUT bound to: 8'bx0001010 
+	Parameter OPERATE_INTERACT bound to: 8'bx0010010 
+	Parameter OPERATE_MOVE bound to: 8'bx0100010 
+	Parameter OPERATE_THROW bound to: 8'bx1000010 
+	Parameter OPERATE_IGNORE bound to: 8'bx0000010 
+	Parameter ITEM_NUM bound to: 0 - type: integer 
+	Parameter FIRST_ITEM bound to: 1 - type: integer 
+	Parameter SECOND_ITEM bound to: 2 - type: integer 
+	Parameter THIRD_ITEM bound to: 3 - type: integer 
+	Parameter ONE bound to: 1 - type: integer 
+	Parameter TWO bound to: 2 - type: integer 
+	Parameter THREE bound to: 3 - type: integer 
+	Parameter NULL bound to: 0 - type: integer 
+	Parameter SWEET_FLOWER bound to: 1 - type: integer 
+	Parameter WHEAT bound to: 2 - type: integer 
+	Parameter JUEYUN_CHILI bound to: 3 - type: integer 
+	Parameter RAW_MEAT bound to: 4 - type: integer 
+	Parameter BERRY bound to: 5 - type: integer 
+	Parameter SALT bound to: 6 - type: integer 
+	Parameter HAM bound to: 7 - type: integer 
+	Parameter SPICE bound to: 8 - type: integer 
+	Parameter FLOUR bound to: 9 - type: integer 
+	Parameter SLICED_MEAT bound to: 10 - type: integer 
+	Parameter SUGAR bound to: 11 - type: integer 
+	Parameter CUMIN bound to: 12 - type: integer 
+	Parameter SAUSAGE bound to: 13 - type: integer 
+	Parameter SWEET_MADAME bound to: 14 - type: integer 
+	Parameter CHILI_CHICKEN bound to: 15 - type: integer 
+	Parameter BERRY_MISS_MANJUU bound to: 16 - type: integer 
+	Parameter COLD_CUT_PLATTER bound to: 17 - type: integer 
+	Parameter STICKY_HONEY_ROAST bound to: 18 - type: integer 
+	Parameter BAD_CUSINE bound to: 19 - type: integer 
+	Parameter CUSINE_START_INDEX bound to: 13 - type: integer 
+	Parameter CUSINE_END_INDEX bound to: 18 - type: integer 
+	Parameter STORAGE_BEGIN bound to: 1 - type: integer 
+	Parameter SOTRAGE_END bound to: 6 - type: integer 
+	Parameter STONE_MILL_7 bound to: 7 - type: integer 
+	Parameter CUTTING_MACHINE_8 bound to: 8 - type: integer 
+	Parameter TABLE_9 bound to: 9 - type: integer 
+	Parameter TABLE_11 bound to: 11 - type: integer 
+	Parameter TABLE_14 bound to: 14 - type: integer 
+	Parameter TABLE_17 bound to: 17 - type: integer 
+	Parameter TABLE_19 bound to: 19 - type: integer 
+	Parameter STOVE_10 bound to: 10 - type: integer 
+	Parameter OVEN_12 bound to: 12 - type: integer 
+	Parameter OVEN_13 bound to: 13 - type: integer 
+	Parameter WORKBENCH_15 bound to: 15 - type: integer 
+	Parameter MIXER_16 bound to: 16 - type: integer 
+	Parameter CUSTOMER_18 bound to: 18 - type: integer 
+	Parameter TRASH_BIN_20 bound to: 20 - type: integer 
+	Parameter MAX_ITEM_NUM bound to: 3 - type: integer 
+	Parameter MIN_ITEM_NUM bound to: 0 - type: integer 
+	Parameter TRUE bound to: 1 - type: integer 
+	Parameter FALSE bound to: 0 - type: integer 
+	Parameter GAME_START bound to: 8'bxxxx0101 
+	Parameter GAME_STOP bound to: 8'bxxxx1001 
+WARNING: [Synth 8-567] referenced signal 'InFrontOfTargetMachine' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:83]
+WARNING: [Synth 8-567] referenced signal 'HasItemInHand' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:83]
+WARNING: [Synth 8-567] referenced signal 'TargetMachineHasItem' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:83]
+WARNING: [Synth 8-567] referenced signal 'MachineNumber' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:83]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[1][1] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:67]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[0][1] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:67]
+INFO: [Synth 8-256] done synthesizing module 'VerifyIfOperateDataCorrect' (9#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerTargetMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:1]
+	Parameter ANTISHAKECNT bound to: 5000000 - type: integer 
+	Parameter SELECT_DATA_IGNORE bound to: 8'b00000011 
+	Parameter SELECT_VALUE_MAX bound to: 20 - type: integer 
+	Parameter CHANNEL_TARGET bound to: 2'b11 
+WARNING: [Synth 8-567] referenced signal 'select_switches' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:16]
+INFO: [Synth 8-256] done synthesizing module 'TravelerTargetMachine' (10#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'select_switches' does not match port width (5) of module 'TravelerTargetMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:123]
+INFO: [Synth 8-638] synthesizing module 'SendData' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:3]
+	Parameter SEND_GAMESTATE bound to: 2'b00 
+	Parameter SEND_TARGET bound to: 2'b01 
+	Parameter SEND_OPERATE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:29]
+WARNING: [Synth 8-567] referenced signal 'GameStateChangeData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+WARNING: [Synth 8-567] referenced signal 'TravelerTargetMachineData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+WARNING: [Synth 8-567] referenced signal 'TravelerOperateMachineData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+INFO: [Synth 8-256] done synthesizing module 'SendData' (11#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:3]
+INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
+	Parameter MAX bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (12#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
+WARNING: [Synth 8-3848] Net led2 in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:12]
+WARNING: [Synth 8-3848] Net pc in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:32]
+INFO: [Synth 8-256] done synthesizing module 'DemoTop' (13#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_valid
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[6]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port uart_clk
+WARNING: [Synth 8-3331] design SendData has unconnected port data_ready
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[6]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[5]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[4]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[3]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[2]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachineIsProcessing
+WARNING: [Synth 8-3331] design ScriptMem has unconnected port reset
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 390.270 ; gain = 150.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[7] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[6] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[5] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[4] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[3] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[2] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[1] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[0] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 390.270 ; gain = 150.270
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-27168-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-27168-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DemoTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 725.629 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 725.629 ; gain = 485.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 725.629 ; gain = 485.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for script_mem_module/ram_module. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 725.629 ; gain = 485.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "script_size" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
+INFO: [Synth 8-5544] ROM "spacing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
+WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:152]
+WARNING: [Synth 8-6014] Unused sequential element uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
+WARNING: [Synth 8-6014] Unused sequential element second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
+WARNING: [Synth 8-6014] Unused sequential element millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:45]
+WARNING: [Synth 8-6014] Unused sequential element j_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:67]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[1][0] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:67]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[0][0] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:67]
+INFO: [Synth 8-5545] ROM "data" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'VerifiedOperateData_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'data_send_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 725.629 ; gain = 485.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ScriptMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module UARTTransmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module UARTReceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DivideClock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module GameStateChange 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module TravelerOperateMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module TravelerTargetMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SendData 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ReceiveUnScriptData 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:30]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:39]
+WARNING: [Synth 8-6014] Unused sequential element tom/prev_buttons_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:44]
+WARNING: [Synth 8-6014] Unused sequential element rd/InFrontOfTargetMachine_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/HasItemInHand_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/TargetMachineIsProcessing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/TargetMachineHasItem_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
+WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:45]
+INFO: [Synth 8-5545] ROM "ttm/data" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element script_mem_module/script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/rx/spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:152]
+WARNING: [Synth 8-6014] Unused sequential element dc/uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
+WARNING: [Synth 8-6014] Unused sequential element ttm/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:28]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ttm/data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[2] )
+INFO: [Synth 8-3886] merging instance 'ttm/data_reg[1]' (LD) to 'ttm/data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ttm/data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/data_send_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_module/tx/data_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sd/data_send_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (uart_module/tx/data_reg[7]) is unused and will be removed from module DemoTop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 725.629 ; gain = 485.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 725.629 ; gain = 485.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 725.629 ; gain = 485.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_ram      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |inst_ram |     1|
+|2     |BUFG     |     2|
+|3     |CARRY4   |     9|
+|4     |LUT1     |     6|
+|5     |LUT2     |    22|
+|6     |LUT3     |    13|
+|7     |LUT4     |    33|
+|8     |LUT5     |    17|
+|9     |LUT6     |    17|
+|10    |FDRE     |   117|
+|11    |LD       |    13|
+|12    |IBUF     |     8|
+|13    |OBUF     |     5|
+|14    |OBUFT    |    12|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           |   290|
+|2     |  dc                |DivideClock                |    29|
+|3     |  rd                |ReceiveUnScriptData        |     4|
+|4     |  script_mem_module |ScriptMem                  |    63|
+|5     |  sd                |SendData                   |    18|
+|6     |  ttm               |TravelerTargetMachine      |    63|
+|7     |  uart_module       |UART                       |    85|
+|8     |    rx              |UARTReceiver               |    40|
+|9     |    tx              |UARTTransmitter            |    25|
+|10    |  vod               |VerifyIfOperateDataCorrect |     1|
++------+--------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 735.977 ; gain = 160.617
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 735.977 ; gain = 495.977
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  LD => LDCE: 13 instances
+
 INFO: [Common 17-83] Releasing license: Synthesis
-2 Infos, 1 Warnings, 0 Critical Warnings and 20 Errors encountered.
+56 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 735.977 ; gain = 506.387
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 735.977 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 00:52:08 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15268 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:21]
+ERROR: [Synth 8-2576] procedural assignment to a non-register CompleteCusineNum is not permitted [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:18]
+INFO: [Synth 8-2350] module GameStateChange ignored due to previous errors [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
 synth_design failed
 ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 22:27:04 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:12:16 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15144 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:21]
+ERROR: [Synth 8-3966] non-net port CompleteCusineNum cannot be of mode inout: `default_nettype is "none" [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:3]
+INFO: [Synth 8-2350] module GameStateChange ignored due to previous errors [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:13:11 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13964 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:21]
+ERROR: [Synth 8-3966] non-net port CompleteCusineNum cannot be of mode input: `default_nettype is "none" [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:3]
+INFO: [Synth 8-2350] module GameStateChange ignored due to previous errors [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:14:33 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1944 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:21]
+WARNING: [Synth 8-2611] redeclaration of ansi port CompleteCusineNum is not allowed [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:18]
+WARNING: [Synth 8-976] CompleteCusineNum has already been declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:18]
+WARNING: [Synth 8-2654] second declaration of CompleteCusineNum ignored [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:18]
+INFO: [Synth 8-994] CompleteCusineNum is declared here [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 352.668 ; gain = 111.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DemoTop' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
+INFO: [Synth 8-638] synthesizing module 'ScriptMem' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'inst_ram' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-5844-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'inst_ram' (1#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-5844-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (2#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:137]
+INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
+INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (3#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
+INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
+INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (4#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
+INFO: [Synth 8-256] done synthesizing module 'UART' (5#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:137]
+INFO: [Synth 8-638] synthesizing module 'DivideClock' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
+	Parameter UARTCNT bound to: 325 - type: integer 
+	Parameter SECONDCNT bound to: 50000000 - type: integer 
+	Parameter MILLISECONDCNT bound to: 50000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DivideClock' (6#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
+INFO: [Synth 8-638] synthesizing module 'GameStateChange' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+	Parameter START bound to: 2'b01 
+	Parameter STOP bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'GameStateChange' (7#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerOperateMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:4]
+	Parameter ANTISHAKECNT bound to: 5000000 - type: integer 
+	Parameter OPERATE_GET bound to: 8'bx0000110 
+	Parameter OPERATE_PUT bound to: 8'bx0001010 
+	Parameter OPERATE_INTERACT bound to: 8'bx0010010 
+	Parameter OPERATE_MOVE bound to: 8'bx0100010 
+	Parameter OPERATE_THROW bound to: 8'bx1000010 
+	Parameter OPERATE_IGNORE bound to: 8'bx0000010 
+	Parameter PRESS_UP bound to: 5'b10000 
+	Parameter PRESS_DOWN bound to: 5'b01000 
+	Parameter PRESS_CENTER bound to: 5'b00100 
+	Parameter PRESS_LEFT bound to: 5'b00010 
+	Parameter PRESS_RIGHT bound to: 5'b00001 
+WARNING: [Synth 8-567] referenced signal 'data_store' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:25]
+INFO: [Synth 8-256] done synthesizing module 'TravelerOperateMachine' (8#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:4]
+INFO: [Synth 8-638] synthesizing module 'VerifyIfOperateDataCorrect' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:1]
+	Parameter GAME_START bound to: 8'bxxxx0101 
+	Parameter GAME_STOP bound to: 8'bxxxx1001 
+	Parameter OPERATE_GET bound to: 8'bx0000110 
+	Parameter OPERATE_PUT bound to: 8'bx0001010 
+	Parameter OPERATE_INTERACT bound to: 8'bx0010010 
+	Parameter OPERATE_MOVE bound to: 8'bx0100010 
+	Parameter OPERATE_THROW bound to: 8'bx1000010 
+	Parameter OPERATE_IGNORE bound to: 8'bx0000010 
+	Parameter ITEM_NUM bound to: 0 - type: integer 
+	Parameter FIRST_ITEM bound to: 1 - type: integer 
+	Parameter SECOND_ITEM bound to: 2 - type: integer 
+	Parameter THIRD_ITEM bound to: 3 - type: integer 
+	Parameter ONE bound to: 1 - type: integer 
+	Parameter TWO bound to: 2 - type: integer 
+	Parameter THREE bound to: 3 - type: integer 
+	Parameter NULL bound to: 0 - type: integer 
+	Parameter SWEET_FLOWER bound to: 1 - type: integer 
+	Parameter WHEAT bound to: 2 - type: integer 
+	Parameter JUEYUN_CHILI bound to: 3 - type: integer 
+	Parameter RAW_MEAT bound to: 4 - type: integer 
+	Parameter BERRY bound to: 5 - type: integer 
+	Parameter SALT bound to: 6 - type: integer 
+	Parameter HAM bound to: 7 - type: integer 
+	Parameter SPICE bound to: 8 - type: integer 
+	Parameter FLOUR bound to: 9 - type: integer 
+	Parameter SLICED_MEAT bound to: 10 - type: integer 
+	Parameter SUGAR bound to: 11 - type: integer 
+	Parameter CUMIN bound to: 12 - type: integer 
+	Parameter SAUSAGE bound to: 13 - type: integer 
+	Parameter SWEET_MADAME bound to: 14 - type: integer 
+	Parameter CHILI_CHICKEN bound to: 15 - type: integer 
+	Parameter BERRY_MISS_MANJUU bound to: 16 - type: integer 
+	Parameter COLD_CUT_PLATTER bound to: 17 - type: integer 
+	Parameter STICKY_HONEY_ROAST bound to: 18 - type: integer 
+	Parameter BAD_CUSINE bound to: 19 - type: integer 
+	Parameter CUSINE_START_INDEX bound to: 13 - type: integer 
+	Parameter CUSINE_END_INDEX bound to: 18 - type: integer 
+	Parameter STORAGE_BEGIN bound to: 1 - type: integer 
+	Parameter SOTRAGE_END bound to: 6 - type: integer 
+	Parameter STONE_MILL_7 bound to: 7 - type: integer 
+	Parameter CUTTING_MACHINE_8 bound to: 8 - type: integer 
+	Parameter TABLE_9 bound to: 9 - type: integer 
+	Parameter TABLE_11 bound to: 11 - type: integer 
+	Parameter TABLE_14 bound to: 14 - type: integer 
+	Parameter TABLE_17 bound to: 17 - type: integer 
+	Parameter TABLE_19 bound to: 19 - type: integer 
+	Parameter STOVE_10 bound to: 10 - type: integer 
+	Parameter OVEN_12 bound to: 12 - type: integer 
+	Parameter OVEN_13 bound to: 13 - type: integer 
+	Parameter WORKBENCH_15 bound to: 15 - type: integer 
+	Parameter MIXER_16 bound to: 16 - type: integer 
+	Parameter CUSTOMER_18 bound to: 18 - type: integer 
+	Parameter TRASH_BIN_20 bound to: 20 - type: integer 
+	Parameter MAX_ITEM_NUM bound to: 3 - type: integer 
+	Parameter MIN_ITEM_NUM bound to: 0 - type: integer 
+	Parameter TRUE bound to: 1 - type: integer 
+	Parameter FALSE bound to: 0 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'InFrontOfTargetMachine' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:87]
+WARNING: [Synth 8-567] referenced signal 'HasItemInHand' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:87]
+WARNING: [Synth 8-567] referenced signal 'TargetMachineHasItem' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:87]
+WARNING: [Synth 8-567] referenced signal 'MachineNumber' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:87]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[1][1] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:71]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[0][1] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:71]
+INFO: [Synth 8-256] done synthesizing module 'VerifyIfOperateDataCorrect' (9#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerTargetMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:1]
+	Parameter ANTISHAKECNT bound to: 5000000 - type: integer 
+	Parameter SELECT_DATA_IGNORE bound to: 8'b00000011 
+	Parameter SELECT_VALUE_MAX bound to: 20 - type: integer 
+	Parameter CHANNEL_TARGET bound to: 2'b11 
+WARNING: [Synth 8-567] referenced signal 'select_switches' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:16]
+INFO: [Synth 8-256] done synthesizing module 'TravelerTargetMachine' (10#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'select_switches' does not match port width (5) of module 'TravelerTargetMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:127]
+INFO: [Synth 8-638] synthesizing module 'SendData' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:3]
+	Parameter SEND_GAMESTATE bound to: 2'b00 
+	Parameter SEND_TARGET bound to: 2'b01 
+	Parameter SEND_OPERATE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:29]
+WARNING: [Synth 8-567] referenced signal 'GameStateChangeData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+WARNING: [Synth 8-567] referenced signal 'TravelerTargetMachineData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+WARNING: [Synth 8-567] referenced signal 'TravelerOperateMachineData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+INFO: [Synth 8-256] done synthesizing module 'SendData' (11#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:3]
+INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
+	Parameter MAX bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (12#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
+WARNING: [Synth 8-3848] Net led2 in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:12]
+WARNING: [Synth 8-3848] Net pc in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:32]
+INFO: [Synth 8-256] done synthesizing module 'DemoTop' (13#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_valid
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[6]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port uart_clk
+WARNING: [Synth 8-3331] design SendData has unconnected port data_ready
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[6]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[5]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[4]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[3]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[2]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachineIsProcessing
+WARNING: [Synth 8-3331] design ScriptMem has unconnected port reset
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 390.973 ; gain = 150.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[7] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[6] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[5] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[4] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[3] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[2] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[1] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[0] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 390.973 ; gain = 150.234
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-5844-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-5844-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DemoTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 725.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 725.441 ; gain = 484.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 725.441 ; gain = 484.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for script_mem_module/ram_module. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 725.441 ; gain = 484.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "script_size" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
+INFO: [Synth 8-5544] ROM "spacing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
+WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:152]
+WARNING: [Synth 8-6014] Unused sequential element uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
+WARNING: [Synth 8-6014] Unused sequential element second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
+WARNING: [Synth 8-6014] Unused sequential element millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:45]
+WARNING: [Synth 8-6014] Unused sequential element j_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:71]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[1][0] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:71]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[0][0] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:71]
+INFO: [Synth 8-5545] ROM "data" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'VerifiedOperateData_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'data_send_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 725.441 ; gain = 484.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ScriptMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module UARTTransmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module UARTReceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DivideClock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module GameStateChange 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+Module TravelerOperateMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module TravelerTargetMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SendData 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ReceiveUnScriptData 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:30]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:39]
+WARNING: [Synth 8-6014] Unused sequential element tom/prev_buttons_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:44]
+WARNING: [Synth 8-6014] Unused sequential element rd/InFrontOfTargetMachine_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/HasItemInHand_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/TargetMachineIsProcessing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/TargetMachineHasItem_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
+WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:45]
+INFO: [Synth 8-5545] ROM "ttm/data" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element script_mem_module/script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/rx/spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:152]
+WARNING: [Synth 8-6014] Unused sequential element dc/uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
+WARNING: [Synth 8-6014] Unused sequential element ttm/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:28]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ttm/data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[2] )
+INFO: [Synth 8-3886] merging instance 'ttm/data_reg[1]' (LD) to 'ttm/data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ttm/data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/data_send_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_module/tx/data_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sd/data_send_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (uart_module/tx/data_reg[7]) is unused and will be removed from module DemoTop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 725.441 ; gain = 484.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 725.441 ; gain = 484.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 725.441 ; gain = 484.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_ram      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |inst_ram |     1|
+|2     |BUFG     |     2|
+|3     |CARRY4   |     9|
+|4     |LUT1     |     6|
+|5     |LUT2     |    22|
+|6     |LUT3     |    13|
+|7     |LUT4     |    33|
+|8     |LUT5     |    17|
+|9     |LUT6     |    17|
+|10    |FDRE     |   117|
+|11    |LD       |    13|
+|12    |IBUF     |     8|
+|13    |OBUF     |     5|
+|14    |OBUFT    |    12|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           |   290|
+|2     |  dc                |DivideClock                |    29|
+|3     |  rd                |ReceiveUnScriptData        |     4|
+|4     |  script_mem_module |ScriptMem                  |    63|
+|5     |  sd                |SendData                   |    18|
+|6     |  ttm               |TravelerTargetMachine      |    63|
+|7     |  uart_module       |UART                       |    85|
+|8     |    rx              |UARTReceiver               |    40|
+|9     |    tx              |UARTTransmitter            |    25|
+|10    |  vod               |VerifyIfOperateDataCorrect |     1|
++------+--------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 742.906 ; gain = 167.699
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 742.906 ; gain = 502.168
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  LD => LDCE: 13 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 743.723 ; gain = 513.883
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 743.723 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:15:58 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1160 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:21]
+WARNING: [Synth 8-2611] redeclaration of ansi port CompleteCusineNum is not allowed [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:18]
+WARNING: [Synth 8-976] CompleteCusineNum has already been declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:18]
+WARNING: [Synth 8-2654] second declaration of CompleteCusineNum ignored [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:18]
+INFO: [Synth 8-994] CompleteCusineNum is declared here [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 352.621 ; gain = 111.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DemoTop' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
+INFO: [Synth 8-638] synthesizing module 'ScriptMem' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'inst_ram' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-2908-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'inst_ram' (1#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-2908-LAPTOP-6GMAV85C/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (2#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:137]
+INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
+INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (3#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:4]
+INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
+INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (4#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:47]
+INFO: [Synth 8-256] done synthesizing module 'UART' (5#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:137]
+INFO: [Synth 8-638] synthesizing module 'DivideClock' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
+	Parameter UARTCNT bound to: 325 - type: integer 
+	Parameter SECONDCNT bound to: 50000000 - type: integer 
+	Parameter MILLISECONDCNT bound to: 50000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DivideClock' (6#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:2]
+INFO: [Synth 8-638] synthesizing module 'GameStateChange' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+	Parameter START bound to: 2'b01 
+	Parameter STOP bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'GameStateChange' (7#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/GameStateChange.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerOperateMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:4]
+	Parameter ANTISHAKECNT bound to: 5000000 - type: integer 
+	Parameter OPERATE_GET bound to: 8'bx0000110 
+	Parameter OPERATE_PUT bound to: 8'bx0001010 
+	Parameter OPERATE_INTERACT bound to: 8'bx0010010 
+	Parameter OPERATE_MOVE bound to: 8'bx0100010 
+	Parameter OPERATE_THROW bound to: 8'bx1000010 
+	Parameter OPERATE_IGNORE bound to: 8'bx0000010 
+	Parameter PRESS_UP bound to: 5'b10000 
+	Parameter PRESS_DOWN bound to: 5'b01000 
+	Parameter PRESS_CENTER bound to: 5'b00100 
+	Parameter PRESS_LEFT bound to: 5'b00010 
+	Parameter PRESS_RIGHT bound to: 5'b00001 
+WARNING: [Synth 8-567] referenced signal 'data_store' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:25]
+INFO: [Synth 8-256] done synthesizing module 'TravelerOperateMachine' (8#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:4]
+INFO: [Synth 8-638] synthesizing module 'VerifyIfOperateDataCorrect' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:1]
+	Parameter GAME_START bound to: 8'bxxxx0101 
+	Parameter GAME_STOP bound to: 8'bxxxx1001 
+	Parameter ITEM_NUM bound to: 0 - type: integer 
+	Parameter FIRST_ITEM bound to: 1 - type: integer 
+	Parameter SECOND_ITEM bound to: 2 - type: integer 
+	Parameter THIRD_ITEM bound to: 3 - type: integer 
+	Parameter ONE bound to: 1 - type: integer 
+	Parameter TWO bound to: 2 - type: integer 
+	Parameter THREE bound to: 3 - type: integer 
+	Parameter NULL bound to: 0 - type: integer 
+	Parameter SWEET_FLOWER bound to: 1 - type: integer 
+	Parameter WHEAT bound to: 2 - type: integer 
+	Parameter JUEYUN_CHILI bound to: 3 - type: integer 
+	Parameter RAW_MEAT bound to: 4 - type: integer 
+	Parameter BERRY bound to: 5 - type: integer 
+	Parameter SALT bound to: 6 - type: integer 
+	Parameter HAM bound to: 7 - type: integer 
+	Parameter SPICE bound to: 8 - type: integer 
+	Parameter FLOUR bound to: 9 - type: integer 
+	Parameter SLICED_MEAT bound to: 10 - type: integer 
+	Parameter SUGAR bound to: 11 - type: integer 
+	Parameter CUMIN bound to: 12 - type: integer 
+	Parameter SAUSAGE bound to: 13 - type: integer 
+	Parameter SWEET_MADAME bound to: 14 - type: integer 
+	Parameter CHILI_CHICKEN bound to: 15 - type: integer 
+	Parameter BERRY_MISS_MANJUU bound to: 16 - type: integer 
+	Parameter COLD_CUT_PLATTER bound to: 17 - type: integer 
+	Parameter STICKY_HONEY_ROAST bound to: 18 - type: integer 
+	Parameter BAD_CUSINE bound to: 19 - type: integer 
+	Parameter CUSINE_START_INDEX bound to: 13 - type: integer 
+	Parameter CUSINE_END_INDEX bound to: 18 - type: integer 
+	Parameter STORAGE_BEGIN bound to: 1 - type: integer 
+	Parameter SOTRAGE_END bound to: 6 - type: integer 
+	Parameter STONE_MILL_7 bound to: 7 - type: integer 
+	Parameter CUTTING_MACHINE_8 bound to: 8 - type: integer 
+	Parameter TABLE_9 bound to: 9 - type: integer 
+	Parameter TABLE_11 bound to: 11 - type: integer 
+	Parameter TABLE_14 bound to: 14 - type: integer 
+	Parameter TABLE_17 bound to: 17 - type: integer 
+	Parameter TABLE_19 bound to: 19 - type: integer 
+	Parameter STOVE_10 bound to: 10 - type: integer 
+	Parameter OVEN_12 bound to: 12 - type: integer 
+	Parameter OVEN_13 bound to: 13 - type: integer 
+	Parameter WORKBENCH_15 bound to: 15 - type: integer 
+	Parameter MIXER_16 bound to: 16 - type: integer 
+	Parameter CUSTOMER_18 bound to: 18 - type: integer 
+	Parameter TRASH_BIN_20 bound to: 20 - type: integer 
+	Parameter MAX_ITEM_NUM bound to: 3 - type: integer 
+	Parameter MIN_ITEM_NUM bound to: 0 - type: integer 
+	Parameter TRUE bound to: 1 - type: integer 
+	Parameter FALSE bound to: 0 - type: integer 
+	Parameter OPERATE_GET bound to: 8'bx0000110 
+	Parameter OPERATE_PUT bound to: 8'bx0001010 
+	Parameter OPERATE_INTERACT bound to: 8'bx0010010 
+	Parameter OPERATE_MOVE bound to: 8'bx0100010 
+	Parameter OPERATE_THROW bound to: 8'bx1000010 
+	Parameter OPERATE_IGNORE bound to: 8'bx0000010 
+WARNING: [Synth 8-567] referenced signal 'InFrontOfTargetMachine' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:59]
+WARNING: [Synth 8-567] referenced signal 'HasItemInHand' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:59]
+WARNING: [Synth 8-567] referenced signal 'TargetMachineHasItem' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:59]
+WARNING: [Synth 8-567] referenced signal 'MachineNumber' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:59]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[1][1] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:43]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[0][1] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:43]
+INFO: [Synth 8-256] done synthesizing module 'VerifyIfOperateDataCorrect' (9#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerTargetMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:1]
+	Parameter ANTISHAKECNT bound to: 5000000 - type: integer 
+	Parameter SELECT_DATA_IGNORE bound to: 8'b00000011 
+	Parameter SELECT_VALUE_MAX bound to: 20 - type: integer 
+	Parameter CHANNEL_TARGET bound to: 2'b11 
+WARNING: [Synth 8-567] referenced signal 'select_switches' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:16]
+INFO: [Synth 8-256] done synthesizing module 'TravelerTargetMachine' (10#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'select_switches' does not match port width (5) of module 'TravelerTargetMachine' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:127]
+INFO: [Synth 8-638] synthesizing module 'SendData' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:3]
+	Parameter SEND_GAMESTATE bound to: 2'b00 
+	Parameter SEND_TARGET bound to: 2'b01 
+	Parameter SEND_OPERATE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:29]
+WARNING: [Synth 8-567] referenced signal 'GameStateChangeData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+WARNING: [Synth 8-567] referenced signal 'TravelerTargetMachineData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+WARNING: [Synth 8-567] referenced signal 'TravelerOperateMachineData' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:28]
+INFO: [Synth 8-256] done synthesizing module 'SendData' (11#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:3]
+INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
+	Parameter MAX bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (12#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:1]
+WARNING: [Synth 8-3848] Net led2 in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:12]
+WARNING: [Synth 8-3848] Net pc in module/entity DemoTop does not have driver. [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:32]
+INFO: [Synth 8-256] done synthesizing module 'DemoTop' (13#1) [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_valid
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[6]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port uart_clk
+WARNING: [Synth 8-3331] design SendData has unconnected port data_ready
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[6]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[5]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[4]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[3]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[2]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port GameStateChangeData[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachine[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port TargetMachineIsProcessing
+WARNING: [Synth 8-3331] design ScriptMem has unconnected port reset
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 391.324 ; gain = 149.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[7] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[6] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[5] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[4] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[3] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[2] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[1] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3295] tying undriven pin script_mem_module:pc[0] to constant 0 [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DemoTop.v:39]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 391.324 ; gain = 149.992
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-2908-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-2908-LAPTOP-6GMAV85C/dcp1/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DemoTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 723.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 723.742 ; gain = 482.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 723.742 ; gain = 482.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for script_mem_module/ram_module. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 723.742 ; gain = 482.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "script_size" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
+INFO: [Synth 8-5544] ROM "spacing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
+WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:152]
+WARNING: [Synth 8-6014] Unused sequential element uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
+WARNING: [Synth 8-6014] Unused sequential element second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
+WARNING: [Synth 8-6014] Unused sequential element millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:45]
+WARNING: [Synth 8-6014] Unused sequential element j_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:43]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[1][0] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:43]
+WARNING: [Synth 8-6014] Unused sequential element StoreNums_reg[0][0] was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:43]
+INFO: [Synth 8-5545] ROM "data" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'VerifiedOperateData_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'data_send_reg' [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/SendData.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 723.742 ; gain = 482.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ScriptMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module UARTTransmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module UARTReceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DivideClock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module GameStateChange 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+Module TravelerOperateMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module TravelerTargetMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SendData 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ReceiveUnScriptData 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:30]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:39]
+WARNING: [Synth 8-6014] Unused sequential element tom/prev_buttons_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:44]
+WARNING: [Synth 8-6014] Unused sequential element rd/InFrontOfTargetMachine_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/HasItemInHand_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/TargetMachineIsProcessing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element rd/TargetMachineHasItem_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ReceiveUnScriptData.v:24]
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:27]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:36]
+WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:45]
+INFO: [Synth 8-5545] ROM "ttm/data" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element script_mem_module/script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/ScriptMem.v:19]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/rx/spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:60]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/UART.v:152]
+WARNING: [Synth 8-6014] Unused sequential element dc/uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/DivideClock.v:18]
+WARNING: [Synth 8-6014] Unused sequential element ttm/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:28]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led2[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[3]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[2]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[1]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port button[0]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ttm/data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[2] )
+INFO: [Synth 8-3886] merging instance 'ttm/data_reg[1]' (LD) to 'ttm/data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ttm/data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vod/VerifiedOperateData_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/data_send_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_module/tx/data_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (vod/VerifiedOperateData_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sd/data_send_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (uart_module/tx/data_reg[7]) is unused and will be removed from module DemoTop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 723.742 ; gain = 482.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 723.742 ; gain = 482.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 723.742 ; gain = 482.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_ram      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |inst_ram |     1|
+|2     |BUFG     |     2|
+|3     |CARRY4   |     9|
+|4     |LUT1     |     6|
+|5     |LUT2     |    22|
+|6     |LUT3     |    13|
+|7     |LUT4     |    33|
+|8     |LUT5     |    17|
+|9     |LUT6     |    17|
+|10    |FDRE     |   117|
+|11    |LD       |    13|
+|12    |IBUF     |     8|
+|13    |OBUF     |     5|
+|14    |OBUFT    |    12|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           |   290|
+|2     |  dc                |DivideClock                |    29|
+|3     |  rd                |ReceiveUnScriptData        |     4|
+|4     |  script_mem_module |ScriptMem                  |    63|
+|5     |  sd                |SendData                   |    18|
+|6     |  ttm               |TravelerTargetMachine      |    63|
+|7     |  uart_module       |UART                       |    85|
+|8     |    rx              |UARTReceiver               |    40|
+|9     |    tx              |UARTTransmitter            |    25|
+|10    |  vod               |VerifyIfOperateDataCorrect |     1|
++------+--------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 740.160 ; gain = 166.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 740.160 ; gain = 498.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  LD => LDCE: 13 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 740.160 ; gain = 510.355
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 740.160 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:17:04 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6348 
+ERROR: [Synth 8-2222] incorrect use of predefined macro define. Expected <macro_name> [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:2]
+ERROR: [Synth 8-2715] syntax error near "Define.h [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:2]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 3 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:21:23 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13092 
+ERROR: [Synth 8-2222] incorrect use of predefined macro define. Expected <macro_name> [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:2]
+ERROR: [Synth 8-2715] syntax error near "Define.h [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:2]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 3 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:25:41 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9812 
+ERROR: [Synth 8-1766] cannot open include file Define.h [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:2]
+ERROR: [Synth 8-1031] ANTISHAKECNT is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:26]
+ERROR: [Synth 8-1031] OPERATE_IGNORE is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:29]
+ERROR: [Synth 8-1031] OPERATE_PUT is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:34]
+ERROR: [Synth 8-1031] OPERATE_THROW is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:35]
+ERROR: [Synth 8-1031] OPERATE_INTERACT is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:36]
+ERROR: [Synth 8-1031] OPERATE_GET is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:37]
+ERROR: [Synth 8-1031] OPERATE_PUT is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:38]
+ERROR: [Synth 8-1031] OPERATE_IGNORE is not declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:39]
+INFO: [Synth 8-2350] module TravelerOperateMachine ignored due to previous errors [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v:5]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerOperateMachine.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 10 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:27:30 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14512 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:2]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:22]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:24]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:26]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:28]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:30]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:31]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:32]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:33]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:34]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:35]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:36]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:37]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:38]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:39]
+ERROR: [Synth 8-988] TRUE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:2]
+ERROR: [Synth 8-988] FALSE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:2]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:2]
+ERROR: [Synth 8-988] ZERO is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] ONE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] TWO is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] THREE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] ANTISHAKECNT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+ERROR: [Synth 8-988] GAME_START is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] GAME_STOP is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] OPERATE_GET is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_PUT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_INTERACT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_MOVE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_THROW is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_IGNORE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] NULL is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:18]
+ERROR: [Synth 8-988] SWEET_FLOWER is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] WHEAT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] JUEYUN_CHILI is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 24 Warnings, 0 Critical Warnings and 20 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:30:59 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9452 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:22]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:25]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:28]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:31]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:34]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:35]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:36]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:37]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:38]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:39]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:40]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:41]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:42]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:43]
+ERROR: [Synth 8-988] ZERO is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] ONE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] TWO is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] THREE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:5]
+ERROR: [Synth 8-988] ANTISHAKECNT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+ERROR: [Synth 8-988] GAME_START is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] GAME_STOP is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] OPERATE_GET is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_PUT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_INTERACT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_MOVE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_THROW is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_IGNORE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] NULL is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:18]
+ERROR: [Synth 8-988] SWEET_FLOWER is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] WHEAT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] JUEYUN_CHILI is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] RAW_MEAT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] BERRY is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 22 Warnings, 0 Critical Warnings and 20 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:33:00 2023...
+
+*** Running vivado
+    with args -log DemoTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4888 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:22]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:25]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:28]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:31]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:34]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:35]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:36]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:37]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:38]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:39]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:40]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:41]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:42]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:43]
+ERROR: [Synth 8-988] ANTISHAKECNT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+ERROR: [Synth 8-988] GAME_START is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] GAME_STOP is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] OPERATE_GET is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_PUT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_INTERACT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_MOVE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_THROW is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_IGNORE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] NULL is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:18]
+ERROR: [Synth 8-988] SWEET_FLOWER is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] WHEAT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] JUEYUN_CHILI is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] RAW_MEAT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] BERRY is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] SALT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] HAM is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:20]
+ERROR: [Synth 8-988] SPICE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:20]
+ERROR: [Synth 8-988] FLOUR is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:20]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 20 Warnings, 0 Critical Warnings and 20 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:33:47 2023...

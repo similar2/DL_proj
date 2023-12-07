@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Dec  7 22:26:55 2023
-# Process ID: 25368
+# Start of session at: Fri Dec  8 01:33:37 2023
+# Process ID: 15428
 # Current directory: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1
 # Command line: vivado.exe -log DemoTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
 # Log file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.vds
@@ -15,30 +15,49 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14208 
-WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v:21]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:54]
-ERROR: [Synth 8-2158] illegal operand for operator > [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:54]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-2158] illegal operand for operator - [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-2833] unpacked value/target cannot be used in assignment [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:55]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:60]
-ERROR: [Synth 8-2158] illegal operand for operator < [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:60]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-2158] illegal operand for operator + [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-2833] unpacked value/target cannot be used in assignment [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:61]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:88]
-ERROR: [Synth 8-2158] illegal operand for operator > [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:88]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-2158] illegal operand for operator - [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-2833] unpacked value/target cannot be used in assignment [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:89]
-ERROR: [Synth 8-1050] StoreNums needs 2 dimensions [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v:94]
-Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/VerifyOperateData.v'
+INFO: Helper process launched with PID 4888 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:22]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:25]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:28]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:31]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:34]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:35]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:36]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:37]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:38]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:39]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:40]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:41]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:42]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:43]
+ERROR: [Synth 8-988] ANTISHAKECNT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:8]
+ERROR: [Synth 8-988] GAME_START is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] GAME_STOP is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:11]
+ERROR: [Synth 8-988] OPERATE_GET is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_PUT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_INTERACT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_MOVE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_THROW is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] OPERATE_IGNORE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:14]
+ERROR: [Synth 8-988] NULL is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:18]
+ERROR: [Synth 8-988] SWEET_FLOWER is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] WHEAT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] JUEYUN_CHILI is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] RAW_MEAT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] BERRY is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] SALT is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:19]
+ERROR: [Synth 8-988] HAM is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:20]
+ERROR: [Synth 8-988] SPICE is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:20]
+ERROR: [Synth 8-988] FLOUR is already declared [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/Define.v:20]
+Failed to read verilog 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/source/TravelerTargetMachine.v'
 INFO: [Common 17-83] Releasing license: Synthesis
-2 Infos, 1 Warnings, 0 Critical Warnings and 20 Errors encountered.
+2 Infos, 20 Warnings, 0 Critical Warnings and 20 Errors encountered.
 synth_design failed
 ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 22:27:04 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 01:33:47 2023...
