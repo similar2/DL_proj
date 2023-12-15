@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Nov  6 20:40:01 2023
-# Process ID: 144440
-# Current directory: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/inst_ram_synth_1
+# Start of session at: Thu Dec 14 17:34:38 2023
+# Process ID: 18844
+# Current directory: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1
 # Command line: vivado.exe -log inst_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inst_ram.tcl
-# Log file: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.vds
-# Journal file: C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/inst_ram_synth_1\vivado.jou
+# Log file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.vds
+# Journal file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1\vivado.jou
 #-----------------------------------------------------------
 source inst_ram.tcl -notrace

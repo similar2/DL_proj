@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Lenovo/Desktop/Digital Logic Project/HDL_Framework/GenshinKitchen.runs/inst_ram_synth_1'
+HD_PWD='C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

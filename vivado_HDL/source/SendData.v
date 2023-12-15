@@ -6,32 +6,41 @@ module SendData(
     input [7:0] TravelerOperateMachineData, // [7:0] 机器操作
     input uart_clk, // uart时钟周期
     input data_ready,    // 数据是否发送完毕的标志
-    output reg [7:0] data_send = 0   // 接入UART的输出数据
+    output reg [7:0] data_send = 0,   // 接入UART的输出数据
+    output reg [7:0] led = 0
 );
 
-parameter SEND_GAMESTATE = 2'b00 , SEND_TARGET = 2'b01 , SEND_OPERATE = 2'b10;
+parameter SEND_NULL = 2'b00 , SEND_GAMESTATE = 2'b01 , SEND_TARGET = 2'b10 , SEND_OPERATE = 2'b11;
 
 
-reg [1:0] send_state = 0;
+reg [1:0] send_state = SEND_GAMESTATE;
+reg [1:0] next_send_state = SEND_TARGET;
 
-// 示例bit文件的发送数据是轮询，逆天
-// 我就说为什么只输出一个数据Move会有问题，byd一直传输不怕给软件整爆了
+// [IMPORTANT]
+// When Data = 8'b00000000 , uart will blocking , we must promise the case wont appear
+
+always @(send_state) begin
+    case(send_state)
+    SEND_GAMESTATE: begin
+        data_send = GameStateChangeData;
+        next_send_state = SEND_TARGET;
+    end
+    SEND_TARGET: begin
+        data_send = TravelerTargetMachineData;
+        next_send_state = SEND_OPERATE;
+    end
+    SEND_OPERATE: begin
+        data_send = TravelerOperateMachineData;
+        next_send_state = SEND_GAMESTATE;
+    end
+    endcase
+end
+
 
 always @(posedge uart_clk) begin
-    case(send_state)
-        SEND_GAMESTATE : send_state <= SEND_TARGET;
-        SEND_TARGET : send_state <= SEND_OPERATE;
-        SEND_OPERATE : send_state <= SEND_GAMESTATE;
-    endcase
+    send_state <= next_send_state;
 end
 
-always @(send_state) begin    // 在always块中统一检查数据变化,如果有变化则令output_data设置为当前值
-    case(send_state)
-        SEND_GAMESTATE : data_send = GameStateChangeData;
-        SEND_TARGET : data_send = TravelerTargetMachineData;
-        SEND_OPERATE : data_send = TravelerOperateMachineData;
-    endcase
-end
 
 
 

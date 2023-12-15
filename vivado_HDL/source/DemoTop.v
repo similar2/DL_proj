@@ -90,7 +90,8 @@ module DemoTop(
     GameStateChange gsc(  
       .switch(switches[7]),             // 左侧第一个开关控制
       .data(GameStateChangeData),
-      .CompleteCusineNum(CompleteCusineNum)
+      .CompleteCusineNum(CompleteCusineNum),
+      .uart_clk(uart_clk_16)
     );
 
     // 玩家操作机器
@@ -100,22 +101,22 @@ module DemoTop(
       .button_center(button[2]),
       .button_left(button[0]),
       .button_right(button[4]),
-      .clk(clk),
+      .uart_clk(uart_clk_16),
       .data(OriginTravelerOperateMachineData)
     );
 
-    VerifyIfOperateDataCorrect vod(
-      .clk(clk),
-      .GameStateChangeData(GameStateChangeData),
-      .OriginOperateData(OriginTravelerOperateMachineData),
-      .TargetMachine(TravelerTargetMachineData),
-      .InFrontOfTargetMachine(InFrontOfTargetMachine),
-      .HasItemInHand(HasItemInHand),
-      .TargetMachineIsProcessing(TargetMachineIsProcessing),
-      .TargetMachineHasItem(TargetMachineHasItem),
-      .VerifiedOperateData(VerifiedOperateMachineData),
-      .CompleteCusineNum(CompleteCusineNum)
-    );
+    // VerifyIfOperateDataCorrect vod(
+    //   .clk(clk),
+    //   .GameStateChangeData(GameStateChangeData),
+    //   .OriginOperateData(OriginTravelerOperateMachineData),
+    //   .TargetMachine(TravelerTargetMachineData),
+    //   .InFrontOfTargetMachine(InFrontOfTargetMachine),
+    //   .HasItemInHand(HasItemInHand),
+    //   .TargetMachineIsProcessing(TargetMachineIsProcessing),
+    //   .TargetMachineHasItem(TargetMachineHasItem),
+    //   .VerifiedOperateData(VerifiedOperateMachineData),
+    //   .CompleteCusineNum(CompleteCusineNum)
+    // );
 
     // 玩家更改目标机器
     TravelerTargetMachine ttm(
@@ -126,7 +127,8 @@ module DemoTop(
 
     // UART发送数据
     SendData sd(
-      .TravelerOperateMachineData(VerifiedOperateMachineData),
+      // .TravelerOperateMachineData(VerifiedOperateMachineData),
+      .TravelerOperateMachineData(OriginTravelerOperateMachineData),
       .TravelerTargetMachineData(TravelerTargetMachineData),
       .GameStateChangeData(GameStateChangeData),
       .uart_clk(uart_clk_16),

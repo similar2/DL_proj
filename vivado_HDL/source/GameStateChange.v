@@ -2,18 +2,18 @@
 module GameStateChange(
     input switch,
     input [2:0] CompleteCusineNum,
-    output reg [7:0] data = 8'bxxxx_10_01
+    input uart_clk,
+    output reg [7:0] data,
+    output reg [7:0] led
 );
 
+// data of game state
+parameter GAME_START = 8'bxxxx_01_01 , GAME_STOP = 8'bxxxx_10_01;  
 
 
-always @(switch,CompleteCusineNum) begin
-    if(CompleteCusineNum < 3) begin
-        if(switch) begin
-            data = GAME_START;
-        end else begin
-            data = GAME_STOP;
-        end
+always @(switch) begin
+    if(switch) begin
+        data = GAME_START;
     end else begin
         data = GAME_STOP;
     end
