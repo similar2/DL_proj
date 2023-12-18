@@ -13,10 +13,7 @@ module ReceiveUnScriptData(
 
 parameter MAX = 15;
 
-// 数据不知道为什么会有丢失,排列顺序移动了
-// 变成了 ?7654321(0消失了)
-
-// 现在我在UART的receive模块增加了一个寄存位让他恢复了正常,不过我不知道这样做是不是对的(简直泰酷辣)
+parameter FEEDBACK = 2'b01;
 
 
 always @(posedge uart_clk) begin
@@ -24,7 +21,7 @@ always @(posedge uart_clk) begin
     if(data_valid) begin
 
 
-        if(data_receive[1:0]==2'b01) begin
+        if(data_receive[1:0]== FEEDBACK) begin
         
             feedback_leds <= data_receive[5:2];
             {sig_machine,sig_processing,sig_hand,sig_front} <= data_receive[5:2];
