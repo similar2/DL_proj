@@ -1,29 +1,29 @@
 // `include "Define.v"
 module VerifyIfOperateDataCorrect(
-    input clk,
-    input [7:0] GameStateChangeData,    // data of game state
-    input [7:0] OriginOperateData,      // data of origin operate
-    input [7:0] TargetMachine,          // data of target machine
-    input InFrontOfTargetMachine,       // feedback of player if in front of machine
-    input HasItemInHand,                // feedback of if has item in player's hand
-    input TargetMachineIsProcessing,    // feedback of if Machine processing
-    input TargetMachineHasItem,         // feedback of if Machine has item
-    output reg [7:0] VerifiedOperateData = OPERATE_IGNORE,   // return operate data after verify
-    output reg [2:0] CompleteCusineNum = 0,      // return how many cussine finish
-    output reg [7:0] led = 0
+    input uart_clk,
+    input [7:0] data_game_state,    // data of game state
+    input [7:0] data_operate,      // data of origin operate
+    input [7:0] data_target,          // data of target machine
+    input sig_front,       // feedback of player if in front of machine
+    input sig_hand,                // feedback of if has item in player's hand
+    input sig_processing,    // feedback of if Machine processing
+    input sig_machine,         // feedback of if Machine has item
+    output reg [7:0] data_operate_verified = OPERATE_IGNORE,   // return operate data after verify
+    output reg [2:0] data_cusine_finish_num = 0,      // return how many cussine finish
+    output reg [7:0] test_led = 0
 );
 
 
 // variable to memory What cusine is in player's hand
-reg [5:0] ItemInHand = NULL;
+reg [5:0] hand_item = NULL;
 
 // Stone Mill -- 7
 reg [5:0] item_7 = NULL;
 
 
 // variable to analyse number of machine
-wire [4:0] MachineNumber;
-assign MachineNumber = TargetMachine[6:2];
+wire [4:0] target;
+assign target = data_target[6:2];
 
 parameter FALSE = 0 , TRUE = 1;
 
@@ -34,16 +34,16 @@ parameter GAME_STATE_STOP = 2'b10;
 parameter OPERATE_GET = 8'b1_00001_10 , OPERATE_PUT = 8'b1_00010_10 , OPERATE_INTERACT = 8'b1_00100_10 , OPERATE_MOVE = 8'b1_01000_10 , OPERATE_THROW = 8'b1_10000_10 , OPERATE_IGNORE = 8'b1_00000_10;
 
 // index of machine
-parameter STORAGE_BEGIN = 1 , STORAGE_END = 6;
-parameter STONE_MILL_7 = 7;
-parameter CUTTING_MACHINE_8 = 8;
-parameter TABLE_9 = 9 , TABLE_11 = 11 , TABLE_14 = 14 , TABLE_17 = 17 , TABLE_19 = 19;
-parameter STOVE_10 = 10;
-parameter OVEN_12 = 12 , OVEN_13 = 13;
-parameter WORKBENCH_15 = 15;
-parameter MIXER_16 = 16;
-parameter CUSTOMER_18 = 18;
-parameter TRASH_BIN_20 = 20;
+parameter STORAGE_BEGIN = 1 , STORAGE_END = 6,
+          STONE_MILL_7 = 7,
+          CUTTING_MACHINE_8 = 8,
+          TABLE_9 = 9 , TABLE_11 = 11 , TABLE_14 = 14 , TABLE_17 = 17 , TABLE_19 = 19,
+          STOVE_10 = 10,
+          OVEN_12 = 12 , OVEN_13 = 13,
+          WORKBENCH_15 = 15,
+          MIXER_16 = 16,
+          CUSTOMER_18 = 18,
+          TRASH_BIN_20 = 20;    
 
 
 // things index
@@ -53,72 +53,71 @@ parameter NULL = 0,
           SAUSAGE = 13, SWEET_MADAME = 14, CHILI_CHICKEN = 15, BERRY_MISS_MANJUU = 16, COLD_CUT_PLATTER = 17, STICKY_HONEY_ROAST = 18,
           BAD_CUSINE = 19;
 
-reg [7:0] OperateData = 0;
 
-// always @(OperateData) begin
+// always @(data_operate) begin
 //     led[5:0] = item_7;
 
-//     if(OperateData == OPERATE_IGNORE) begin
-//         VerifiedOperateData = OPERATE_IGNORE;
+//     if(data_operate == OPERATE_IGNORE) begin
+//         data_operate_verified = OPERATE_IGNORE;
 
 //     // Game Not Start
-//     end else if(GameStateChangeData[3:2] == GAME_STATE_STOP) begin
-//         VerifiedOperateData = OPERATE_IGNORE;
+//     end else if(data_game_state[3:2] == GAME_STATE_STOP) begin
+//         data_operate_verified = OPERATE_IGNORE;
 
-//     end else if(OperateData != OPERATE_MOVE && !InFrontOfTargetMachine) begin
-//         VerifiedOperateData = OPERATE_IGNORE;
+//     end else if(data_operate != OPERATE_MOVE && !sig_front) begin
+//         data_operate_verified = OPERATE_IGNORE;
 
-//     end else if(OperateData == OPERATE_PUT && !HasItemInHand) begin
-//             VerifiedOperateData = OPERATE_IGNORE;
+//     end else if(data_operate == OPERATE_PUT && !sig_hand) begin
+//             data_operate_verified = OPERATE_IGNORE;
     
-//     end else if(OperateData == OPERATE_GET && (HasItemInHand || !TargetMachineHasItem)) begin
-//             VerifiedOperateData = OPERATE_IGNORE;
+//     end else if(data_operate == OPERATE_GET && (sig_hand || !sig_machine)) begin
+//             data_operate_verified = OPERATE_IGNORE;
 
 //     end else begin
                 
 //         // Storages
-//         if(MachineNumber >= STORAGE_BEGIN && MachineNumber <= STORAGE_END) begin
-//             if(OperateData == OPERATE_PUT || OperateData == OPERATE_THROW || OperateData == OPERATE_INTERACT) begin
-//                 VerifiedOperateData = OPERATE_IGNORE;
-//             end else if(OperateData == OPERATE_GET) begin
-//                 if(!HasItemInHand) begin
-//                     ItemInHand = MachineNumber;
-//                     VerifiedOperateData = OperateData;
+//         if(target >= STORAGE_BEGIN && target <= STORAGE_END) begin
+//             if(data_operate == OPERATE_PUT || data_operate == OPERATE_THROW || data_operate == OPERATE_INTERACT) begin
+//                 data_operate_verified = OPERATE_IGNORE;
+//             end else if(data_operate == OPERATE_GET) begin
+//                 if(!sig_hand) begin
+//                     hand_item = target;
+//                     data_operate_verified = data_operate;
 //                 end else begin
-//                     VerifiedOperateData = OPERATE_IGNORE;
+//                     data_operate_verified = OPERATE_IGNORE;
 //                 end
 //             end else begin
-//                 VerifiedOperateData = OperateData;
+//                 data_operate_verified = data_operate;
 //             end
 //         end
 
 //         // Stone Mill -- 7
-//         else if(MachineNumber == STONE_MILL_7) begin
+//         else if(target == STONE_MILL_7) begin
 //             // throw
-//             if(OperateData == OPERATE_THROW) begin
-//                 VerifiedOperateData = OPERATE_IGNORE;
+//             if(data_operate == OPERATE_THROW) begin
+//                 data_operate_verified = OPERATE_IGNORE;
 //             // put
-//             end else if(OperateData == OPERATE_PUT) begin
-//                 if(item_7 == NULL && ItemInHand != NULL) begin
-//                     VerifiedOperateData = OPERATE_PUT;
-//                     item_7 = ItemInHand;
+//             end else if(data_operate == OPERATE_PUT) begin
+//                 if(item_7 == NULL && hand_item != NULL) begin
+//                     data_operate_verified = OPERATE_PUT;
+//                     item_7 = hand_item;
 //                     led[6] = 1;
-//                     ItemInHand = NULL;
+//                     hand_item = NULL;
 //                 end else begin
 //                     led[7] = 1;
-//                     VerifiedOperateData = OPERATE_IGNORE;
+//                     data_operate_verified = OPERATE_IGNORE;
 //                 end
 //             // get
-//             end else if(OperateData == OPERATE_GET) begin
-//                 if(item_7 != NULL && ItemInHand == NULL) begin
-//                     ItemInHand = item_7;
+//             end else if(data_operate == OPERATE_GET) begin
+//                 if(item_7 != NULL && hand_item == NULL) begin
+//                     hand_item = item_7;
 //                     item_7 = NULL;
-//                     VerifiedOperateData = OPERATE_GET;
+//                     data_operate_verified = OPERATE_GET;
 //                 end else begin
-//                     VerifiedOperateData = OPERATE_IGNORE;
+//                     data_operate_verified = OPERATE_IGNORE;
 //                 end
 //             // interact
-//             end else if(OperateData == OPERATE_INTERACT) begin
+//             end else if(data_operate == OPERATE_INTERACT) begin
 //                 if(item_7 != NULL) begin
 //                     if(item_7 == RAW_MEAT) begin
 //                         item_7 = SLICED_MEAT;
@@ -132,124 +131,126 @@ reg [7:0] OperateData = 0;
 //                         item_7 = SAUSAGE;
 //                     end
 //                 end
-//                     VerifiedOperateData = OperateData;
+//                     data_operate_verified = data_operate;
 //             // move
-//             end else if(OperateData == OPERATE_MOVE) begin
-//                 VerifiedOperateData = OperateData;
+//             end else if(data_operate == OPERATE_MOVE) begin
+//                 data_operate_verified = data_operate;
 //             end
 //         end
         
 //         // Normal Situation
 //         else
-//         VerifiedOperateData = OPERATE_IGNORE;
+//         data_operate_verified = OPERATE_IGNORE;
 //     end
  
 // end
 
-always @(OperateData) begin
+always @(data_operate) begin
 
     // Game Not Start
-    if(GameStateChangeData[3:2] == GAME_STATE_STOP) begin
-        VerifiedOperateData = OPERATE_IGNORE;
+    if(data_game_state[3:2] == GAME_STATE_STOP) begin
+        data_operate_verified = OPERATE_IGNORE;
 
-    end else if(OperateData != OPERATE_MOVE && !InFrontOfTargetMachine) begin
-        VerifiedOperateData = OPERATE_IGNORE;
+    end else if(data_operate != OPERATE_MOVE && !sig_front) begin
+        data_operate_verified = OPERATE_IGNORE;
 
     end else begin
                 
         // Storages
-        if(MachineNumber >= STORAGE_BEGIN && MachineNumber <= STORAGE_END) begin
-            if(OperateData == OPERATE_PUT || OperateData == OPERATE_THROW || OperateData == OPERATE_INTERACT) begin
-                VerifiedOperateData = OPERATE_IGNORE;
-            end else if(OperateData == OPERATE_GET) begin
-                if(!HasItemInHand) begin
-                    VerifiedOperateData = OperateData;
+        if(target >= STORAGE_BEGIN && target <= STORAGE_END) begin
+            if(data_operate == OPERATE_PUT || data_operate == OPERATE_THROW || data_operate == OPERATE_INTERACT) begin
+                data_operate_verified = OPERATE_IGNORE;
+            end else if(data_operate == OPERATE_GET) begin
+                if(!sig_hand) begin
+                    data_operate_verified = data_operate;
                 end else begin
-                    VerifiedOperateData = OPERATE_IGNORE;
+                    data_operate_verified = OPERATE_IGNORE;
                 end
             end else begin
-                VerifiedOperateData = OperateData;
+                data_operate_verified = data_operate;
             end
         end
 
         // Stone Mill -- 7
-        else if(MachineNumber == STONE_MILL_7 || MachineNumber == CUTTING_MACHINE_8) begin
+        else if(target == STONE_MILL_7 || target == CUTTING_MACHINE_8) begin
             // throw
-            if(OperateData == OPERATE_THROW) begin
-                VerifiedOperateData = OPERATE_IGNORE;
+            if(data_operate == OPERATE_THROW) begin
+                data_operate_verified = OPERATE_IGNORE;
             // put
-            end else if(OperateData == OPERATE_PUT) begin
-                if(HasItemInHand && !TargetMachineHasItem) begin
-                    VerifiedOperateData = OPERATE_PUT;
+            end else if(data_operate == OPERATE_PUT) begin
+                if(sig_hand && !sig_machine) begin
+                    data_operate_verified = OPERATE_PUT;
                 end else begin
-                    VerifiedOperateData = OPERATE_IGNORE;
+                    data_operate_verified = OPERATE_IGNORE;
                 end
             // get
-            end else if(OperateData == OPERATE_GET) begin
-                if(!HasItemInHand && TargetMachineHasItem) begin
-                    VerifiedOperateData = OPERATE_GET;
+            end else if(data_operate == OPERATE_GET) begin
+                if(!sig_hand && sig_machine) begin
+                    data_operate_verified = OPERATE_GET;
                 end else begin
-                    VerifiedOperateData = OPERATE_IGNORE;
+                    data_operate_verified = OPERATE_IGNORE;
                 end
             // interact
             end else begin
-                VerifiedOperateData = OriginOperateData;
+                data_operate_verified = data_operate;
             end
         end
 
-        else if(MachineNumber == TABLE_9 || MachineNumber == TABLE_11 || MachineNumber == TABLE_14 || MachineNumber == TABLE_17 || MachineNumber == TABLE_19 || MachineNumber == TRASH_BIN_20) begin
-            case(OriginOperateData)
+        else if(target == TABLE_9 || target == TABLE_11 || target == TABLE_14 || target == TABLE_17 || target == TABLE_19 || target == TRASH_BIN_20) begin
+            case(data_operate)
             OPERATE_THROW , OPERATE_PUT: begin
-                case(HasItemInHand)
-                TRUE:VerifiedOperateData = OriginOperateData;
-                default:VerifiedOperateData = OPERATE_IGNORE;
+                case(sig_hand)
+                TRUE:data_operate_verified = data_operate;
+                default:data_operate_verified = OPERATE_IGNORE;
                 endcase
             end
             OPERATE_GET: begin
-                case({HasItemInHand,TargetMachineHasItem})
-                {FALSE,TRUE}:VerifiedOperateData = OriginOperateData;
-                default:VerifiedOperateData = OPERATE_IGNORE;
+                case({sig_hand,sig_machine})
+                {FALSE,TRUE}:data_operate_verified = data_operate;
+                default:data_operate_verified = OPERATE_IGNORE;
                 endcase
             end
-            default:VerifiedOperateData = OriginOperateData;
+            default:data_operate_verified = data_operate;
             endcase
         end
 
-        else if(MachineNumber == WORKBENCH_15 || MachineNumber == MIXER_16 || MachineNumber == STOVE_10 || MachineNumber == OVEN_12 || MachineNumber == OVEN_13) begin
-            case(OriginOperateData)
-            OPERATE_THROW:VerifiedOperateData = OPERATE_IGNORE;
+        else if(target == WORKBENCH_15 || target == MIXER_16 || target == STOVE_10 || target == OVEN_12 || target == OVEN_13) begin
+            case(data_operate)
+            OPERATE_THROW:data_operate_verified = OPERATE_IGNORE;
             OPERATE_PUT: begin
-                case(HasItemInHand)
-                TRUE:VerifiedOperateData = OriginOperateData;
-                default:VerifiedOperateData = OPERATE_IGNORE;
+                case(sig_hand)
+                TRUE:data_operate_verified = data_operate;
+                default:data_operate_verified = OPERATE_IGNORE;
                 endcase
             end
             OPERATE_GET: begin
-                case({HasItemInHand,TargetMachineHasItem})
-                {FALSE,TRUE}:VerifiedOperateData = OriginOperateData;
-                default:VerifiedOperateData = OPERATE_IGNORE;
+                case({sig_hand,sig_machine})
+                {FALSE,TRUE}:data_operate_verified = data_operate;
+                default:data_operate_verified = OPERATE_IGNORE;
                 endcase
             end
-            default:VerifiedOperateData = OriginOperateData;
+            default:data_operate_verified = data_operate;
             endcase
         end
 
-        else if(MachineNumber == CUSTOMER_18) begin
-            OPERATE_GET , OPERATE_THROW , OPERATE_INTERACT: OriginOperateData = OPERATE_IGNORE;
+        else if(target == CUSTOMER_18) begin
+            case(data_operate)
+            OPERATE_GET , OPERATE_THROW , OPERATE_INTERACT: data_operate_verified = OPERATE_IGNORE;
             OPERATE_PUT: begin
-                case(HasItemInHand)
-                TRUE:VerifiedOperateData = OriginOperateData;
-                default:VerifiedOperateData = OPERATE_IGNORE;
+                case(sig_hand)
+                TRUE:data_operate_verified = data_operate;
+                default:data_operate_verified = OPERATE_IGNORE;
                 endcase
             end
-            default : VerifiedOperateData = OriginOperateData;
+            default : data_operate_verified = data_operate;
+            endcase
         end
 
 
         
         // Normal Situation
         else
-        VerifiedOperateData = OPERATE_IGNORE;
+        data_operate_verified = OPERATE_IGNORE;
     end
  
 end

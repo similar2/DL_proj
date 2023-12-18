@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Dec 18 02:23:53 2023
+| Date         : Mon Dec 18 15:23:41 2023
 | Host         : LAPTOP-6GMAV85C running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file DemoTop_timing_summary_routed.rpt -rpx DemoTop_timing_summary_routed.rpx -warn_on_violation
 | Design       : DemoTop
@@ -52,21 +52,13 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 48 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 11 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: switches[7] (HIGH)
+ There are 121 register/latch pins with no clock driven by root clock pin: dc/uart_clk_reg/Q (HIGH)
 
- There are 91 register/latch pins with no clock driven by root clock pin: dc/uart_clk_reg/Q (HIGH)
+ There are 9 register/latch pins with no clock driven by root clock pin: sd/send_state_reg[0]/Q (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: rd/HasItemInHand_reg/Q (HIGH)
-
- There are 10 register/latch pins with no clock driven by root clock pin: rd/InFrontOfTargetMachine_reg/Q (HIGH)
-
- There are 10 register/latch pins with no clock driven by root clock pin: rd/TargetMachineHasItem_reg/Q (HIGH)
-
- There are 10 register/latch pins with no clock driven by root clock pin: sd/send_state_reg[0]/Q (HIGH)
-
- There are 10 register/latch pins with no clock driven by root clock pin: sd/send_state_reg[1]/Q (HIGH)
+ There are 9 register/latch pins with no clock driven by root clock pin: sd/send_state_reg[1]/Q (HIGH)
 
  There are 5 register/latch pins with no clock driven by root clock pin: ttm/clk_cnt_reg[0]/Q (HIGH)
 
@@ -130,44 +122,6 @@ Table of Contents
 
  There are 5 register/latch pins with no clock driven by root clock pin: ttm/clk_cnt_reg[9]/Q (HIGH)
 
- There are 16 register/latch pins with no clock driven by root clock pin: ttm/data_reg[2]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: ttm/data_reg[3]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: ttm/data_reg[4]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: ttm/data_reg[5]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: ttm/data_reg[6]/Q (HIGH)
-
- There are 6 register/latch pins with no clock driven by root clock pin: vod/ItemInHand_reg[0]/Q (HIGH)
-
- There are 6 register/latch pins with no clock driven by root clock pin: vod/ItemInHand_reg[1]/Q (HIGH)
-
- There are 6 register/latch pins with no clock driven by root clock pin: vod/ItemInHand_reg[2]/Q (HIGH)
-
- There are 6 register/latch pins with no clock driven by root clock pin: vod/ItemInHand_reg[3]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: vod/OperateData_reg[2]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: vod/OperateData_reg[3]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: vod/OperateData_reg[4]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: vod/OperateData_reg[5]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: vod/OperateData_reg[6]/Q (HIGH)
-
- There are 16 register/latch pins with no clock driven by root clock pin: vod/OperateData_reg[7]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: vod/item_7_reg[0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: vod/item_7_reg[1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: vod/item_7_reg[2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: vod/item_7_reg[3]/Q (HIGH)
-
 
 2. checking constant_clock
 --------------------------
@@ -181,7 +135,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 295 pins that are not constrained for maximum delay. (HIGH)
+ There are 259 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -195,7 +149,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 11 ports with no output delay specified. (HIGH)
+ There are 5 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -229,7 +183,7 @@ Table of Contents
 
 12. checking latch_loops
 ------------------------
- There are 2 combinational latch loops in the design through latch input (HIGH)
+ There are 0 combinational latch loops in the design through latch input
 
 
 

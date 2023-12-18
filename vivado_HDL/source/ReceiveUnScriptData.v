@@ -3,10 +3,10 @@ module ReceiveUnScriptData(
     input [7:0] data_receive,
     input uart_clk,
     input clk,
-    output reg InFrontOfTargetMachine,
-    output reg HasItemInHand,
-    output reg TargetMachineIsProcessing,
-    output reg TargetMachineHasItem,
+    output reg sig_front,
+    output reg sig_hand,
+    output reg sig_processing,
+    output reg sig_machine,
     output reg [3:0] feedback_leds = 0
 );
 
@@ -26,12 +26,12 @@ always @(posedge uart_clk) begin
         if(data_receive[1:0]==2'b01) begin
         
             feedback_leds <= data_receive[5:2];
-            {TargetMachineHasItem,TargetMachineIsProcessing,HasItemInHand,InFrontOfTargetMachine} <= data_receive[5:2];
+            {sig_machine,sig_processing,sig_hand,sig_front} <= data_receive[5:2];
          
         end else begin
 
             feedback_leds <= 4'b0000;
-            {TargetMachineHasItem,TargetMachineIsProcessing,HasItemInHand,InFrontOfTargetMachine} <= 4'b0000;
+            {sig_machine,sig_processing,sig_hand,sig_front} <= 4'b0000;
 
         end
     

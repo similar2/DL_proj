@@ -1,9 +1,9 @@
 // 想要设计成统一处理变化数据并传输给UART的模块
 
 module SendData(
-    input [7:0] TravelerTargetMachineData,  // [7:0] 选择机器
-    input [7:0] GameStateChangeData,        // [7:0] 更改游戏状态
-    input [7:0] TravelerOperateMachineData, // [7:0] 机器操作
+    input [7:0] data_target,  // [7:0] 选择机器
+    input [7:0] data_game_state,        // [7:0] 更改游戏状态
+    input [7:0] data_operate_verified, // [7:0] 机器操作
     input uart_clk, // uart时钟周期
     input data_ready,    // 数据是否发送完毕的标志
     output reg [7:0] data_send = 0,   // 接入UART的输出数据
@@ -23,15 +23,15 @@ reg [1:0] next_send_state = SEND_TARGET;
 always @(send_state) begin
     case(send_state)
     SEND_GAMESTATE: begin
-        data_send = GameStateChangeData;
+        data_send = data_game_state;
         next_send_state = SEND_TARGET;
     end
     SEND_TARGET: begin
-        data_send = TravelerTargetMachineData;
+        data_send = data_target;
         next_send_state = SEND_OPERATE;
     end
     SEND_OPERATE: begin
-        data_send = TravelerOperateMachineData;
+        data_send = data_operate_verified;
         next_send_state = SEND_GAMESTATE;
     end
     endcase

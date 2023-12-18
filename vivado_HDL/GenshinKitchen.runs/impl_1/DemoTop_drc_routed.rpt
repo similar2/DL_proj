@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Dec 18 02:23:31 2023
+| Date         : Mon Dec 18 15:23:39 2023
 | Host         : LAPTOP-6GMAV85C running 64-bit major release  (build 9200)
 | Command      : report_drc -file DemoTop_drc_routed.rpt -pb DemoTop_drc_routed.pb -rpx DemoTop_drc_routed.rpx
 | Design       : DemoTop
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 10
+             Violations found: 3
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 9          |
+| PDRC-153 | Warning  | Gated clock check                                   | 2          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -54,42 +54,7 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net ttm/data_reg[6]_i_2_n_0 is a gated clock net sourced by a combinational pin ttm/data_reg[6]_i_2/O, cell ttm/data_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#3 Warning
-Gated clock check  
-Net vod/ItemInHand_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin vod/ItemInHand_reg[3]_i_2/O, cell vod/ItemInHand_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#4 Warning
-Gated clock check  
-Net vod/VerifiedOperateData_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin vod/VerifiedOperateData_reg[2]_i_2/O, cell vod/VerifiedOperateData_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#5 Warning
-Gated clock check  
-Net vod/VerifiedOperateData_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin vod/VerifiedOperateData_reg[4]_i_2/O, cell vod/VerifiedOperateData_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#6 Warning
-Gated clock check  
-Net vod/VerifiedOperateData_reg[6]_i_2_n_0 is a gated clock net sourced by a combinational pin vod/VerifiedOperateData_reg[6]_i_2/O, cell vod/VerifiedOperateData_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#7 Warning
-Gated clock check  
-Net vod/item_7_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin vod/item_7_reg[3]_i_2/O, cell vod/item_7_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#8 Warning
-Gated clock check  
-Net vod/led_reg[6]_i_1_n_0 is a gated clock net sourced by a combinational pin vod/led_reg[6]_i_1/O, cell vod/led_reg[6]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#9 Warning
-Gated clock check  
-Net vod/led_reg[7]_i_1_n_0 is a gated clock net sourced by a combinational pin vod/led_reg[7]_i_1/O, cell vod/led_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ttm/data_target_reg[6]_i_2_n_0 is a gated clock net sourced by a combinational pin ttm/data_target_reg[6]_i_2/O, cell ttm/data_target_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

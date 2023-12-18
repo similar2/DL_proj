@@ -1,9 +1,11 @@
 // `include "Define.v"
 module TravelerTargetMachine(
-    input [4:0] select_switches,    // switches to represent data
-    input clk,  // clk to anti-shake
-    output reg [7:0] data  // return data of target machine
+    input [4:0] select_switches,    // switches to represent data_target
+    input uart_clk,  // uart_clk to anti-shake
+    output reg [7:0] data_target  // return data_target of target machine
 );
+
+parameter ANTISHAKECNT = 15000;
 
 parameter SELECT_DATA_IGNORE = 8'b000000_11;
 parameter SELECT_VALUE_MAX = 20;
@@ -16,14 +18,14 @@ reg [30:0] clk_cnt = 0;  // count times when switch change
 always @(clk_cnt) begin
     if(clk_cnt == ANTISHAKECNT) begin
         if(select_switches > SELECT_VALUE_MAX) begin
-            data = SELECT_DATA_IGNORE;
+            data_target = SELECT_DATA_IGNORE;
         end else begin
-            data = {0,select_switches,CHANNEL_TARGET};
+            data_target = {0,select_switches,CHANNEL_TARGET};
         end
     end
 end
 
-always @(posedge clk) begin
+always @(posedge uart_clk) begin
     if(prev_select_switch == select_switches) begin
         clk_cnt <= clk_cnt + 1;
     end else begin

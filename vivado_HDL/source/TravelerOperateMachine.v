@@ -7,7 +7,7 @@ module TravelerOperateMachine(
     input button_center,    // interact
     input button_right,     // put
     input uart_clk,
-    output reg [7:0] data = OPERATE_IGNORE // [7:0]数据位
+    output reg [7:0] data_operate = OPERATE_IGNORE // [7:0]数据位
 );
 
 // data of operate
@@ -24,7 +24,7 @@ assign buttons = {button_up,button_down,button_center,button_left,button_right};
 parameter PRESS_UP = 5'b10000 , PRESS_DOWN = 5'b01000 , PRESS_CENTER = 5'b00100 , PRESS_LEFT = 5'b00010 , PRESS_RIGHT = 5'b00001;
 
 // anti-shake constant
-parameter ANTISHAKEUARTCNT = 15000;
+parameter ANTISHAKECNT = 15000;
 
 always @(buttons) begin // 根据当前开关设置待发送数据
     case(buttons)
@@ -42,8 +42,8 @@ end
 always @(posedge uart_clk) begin
     if(prev_buttons == buttons) begin
         clk_cnt <= clk_cnt + 1;
-        if(clk_cnt == ANTISHAKEUARTCNT) begin
-            data <= data_store;
+        if(clk_cnt == ANTISHAKECNT) begin
+            data_operate <= data_store;
         end     
     end else begin
         clk_cnt <= 0;

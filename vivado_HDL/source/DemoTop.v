@@ -74,23 +74,23 @@ module DemoTop(
     );
     
 
-    wire [7:0] GameStateChangeData;        // state of game
-    wire [7:0] OriginTravelerOperateMachineData; // player origin operate data (receive by buttons)
-    wire [7:0] VerifiedOperateMachineData;  // operate data after verify
-    wire [7:0] TravelerTargetMachineData;  // target machine that player select
+    wire [7:0] data_game_state;        // state of game
+    wire [7:0] data_operate; // player origin operate data (receive by buttons)
+    wire [7:0] data_operate_verified;  // operate data after verify
+    wire [7:0] data_target;  // target machine that player select
 
-    wire InFrontOfTargetMachine;        // feedback data of player is in front of target machine
-    wire HasItemInHand;                 // feedback of if player has item in hand 
-    wire TargetMachineIsProcessing;     // feedback of if target machine is processing
-    wire TargetMachineHasItem;          // feedback of if target machine has item
+    wire sig_front;        // feedback data of player is in front of target machine
+    wire sig_hand;                 // feedback of if player has item in hand 
+    wire sig_processing;     // feedback of if target machine is processing
+    wire sig_machine;          // feedback of if target machine has item
 
-    wire [2:0] CompleteCusineNum;       // variable to memory how many cusines finish
+    wire [2:0] cusine_finish_num;       // variable to memory how many cusines finish
 
     // 设置游戏状态
     GameStateChange gsc(  
       .switch(switches[7]),             // 左侧第一个开关控制
-      .data(GameStateChangeData),
-      .CompleteCusineNum(CompleteCusineNum),
+      .data_game_state(data_game_state),
+      .cusine_finish_num(cusine_finish_num),
       .uart_clk(uart_clk_16)
     );
 
@@ -102,36 +102,36 @@ module DemoTop(
       .button_left(button[0]),
       .button_right(button[4]),
       .uart_clk(uart_clk_16),
-      .data(OriginTravelerOperateMachineData)
+      .data_operate(data_operate)
     );
 
     VerifyIfOperateDataCorrect vod(
-      .clk(uart_clk_16),
-      .GameStateChangeData(GameStateChangeData),
-      .OriginOperateData(OriginTravelerOperateMachineData),
-      .TargetMachine(TravelerTargetMachineData),
-      .InFrontOfTargetMachine(InFrontOfTargetMachine),
-      .HasItemInHand(HasItemInHand),
-      .TargetMachineIsProcessing(TargetMachineIsProcessing),
-      .TargetMachineHasItem(TargetMachineHasItem),
-      .VerifiedOperateData(VerifiedOperateMachineData),
-      .CompleteCusineNum(CompleteCusineNum),
-      .led(led2)
+      .uart_clk(uart_clk_16),
+      .data_game_state(data_game_state),
+      .data_operate(data_operate),
+      .data_target(data_target),
+      .sig_front(sig_front),
+      .sig_hand(sig_hand),
+      .sig_processing(sig_processing),
+      .sig_machine(sig_machine),
+      .data_operate_verified(data_operate_verified),
+      .data_cusine_finish_num(cusine_finish_num),
+      .test_led(led2)
     );
 
     // 玩家更改目标机器
     TravelerTargetMachine ttm(
         .select_switches(switches[5:0]),  // 右侧5个开关控制
-        .data(TravelerTargetMachineData),
-        .clk(clk)
+        .data_target(data_target),
+        .uart_clk(uart_clk_16)
     );
 
     // UART发送数据
     SendData sd(
-      .TravelerOperateMachineData(VerifiedOperateMachineData),
-      // .TravelerOperateMachineData(OriginTravelerOperateMachineData),
-      .TravelerTargetMachineData(TravelerTargetMachineData),
-      .GameStateChangeData(GameStateChangeData),
+      // .data_operate_verified(data_operate),
+      .data_operate_verified(data_operate_verified),
+      .data_target(data_target),
+      .data_game_state(data_game_state),
       .uart_clk(uart_clk_16),
       .data_ready(dataIn_ready),
       .data_send(dataIn_bits)
@@ -145,10 +145,10 @@ module DemoTop(
       .data_receive(dataOut_bits),
       .uart_clk(uart_clk_16),
       .clk(clk),
-      .InFrontOfTargetMachine(InFrontOfTargetMachine),
-      .HasItemInHand(HasItemInHand),
-      .TargetMachineIsProcessing(TargetMachineIsProcessing),
-      .TargetMachineHasItem(TargetMachineHasItem),
+      .sig_front(sig_front),
+      .sig_hand(sig_hand),
+      .sig_processing(sig_processing),
+      .sig_machine(sig_machine),
       .feedback_leds(led[3:0])    // 左侧右4led显示反馈数据
     );
     

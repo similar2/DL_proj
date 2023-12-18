@@ -4,8 +4,6 @@ parameter TRUE = 1 , FALSE = 0;
 // int constant
 parameter ZERO = 0 , ONE = 1 , TWO = 2 , THREE = 3;
 
- // anti-shake constant
-parameter ANTISHAKECNT = 5000000;  
 
 // data of game state
 parameter GAME_START = 8'bxxxx_01_01 , GAME_STOP = 8'bxxxx_10_01;  
