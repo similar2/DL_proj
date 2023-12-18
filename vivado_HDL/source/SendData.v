@@ -16,6 +16,7 @@ parameter SEND_NULL = 2'b00 , SEND_GAMESTATE = 2'b01 , SEND_TARGET = 2'b10 , SEN
 reg [1:0] send_state = SEND_GAMESTATE;
 reg [1:0] next_send_state = SEND_TARGET;
 
+
 // [IMPORTANT]
 // When Data = 8'b00000000 , uart will blocking , we must promise the case wont appear
 

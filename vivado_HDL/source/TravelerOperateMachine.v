@@ -11,7 +11,7 @@ module TravelerOperateMachine(
 );
 
 // data of operate
-parameter OPERATE_GET = 8'bx_00001_10 , OPERATE_PUT = 8'bx_00010_10 , OPERATE_INTERACT = 8'bx_00100_10 , OPERATE_MOVE = 8'bx_01000_10 , OPERATE_THROW = 8'bx_10000_10 , OPERATE_IGNORE = 8'bx_00000_10;
+parameter OPERATE_GET = 8'b1_00001_10 , OPERATE_PUT = 8'b1_00010_10 , OPERATE_INTERACT = 8'b1_00100_10 , OPERATE_MOVE = 8'b1_01000_10 , OPERATE_THROW = 8'b1_10000_10 , OPERATE_IGNORE = 8'b1_00000_10;
 
 reg [20:0] clk_cnt = 0; // 建立计数器记录按钮按下时间
 
@@ -37,16 +37,14 @@ always @(buttons) begin // 根据当前开关设置待发送数据
     endcase
 end
 
-always @(clk_cnt) begin
-    if(clk_cnt == ANTISHAKEUARTCNT) begin
-        data <= data_store;
-    end
-end
 
 
 always @(posedge uart_clk) begin
     if(prev_buttons == buttons) begin
         clk_cnt <= clk_cnt + 1;
+        if(clk_cnt == ANTISHAKEUARTCNT) begin
+            data <= data_store;
+        end     
     end else begin
         clk_cnt <= 0;
         prev_buttons <= buttons;

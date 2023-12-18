@@ -105,18 +105,19 @@ module DemoTop(
       .data(OriginTravelerOperateMachineData)
     );
 
-    // VerifyIfOperateDataCorrect vod(
-    //   .clk(clk),
-    //   .GameStateChangeData(GameStateChangeData),
-    //   .OriginOperateData(OriginTravelerOperateMachineData),
-    //   .TargetMachine(TravelerTargetMachineData),
-    //   .InFrontOfTargetMachine(InFrontOfTargetMachine),
-    //   .HasItemInHand(HasItemInHand),
-    //   .TargetMachineIsProcessing(TargetMachineIsProcessing),
-    //   .TargetMachineHasItem(TargetMachineHasItem),
-    //   .VerifiedOperateData(VerifiedOperateMachineData),
-    //   .CompleteCusineNum(CompleteCusineNum)
-    // );
+    VerifyIfOperateDataCorrect vod(
+      .clk(uart_clk_16),
+      .GameStateChangeData(GameStateChangeData),
+      .OriginOperateData(OriginTravelerOperateMachineData),
+      .TargetMachine(TravelerTargetMachineData),
+      .InFrontOfTargetMachine(InFrontOfTargetMachine),
+      .HasItemInHand(HasItemInHand),
+      .TargetMachineIsProcessing(TargetMachineIsProcessing),
+      .TargetMachineHasItem(TargetMachineHasItem),
+      .VerifiedOperateData(VerifiedOperateMachineData),
+      .CompleteCusineNum(CompleteCusineNum),
+      .led(led2)
+    );
 
     // 玩家更改目标机器
     TravelerTargetMachine ttm(
@@ -127,8 +128,8 @@ module DemoTop(
 
     // UART发送数据
     SendData sd(
-      // .TravelerOperateMachineData(VerifiedOperateMachineData),
-      .TravelerOperateMachineData(OriginTravelerOperateMachineData),
+      .TravelerOperateMachineData(VerifiedOperateMachineData),
+      // .TravelerOperateMachineData(OriginTravelerOperateMachineData),
       .TravelerTargetMachineData(TravelerTargetMachineData),
       .GameStateChangeData(GameStateChangeData),
       .uart_clk(uart_clk_16),
