@@ -149,7 +149,8 @@ module DemoTop(
       .sig_hand(sig_hand),
       .sig_processing(sig_processing),
       .sig_machine(sig_machine),
-      .feedback_leds(led[3:0])    // 左侧右4led显示反馈数据
+      .feedback_leds(led[3:0]),    // 左侧右4led显示反馈数据
+      .led_mode(led[7])
     );
     
 

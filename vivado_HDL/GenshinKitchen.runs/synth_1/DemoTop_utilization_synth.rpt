@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Dec 18 15:22:51 2023
+| Date         : Mon Dec 18 15:31:46 2023
 | Host         : LAPTOP-6GMAV85C running 64-bit major release  (build 9200)
 | Command      : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
 | Design       : DemoTop
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             |  101 |     0 |     20800 |  0.49 |
 |   LUT as Logic          |  101 |     0 |     20800 |  0.49 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  164 |     0 |     41600 |  0.39 |
-|   Register as Flip Flop |  150 |     0 |     41600 |  0.36 |
+| Slice Registers         |  165 |     0 |     41600 |  0.40 |
+|   Register as Flip Flop |  151 |     0 |     41600 |  0.36 |
 |   Register as Latch     |   14 |     0 |     41600 |  0.03 |
 | F7 Muxes                |    2 |     0 |     16300 |  0.01 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -56,7 +56,7 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 14    |          Yes |           - |        Reset |
-| 0     |          Yes |         Set |            - |
+| 1     |          Yes |         Set |            - |
 | 150   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
@@ -151,15 +151,16 @@ Table of Contents
 | LUT4     |   36 |                 LUT |
 | LUT5     |   26 |                 LUT |
 | LUT2     |   17 |                 LUT |
+| LUT3     |   15 |                 LUT |
 | CARRY4   |   15 |          CarryLogic |
-| LUT3     |   14 |                 LUT |
+| OBUF     |   14 |                  IO |
 | LDCE     |   14 |        Flop & Latch |
-| OBUF     |   13 |                  IO |
 | IBUF     |   13 |                  IO |
 | LUT1     |    6 |                 LUT |
-| OBUFT    |    4 |                  IO |
+| OBUFT    |    3 |                  IO |
 | MUXF7    |    2 |               MuxFx |
 | BUFG     |    2 |               Clock |
+| FDSE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 

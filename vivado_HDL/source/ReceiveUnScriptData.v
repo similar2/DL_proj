@@ -7,7 +7,8 @@ module ReceiveUnScriptData(
     output reg sig_hand,
     output reg sig_processing,
     output reg sig_machine,
-    output reg [3:0] feedback_leds = 0
+    output reg [3:0] feedback_leds = 0,
+    output reg led_mode = 0
 );
 
 parameter MAX = 15;
@@ -27,11 +28,13 @@ always @(posedge uart_clk) begin
         
             feedback_leds <= data_receive[5:2];
             {sig_machine,sig_processing,sig_hand,sig_front} <= data_receive[5:2];
+            led_mode <= 1;
          
         end else begin
 
             feedback_leds <= 4'b0000;
             {sig_machine,sig_processing,sig_hand,sig_front} <= 4'b0000;
+            led_mode <= 0;
 
         end
     
