@@ -86,15 +86,15 @@ module DemoTop(
 
     wire [2:0] cusine_finish_num;       // variable to memory how many cusines finish
 
-    // 设置游戏状态
+    // set data of the state of game
     GameStateChange gsc(  
-      .switch(switches[7]),             // 左侧第一个开关控制
+      .switch(switches[7]),             // left-one switch
       .data_game_state(data_game_state),
       .cusine_finish_num(cusine_finish_num),
       .uart_clk(uart_clk_16)
     );
 
-    // 玩家操作机器
+    // set data of operate (not verified)
     TravelerOperateMachine tom(
       .button_up(button[3]),
       .button_down(button[1]),
@@ -105,6 +105,7 @@ module DemoTop(
       .data_operate(data_operate)
     );
 
+    // verified operate data if available
     VerifyIfOperateDataCorrect vod(
       .uart_clk(uart_clk_16),
       .data_game_state(data_game_state),
@@ -119,14 +120,14 @@ module DemoTop(
       .test_led(led2)
     );
 
-    // 玩家更改目标机器
+    // set data of target machine
     TravelerTargetMachine ttm(
-        .select_switches(switches[5:0]),  // 右侧5个开关控制
+        .select_switches(switches[5:0]),  // right 5 switches
         .data_target(data_target),
         .uart_clk(uart_clk_16)
     );
 
-    // UART发送数据
+    // send data to UART module
     SendData sd(
       // .data_operate_verified(data_operate),
       .data_operate_verified(data_operate_verified),
@@ -137,9 +138,9 @@ module DemoTop(
       .data_send(dataIn_bits)
     );
 
-    /*  接收数据部分  */
+
     
-    // 接受UART返回非脚本数据
+    // receive feedback data of UART
     ReceiveUnScriptData rd(
       .data_valid(dataOut_valid),
       .data_receive(dataOut_bits),
@@ -149,8 +150,8 @@ module DemoTop(
       .sig_hand(sig_hand),
       .sig_processing(sig_processing),
       .sig_machine(sig_machine),
-      .feedback_leds(led[3:0]),    // 左侧右4led显示反馈数据
-      .led_mode(led[7])
+      .feedback_leds(led[3:0]),    // right - 4 led show data
+      .led_mode(led[7])           // left - 1 led show data
     );
     
 

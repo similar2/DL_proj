@@ -1,12 +1,12 @@
 // 想要设计成统一处理变化数据并传输给UART的模块
 
 module SendData(
-    input [7:0] data_target,  // [7:0] 选择机器
-    input [7:0] data_game_state,        // [7:0] 更改游戏状态
-    input [7:0] data_operate_verified, // [7:0] 机器操作
-    input uart_clk, // uart时钟周期
-    input data_ready,    // 数据是否发送完毕的标志
-    output reg [7:0] data_send = 0,   // 接入UART的输出数据
+    input [7:0] data_target,  // data of target machine
+    input [7:0] data_game_state,        // data of game state
+    input [7:0] data_operate_verified, // data of verified operate
+    input uart_clk, // uart clk
+    input data_ready,    // mark of data send finish
+    output reg [7:0] data_send = 0,   // data to send to custom
     output reg [7:0] led = 0
 );
 
@@ -20,6 +20,8 @@ reg [1:0] next_send_state = SEND_TARGET;
 // [IMPORTANT]
 // When Data = 8'b00000000 , uart will blocking , we must promise the case wont appear
 
+
+// send FSM (may add script data)
 always @(send_state) begin
     case(send_state)
     SEND_GAMESTATE: begin

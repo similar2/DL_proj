@@ -196,6 +196,7 @@ always @(data_operate) begin
             end
         end
 
+        // Table And TrashBin
         else if(target == TABLE_9 || target == TABLE_11 || target == TABLE_14 || target == TABLE_17 || target == TABLE_19 || target == TRASH_BIN_20) begin
             case(data_operate)
             OPERATE_THROW , OPERATE_PUT: begin
@@ -214,6 +215,7 @@ always @(data_operate) begin
             endcase
         end
 
+        // WorkBench , Stove , Mixer , Oven
         else if(target == WORKBENCH_15 || target == MIXER_16 || target == STOVE_10 || target == OVEN_12 || target == OVEN_13) begin
             case(data_operate)
             OPERATE_THROW:data_operate_verified = OPERATE_IGNORE;
@@ -233,6 +235,7 @@ always @(data_operate) begin
             endcase
         end
 
+        // Custom
         else if(target == CUSTOMER_18) begin
             case(data_operate)
             OPERATE_GET , OPERATE_THROW , OPERATE_INTERACT: data_operate_verified = OPERATE_IGNORE;

@@ -25,6 +25,7 @@ always @(clk_cnt) begin
     end
 end
 
+// set data_target by switches
 always @(posedge uart_clk) begin
     if(prev_select_switch == select_switches) begin
         clk_cnt <= clk_cnt + 1;

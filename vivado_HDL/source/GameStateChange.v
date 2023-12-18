@@ -11,6 +11,7 @@ module GameStateChange(
 parameter GAME_START = 8'bxxxx_01_01 , GAME_STOP = 8'bxxxx_10_01;  
 
 
+// use switch to set game state
 always @(switch) begin
     if(switch) begin
         data_game_state = GAME_START;
