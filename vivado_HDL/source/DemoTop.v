@@ -29,7 +29,7 @@ module DemoTop(
         wire [15:0] script;
 // The wire above is useful~
 
-        wire uart_reset = 1'b0; // 没想好是否需要复位,应该不用
+        wire uart_reset = 1'b0; // 没想好是否需要复�?,应该不用
 
 
     ScriptMem script_mem_module(
@@ -38,7 +38,7 @@ module DemoTop(
       
       .dataOut_bits(dataOut_bits), // please connect to io_dataOut_bits of UART module
       .dataOut_valid(dataOut_valid), // please connect to io_dataOut_valid of UART module
-      ·
+
       .script_mode(script_mode), // output 1 when loading script from UART.
                                  // at this time, you should not use dataOut_bits or use pc and script.
       
