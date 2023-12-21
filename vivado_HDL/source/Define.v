@@ -33,5 +33,13 @@ parameter CUSTOMER_18 = 18;
 parameter TRASH_BIN_20 = 20;
 
 
+//parameter for script
+
+//jump script
+
+parameter if_mode = 2'b00, ifn_mode = 2'b01,
+          player_ready = 3'd0, player_hasitem = 3'd1,
+          target_ready = 3'd2, target_hasitem = 3'd3;
+
 
 

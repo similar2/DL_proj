@@ -1,6 +1,6 @@
 // 想要用来获取UART对应时钟分频的模块
 module DivideClock(
-    input clk,
+    input clk,//100Mhz 
     output reg uart_clk = 0,    // uart clk
     output reg second_clk = 0,  // second clk
     output reg millisecond_clk = 0  // millisecond clk

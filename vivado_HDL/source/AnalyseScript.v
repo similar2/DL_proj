@@ -5,7 +5,7 @@
 module AnalyseScript(
     input [15:0] script,//connected to scriptmem's output 
     input clk,
-    input res,
+    input res,//use one button or sth to reset pc
     input feedback_sig,//to identify the current state in the kitchen
     input btn_step,//connnect to a button, every time it get pressed pc will move forward one step
     output reg [7:0]pc,
@@ -13,7 +13,7 @@ module AnalyseScript(
 );
 parameter  enabled = 1'b1,disabled = 1'b0,action_code = 3'b001,jump_code =  3'b010,wait_code = 3'b011,game_code = 3'b100;
 //debounced button sig
-wire next_step;
+wire next_step;//however, next_step also serve as a reset sig to all script modules
 
 //divide 16 bit scirpt to 4 parts
 wire [7:0] i_num;assign i_num = script[15:8];
@@ -65,8 +65,17 @@ Debouncer db(
         .data(operation_data)
     );
 
-
-    action act_inst (
+jump jump(
+    .en(en_jump),
+    .clk(clk),
+    .i_num(i_num),
+    .i_sign(i_sign),
+    .next_pc(pc),
+    .func(func),
+    .feedback_sig(feedback_sig),
+    .current_pc(pc)
+);
+    action act (
         .en(en_action),
         .i_num(i_num),
         .func(func),
