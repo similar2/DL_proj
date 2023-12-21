@@ -8,12 +8,13 @@ module AnalyseScript(
     input res,//use one button or sth to reset pc
     input feedback_sig,//to identify the current state in the kitchen
     input btn_step,//connnect to a button, every time it get pressed pc will move forward one step
+    input millisecond_clk,//used by wait     
     output reg [7:0]pc,
     output  [7:0] output_data
 );
 parameter  enabled = 1'b1,disabled = 1'b0,action_code = 3'b001,jump_code =  3'b010,wait_code = 3'b011,game_code = 3'b100;
 //debounced button sig
-wire next_step;//however, next_step also serve as a reset sig to all script modules
+wire next_step;
 
 //divide 16 bit scirpt to 4 parts
 wire [7:0] i_num;assign i_num = script[15:8];
@@ -34,7 +35,10 @@ wire sig_move,sig_throw,sig_get,sig_interact,sig_put;
 wire [4:0]target_machine;
 wire [7:0]target_data;
 wire [7:0] operation_data;
-
+//wire for wait
+wire is_ready;
+//wire for game state change 
+wire [7:0] game_state;
 //divide control data to 5 parts
 assign sig_move = control_data[4];
 assign sig_get = control_data[3];
@@ -83,10 +87,28 @@ jump jump(
         .feedback_sig(feedback_sig),
         .control_data(control_data)
     );
+    
+Wait wt(
+        .en(en_wait),
+        .i_num(i_num),
+        .func(func),
+        .i_sign(i_sign),
+        .millisecond_clk(millisecond_clk),
+        .clk(clk),
+        .feedbak_sig(feedback_sig),
+        .is_ready(is_ready)
+    );
+
+game_state state(
+    .en(en_game),
+    .func(func),
+    .clk(clk),
+    .game_state(game_state)
+);
 
 //the button is active-high res is active-low
     always @(posedge next_step,posedge res) begin
-        if (~res) begin
+        if (res) begin
            pc <= 8'b0000_0000; // Reset value of pc
         end
         else

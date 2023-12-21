@@ -5,7 +5,7 @@ module Wait(
     input [2:0] i_sign,
     input millisecond_clk,
     input clk,  // ordinary uart_clk
-    input [7:0] feedbak_sig,  // Current state in the kitchen
+    input [7:0] feedback_sig,  // Current state in the kitchen
     output is_ready  // when finish waiting is_ready turns 1 or this remains 0
 );
 
@@ -19,11 +19,11 @@ module Wait(
 
 parameter waituntil_mode = 2'b01, wait_mode = 2'b00;
 reg mode, signal;
-reg [10:0] time_counter;
-reg wait_time;
+reg [10:0] time_counter = 0;  // Initialized to 0
+reg [10:0] wait_time = 0;  // Initialized to 0
 
-always @(posedge clk) begin
-    if (en) begin 
+always @(posedge clk ) begin
+   if (en) begin
         case(func) 
             waituntil_mode: begin 
                 mode <= 1'b1;
@@ -33,14 +33,13 @@ always @(posedge clk) begin
         endcase
     end
 end  
-
 always @(posedge clk) begin
     if (en) begin
         case (i_sign)
-            player_ready: signal <= feedbak_sig[2];
-            player_hasitem: signal <= feedbak_sig[3];
-            target_ready: signal <= feedbak_sig[4];
-            target_hasitem: signal <= feedbak_sig[5];
+            player_ready: signal <= feedback_sig[2];
+            player_hasitem: signal <= feedback_sig[3];
+            target_ready: signal <= feedback_sig[4];
+            target_hasitem: signal <= feedback_sig[5];
         endcase
     end
 end

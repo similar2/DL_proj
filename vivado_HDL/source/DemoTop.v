@@ -6,11 +6,14 @@ module DemoTop(
 
     output [7:0] led,
     output [7:0] led2,
+//two buttons for script 
+
+    input res,//reset pc connected to R11
+    input btn_step,//move forward pc  connected to R17
     
     input clk,
     input rx,
     output tx
-
     );
 
 
@@ -29,7 +32,7 @@ module DemoTop(
         wire [15:0] script;
 // The wire above is useful~
 
-        wire uart_reset = 1'b0; // 没想好是否需要复�?,应该不用
+        wire uart_reset = 1'b0; // 没想好是否需要复�?,应该不用
 
 
     ScriptMem script_mem_module(
@@ -154,6 +157,17 @@ module DemoTop(
       .led_mode(led[7])           // left - 1 led show data
     );
     
+//script loading part
 
+AnalyseScript AS(
+  .script(script),
+  .clk(uart_clk_16),
+  .res(res),//pc reset sig
+  .feedback_sig(),//current state in kitchen
+  .btn_step(btn_step),//use a button to move pc forward
+  .millisecond_clk(millisecond_clk),
+  .pc(pc),
+  .output_data()
+);
     
 endmodule
