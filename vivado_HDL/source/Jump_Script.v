@@ -8,11 +8,6 @@ module jump(
     input [7:0] feedbak_sig,  // Current state in the kitchen
     output reg [7:0] next_pc  // Changed to reg since we're assigning it in an always block
 );
-// Description of the signals:
-// data[2] - Set(1) when traveler is in front of target machine, otherwise Reset(0).
-// data[3] - Set(1) when traveler has item in hand, otherwise Reset(0).
-// data[4] - Set(1) when target machine is processing, otherwise Reset(0).
-// data[5] - Set(1) when target machine has item, otherwise Reset(0).
 
 // Operation modes and their format:
 // 010(00) - jumpif [i_num] [signal]   - Jump [i_num] lines if corresponding signal is 1.

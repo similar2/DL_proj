@@ -1,4 +1,4 @@
-// `include "Define.v"
+ `include "Define.v"
 module VerifyIfOperateDataCorrect(
     input uart_clk,
     input [7:0] data_game_state,    // data of game state

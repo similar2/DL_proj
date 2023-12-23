@@ -6,15 +6,32 @@ module AnalyseScript(
     input [15:0] script,//connected to scriptmem's output 
     input clk,
     input res,//use one button or sth to reset pc
-    input feedback_sig,//to identify the current state in the kitchen
+    //to identify the current state in the kitchen
+    input sig_front,
+    input sig_hand,
+    input sig_processing,
+    input sig_machine,
     input btn_step,//connnect to a button, every time it get pressed pc will move forward one step
     input millisecond_clk,//used by wait     
+    input debug_mode,//if this is 1 then we use a button to force pc move forward connected to a switch
     output reg [7:0]pc,
-    output  [7:0] output_data
+    output  [7:0] data_operate_script,
+    output [7:0]data_target_script,
+    output [7:0]data_game_state_script
 );
 parameter  enabled = 1'b1,disabled = 1'b0,action_code = 3'b001,jump_code =  3'b010,wait_code = 3'b011,game_code = 3'b100;
 //debounced button sig
 wire next_step;
+//define feedback sig
+//data[7:6]	data[5:2]	data[1:0]	Description
+//00	   xxxx	         01	        Traveler targeting on specific machine with ID xxxxxx.
+// Description of the signals:
+// data[2] - Set(1) when traveler is in front of target machine, otherwise Reset(0).
+// data[3] - Set(1) when traveler has item in hand, otherwise Reset(0).
+// data[4] - Set(1) when target machine is processing, otherwise Reset(0).
+// data[5] - Set(1) when target machine has item, otherwise Reset(0).
+wire [7:0] feedback_sig = {2'b00, sig_machine, sig_processing, sig_hand, sig_front, 2'b01};
+
 
 //divide 16 bit scirpt to 4 parts
 wire [7:0] i_num;assign i_num = script[15:8];
@@ -55,7 +72,7 @@ Debouncer db(
     TravelerTargetMachine TTM (
         .select_switches(target_machine), // Connect the lower 5 bits of i_num
         .clk(clk),
-        .data(target_data)
+        .data(data_target_script)
     );
 
     // Instantiate TravelerOperateMachine
@@ -66,7 +83,7 @@ Debouncer db(
         .button_center(sig_interact),
         .button_right(sig_put),
         .clk(clk),
-        .data(operation_data)
+        .data(data_operate_script)
     );
 
 jump jump(
@@ -103,7 +120,7 @@ game_state state(
     .en(en_game),
     .func(func),
     .clk(clk),
-    .game_state(game_state)
+    .game_state(data_game_state_script)
 );
 
 //the button is active-high res is active-low
@@ -112,6 +129,8 @@ game_state state(
            pc <= 8'b0000_0000; // Reset value of pc
         end
         else
-        pc<=pc+2'd2;
+        if (debug_mode) begin
+              pc<=pc+2'd2;
+        end
     end
 endmodule

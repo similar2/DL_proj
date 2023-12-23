@@ -10,7 +10,7 @@ module DemoTop(
 
     input res,//reset pc connected to R11
     input btn_step,//move forward pc  connected to R17
-    
+    input debug_mode,//a switch for script connected to P5 
     input clk,
     input rx,
     output tx
@@ -32,8 +32,20 @@ module DemoTop(
         wire [15:0] script;
 // The wire above is useful~
 
-        wire uart_reset = 1'b0; // 没想好是否需要复�?,应该不用
-
+        wire uart_reset = 1'b0; // 没想好是否需要复�???,应该不用
+wire dataIn_ready_script;
+wire dataIn_bits_script;
+wire dataIn_bits_unscript;
+wire dataIn_ready_unscript;
+    mux_script_unscript mux (
+        .script_mode(script_mode),
+        .dataIn_ready_script(dataIn_ready_script),
+        .dataIn_bits_script(dataIn_bits_script),
+        .dataIn_bits_unscript(dataIn_bits_unscript),
+        .dataIn_ready_unscript(dataIn_ready_unscript),
+        .dataIn_ready(dataIn_ready),
+        .dataIn_bits(dataIn_bits)
+    );
 
     ScriptMem script_mem_module(
       .clock(uart_clk_16),   // please use the same clock as UART module
@@ -137,8 +149,8 @@ module DemoTop(
       .data_target(data_target),
       .data_game_state(data_game_state),
       .uart_clk(uart_clk_16),
-      .data_ready(dataIn_ready),
-      .data_send(dataIn_bits)
+      .data_ready(dataIn_ready_unscript),
+      .data_send(dataIn_bits_unscript)
     );
 
 
@@ -158,16 +170,50 @@ module DemoTop(
     );
     
 //script loading part
+wire  [7:0]data_target_script;
+wire  [7:0]data_game_state_script;
+wire  [7:0]data_operate_script;
+wire  [7:0]data_operate_verified_script;
 
 AnalyseScript AS(
   .script(script),
   .clk(uart_clk_16),
   .res(res),//pc reset sig
-  .feedback_sig(),//current state in kitchen
+  .sig_front(sig_front),
+  .sig_hand(sig_hand),
+  .sig_machine(sig_machine),
+  .sig_processing(sig_processing),
   .btn_step(btn_step),//use a button to move pc forward
   .millisecond_clk(millisecond_clk),
   .pc(pc),
-  .output_data()
+  .debug_mode(debug_mode),
+ .data_operate_script(data_operate_script),
+   .data_target_script(data_target_script),
+    .data_game_state_script(data_game_state_script)
 );
-    
+//wires for sccript mode
+
+SendData sd_script(
+      .data_operate_verified(data_operate_verified_script),
+      .data_target(data_target_script),
+      .data_game_state(data_game_state_script),
+      .uart_clk(uart_clk_16),
+      .data_ready(dataIn_ready_unscript),
+      .data_send(dataIn_bits_unscript)
+);    
+    // verified operate data if available
+    VerifyIfOperateDataCorrect vod_script(
+      .uart_clk(uart_clk_16),
+      .data_game_state(data_game_state_script),
+      .data_operate(data_operate_script),
+      .data_target(data_target_script),
+      .sig_front(sig_front),
+      .sig_hand(sig_hand),
+      .sig_processing(sig_processing),
+      .sig_machine(sig_machine),
+      .data_operate_verified(data_operate_verified_script),
+      .data_cusine_finish_num(cusine_finish_num),
+      .test_led(led2)
+    );
+
 endmodule
