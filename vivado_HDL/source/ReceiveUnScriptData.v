@@ -11,9 +11,7 @@ module ReceiveUnScriptData(
     output reg led_mode = 0
 );
 
-parameter MAX = 15;
 
-parameter FEEDBACK = 2'b01;
 
 
 always @(posedge uart_clk) begin

@@ -17,7 +17,6 @@ module Wait(
 // To implement the goal of wait and waituntil we need to specify the clk signal 
 // In this module we use millisecond_clk, namely, whose period is 1ms
 
-parameter waituntil_mode = 2'b01, wait_mode = 2'b00;
 reg mode, signal;
 reg [10:0] time_counter = 0;  // Initialized to 0
 reg [10:0] wait_time = 0;  // Initialized to 0

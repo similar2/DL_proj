@@ -5,7 +5,6 @@ module Debouncer(
 );
 
 // Parameter definition
-parameter DEBOUNCE_TIME = 1000000;  // Set the debounce time threshold
 reg [19:0] counter = 0;             // 20-bit counter for debounce timing
 
 // Debounce logic

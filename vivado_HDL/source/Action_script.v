@@ -7,8 +7,6 @@ module action(
     output [4:0] control_data //control when to do the movement i.e. get put etc
 );
     // Define parameters
-    parameter GET = 2'b00, PUT = 2'b01, INTERACT = 2'b10, THROW = 2'b11;
-    parameter ENABLED = 1'b1, DISABLED = 1'b0;
 
 wire move_ready = feedbak_sig[2]; //whether the chef is in front of the target machine
     // Logic for enabling wires based on func

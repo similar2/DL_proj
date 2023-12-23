@@ -123,13 +123,13 @@
 //       data_5 <= data_4;
 //       data_6 <= data_5;
 //       data_7 <= data_6;
-//       // 新增了这一行
+//       // 新增了这�?�?
 //       data_8 <= data_7;
 //       //
 //     end
 //   end // always @(posedge)
 //   assign io_valid = (/*(state == 4'hA) & */  tick); //4'h2
-//   // 改变了这一行
+//   // 改变了这�?�?
 //   assign io_bits = {data_1, data_2, data_3, data_4, data_5, data_6, data_7,data_8};
 //   //
 // endmodule
@@ -341,48 +341,48 @@ module UARTReceiver(
   
 endmodule
 
-module UART(
-  input        clock,             // uart clock. Please use 16 x BaudRate. (such as: 9600 * 16 = 153600Hz)
-               reset,             // reset on high.
-               io_pair_rx,        // rx, connect to R5 pin please
-  input  [7:0] io_dataIn_bits,    // (a) byte from DevelopmentBoard => GenshinKitchen
-  output       io_pair_tx,        // tx, connect to T4 pin please
-               io_dataIn_ready,   // referring (a) £»pulse 1 after a byte tramsmit success.
-           reg io_dataOut_valid,  // referring (b)
-  output reg [7:0] io_dataOut_bits    // (b) byte from GenshinKitchen => DevelopmentBoard, only available if io_dataOut_valid=1
-);
+//module UART(
+//  input        clock,             // uart clock. Please use 16 x BaudRate. (such as: 9600 * 16 = 153600Hz)
+//               reset,             // reset on high.
+//               io_pair_rx,        // rx, connect to R5 pin please
+//  input  [7:0] io_dataIn_bits,    // (a) byte from DevelopmentBoard => GenshinKitchen
+//  output       io_pair_tx,        // tx, connect to T4 pin please
+//               io_dataIn_ready,   // referring (a) £»pulse 1 after a byte tramsmit success.
+//           reg io_dataOut_valid,  // referring (b)
+//  output reg [7:0] io_dataOut_bits    // (b) byte from GenshinKitchen => DevelopmentBoard, only available if io_dataOut_valid=1
+//);
 
-  wire io_dataIn_valid = (io_dataIn_bits[1:0] != 2'b00);
-  reg [3:0] clkCnt = 0;
-  always @(posedge clock) begin
-    if (reset)
-      clkCnt <= 4'h0;
-    else
-      clkCnt <= clkCnt + 4'h1;
-  end // always @(posedge)
-  UARTTransmitter tx (
-    .clock    (clock),
-    .reset    (reset),
-    .io_valid (io_dataIn_valid),
-    .io_bits  (io_dataIn_bits),
-    .tick     (&clkCnt),
-    .io_ready (io_dataIn_ready),
-    .tx       (io_pair_tx)
-  );
+//  wire io_dataIn_valid = (io_dataIn_bits[1:0] != 2'b00);
+//  reg [3:0] clkCnt = 0;
+//  always @(posedge clock) begin
+//    if (reset)
+//      clkCnt <= 4'h0;
+//    else
+//      clkCnt <= clkCnt + 4'h1;
+//  end // always @(posedge)
+//  UARTTransmitter tx (
+//    .clock    (clock),
+//    .reset    (reset),
+//    .io_valid (io_dataIn_valid),
+//    .io_bits  (io_dataIn_bits),
+//    .tick     (&clkCnt),
+//    .io_ready (io_dataIn_ready),
+//    .tx       (io_pair_tx)
+//  );
   
-  wire io_valid;
-  wire [7:0] io_bits;
-  UARTReceiver rx (
-    .clock    (clock),
-    .reset    (reset),
-    .rx       (io_pair_rx),
-    .io_valid(io_valid),
-    .io_bits(io_bits)
-  );
+//  wire io_valid;
+//  wire [7:0] io_bits;
+//  UARTReceiver rx (
+//    .clock    (clock),
+//    .reset    (reset),
+//    .rx       (io_pair_rx),
+//    .io_valid(io_valid),
+//    .io_bits(io_bits)
+//  );
 
-  always @(posedge clock) begin
-    io_dataOut_bits = io_bits;
-    io_dataOut_valid = io_valid;
-  end
+//  always @(posedge clock) begin
+//    io_dataOut_bits = io_bits;
+//    io_dataOut_valid = io_valid;
+//  end
 
-endmodule
+//endmodule

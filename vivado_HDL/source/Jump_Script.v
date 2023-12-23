@@ -5,7 +5,7 @@ module jump(
     input [2:0] i_sign,
     input clk,
     input [7:0] current_pc,
-    input [7:0] feedbak_sig,  // Current state in the kitchen
+    input [7:0] feedback_sig,  // Current state in the kitchen
     output reg [7:0] next_pc  // Changed to reg since we're assigning it in an always block
 );
 
@@ -34,10 +34,10 @@ end
 always @(posedge clk) begin
     if (en) begin
         case (i_sign)
-            player_ready: signal <= feedbak_sig[2];
-            player_hasitem: signal <= feedbak_sig[3];
-            target_ready: signal <= feedbak_sig[4];
-            target_hasitem: signal <= feedbak_sig[5];
+            player_ready: signal <= feedback_sig[2];
+            player_hasitem: signal <= feedback_sig[3];
+            target_ready: signal <= feedback_sig[4];
+            target_hasitem: signal <= feedback_sig[5];
         endcase
     end
 end

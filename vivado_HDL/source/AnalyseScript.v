@@ -52,6 +52,8 @@ wire sig_move,sig_throw,sig_get,sig_interact,sig_put;
 wire [4:0]target_machine;
 wire [7:0]target_data;
 wire [7:0] operation_data;
+//wire for jump
+reg [7:0]next_pc;//next pc address after jumping
 //wire for wait
 wire is_ready;
 //wire for game state change 
@@ -71,8 +73,8 @@ Debouncer db(
     // Instantiate TravelerTargetMachine
     TravelerTargetMachine TTM (
         .select_switches(target_machine), // Connect the lower 5 bits of i_num
-        .clk(clk),
-        .data(data_target_script)
+        .uart_clk(clk),
+        .data_target(data_target_script)
     );
 
     // Instantiate TravelerOperateMachine
@@ -82,8 +84,8 @@ Debouncer db(
         .button_left(sig_get),
         .button_center(sig_interact),
         .button_right(sig_put),
-        .clk(clk),
-        .data(data_operate_script)
+        .uart_clk(clk),
+        .data_operate(data_operate_script)
     );
 
 jump jump(
@@ -91,7 +93,7 @@ jump jump(
     .clk(clk),
     .i_num(i_num),
     .i_sign(i_sign),
-    .next_pc(pc),
+    .next_pc(next_pc),
     .func(func),
     .feedback_sig(feedback_sig),
     .current_pc(pc)
@@ -127,10 +129,14 @@ game_state state(
     always @(posedge next_step,posedge res) begin
         if (res) begin
            pc <= 8'b0000_0000; // Reset value of pc
+            next_pc<=8'b0000_0000;
         end
         else
         if (debug_mode) begin
-              pc<=pc+2'd2;
+              next_pc<=next_pc+2'd2;
         end
+    end
+    always @(posedge clk ) begin
+        pc<=next_pc;
     end
 endmodule

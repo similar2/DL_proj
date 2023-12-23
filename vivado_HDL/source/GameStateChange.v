@@ -7,8 +7,6 @@ module GameStateChange(
     output reg [7:0] test_led = 0
 );
 
-// data_game_state of game state
-parameter GAME_START = 8'bxxxx_01_01 , GAME_STOP = 8'bxxxx_10_01;  
 
 
 // use switch to set game state

@@ -1,4 +1,4 @@
-// 想要设计成统一处理变化数据并传输给UART的模块
+// 想要设计成统�?处理变化数据并传输给UART的模�?
 
 module SendData(
     input [7:0] data_target,  // data of target machine
@@ -9,9 +9,6 @@ module SendData(
     output reg [7:0] data_send = 0,   // data to send to custom
     output reg [7:0] led = 0
 );
-
-parameter SEND_NULL = 2'b00 , SEND_GAMESTATE = 2'b01 , SEND_TARGET = 2'b10 , SEND_OPERATE = 2'b11;
-
 
 reg [1:0] send_state = SEND_GAMESTATE;
 reg [1:0] next_send_state = SEND_TARGET;
