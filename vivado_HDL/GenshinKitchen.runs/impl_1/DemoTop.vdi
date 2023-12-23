@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 23 19:14:10 2023
+# Process ID: 13888
+# Current directory: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/impl_1
+# Command line: vivado.exe -log DemoTop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DemoTop.tcl -notrace
+# Log file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/impl_1/DemoTop.vdi
+# Journal file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DemoTop.tcl -notrace
+Command: link_design -top DemoTop -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram.dcp' for cell 'script_mem_module/ram_module'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal res cannot be placed on R11 (IOB_X0Y49) because the pad is already occupied by terminal button[4] possibly due to user constraint [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc:76]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal btn_step cannot be placed on R17 (IOB_X0Y25) because the pad is already occupied by terminal button[1] possibly due to user constraint [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc:77]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal debug_mode cannot be placed on P5 (IOB_X1Y23) because the pad is already occupied by terminal switches[7] possibly due to user constraint [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc:78]
+Finished Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+8 Infos, 0 Warnings, 3 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 609.387 ; gain = 316.102
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sd_script/dataIn_bits_unscript has multiple drivers: sd/data_send_reg[0]/Q, and sd_script/data_send_reg[0]/Q.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.237 . Memory (MB): peak = 636.145 ; gain = 26.758
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 0 Warnings, 3 Critical Warnings and 2 Errors encountered.
+opt_design failed
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 23 19:14:19 2023...

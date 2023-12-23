@@ -42,6 +42,7 @@ parameter TRASH_BIN_20 = 20;
 //parameter for script
 
 //jump script
+parameter  enabled = 1'b1,disabled = 1'b0,action_code = 3'b001,jump_code =  3'b010,wait_code = 3'b011,game_code = 3'b100;
 
 parameter if_mode = 2'b00, ifn_mode = 2'b01,
           player_ready = 3'd0, player_hasitem = 3'd1,

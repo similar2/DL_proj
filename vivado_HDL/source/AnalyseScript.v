@@ -19,7 +19,6 @@ module AnalyseScript(
     output [7:0]data_target_script,
     output [7:0]data_game_state_script
 );
-parameter  enabled = 1'b1,disabled = 1'b0,action_code = 3'b001,jump_code =  3'b010,wait_code = 3'b011,game_code = 3'b100;
 //debounced button sig
 wire next_step;
 //define feedback sig
@@ -32,14 +31,14 @@ wire next_step;
 // data[5] - Set(1) when target machine has item, otherwise Reset(0).
 wire [7:0] feedback_sig = {2'b00, sig_machine, sig_processing, sig_hand, sig_front, 2'b01};
 
-
+reg [7:0]next_pc;//next pc address 
 //divide 16 bit scirpt to 4 parts
 wire [7:0] i_num;assign i_num = script[15:8];
 wire [2:0] i_sign;assign i_sign = script[7:5];
 wire [1:0] func;assign func = script[4:3];
 wire [2:0] op_code;assign op_code = script[2:0];
 //choose which module to use
-wire en_action = disabled,en_jump =disabled,en_wait =disabled,en_game=disabled;
+reg en_action = disabled,en_jump =disabled,en_wait =disabled,en_game=disabled;
 
 wire [7:0]data_action;
 wire [7:0]data_jump;
@@ -53,9 +52,11 @@ wire [4:0]target_machine;
 wire [7:0]target_data;
 wire [7:0] operation_data;
 //wire for jump
-reg [7:0]next_pc;//next pc address after jumping
+wire is_ready_jump;
+wire [7:0]next_pc_jump;//next pc address after jumping
+
 //wire for wait
-wire is_ready;
+wire is_ready_wait;
 //wire for game state change 
 wire [7:0] game_state;
 //divide control data to 5 parts
@@ -87,14 +88,17 @@ Debouncer db(
         .uart_clk(clk),
         .data_operate(data_operate_script)
     );
-
+/*if u finish jump module rather than other module, next_pc
+ should be the value jump provided (next_pc_jump)
+ */
 jump jump(
     .en(en_jump),
     .clk(clk),
     .i_num(i_num),
     .i_sign(i_sign),
-    .next_pc(next_pc),
+    .next_pc(next_pc_jump),
     .func(func),
+    .is_ready(is_ready_jump),
     .feedback_sig(feedback_sig),
     .current_pc(pc)
 );
@@ -114,8 +118,8 @@ Wait wt(
         .i_sign(i_sign),
         .millisecond_clk(millisecond_clk),
         .clk(clk),
-        .feedbak_sig(feedback_sig),
-        .is_ready(is_ready)
+        .feedback_sig(feedback_sig),
+        .is_ready(is_ready_wait)
     );
 
 game_state state(
@@ -133,10 +137,24 @@ game_state state(
         end
         else
         if (debug_mode) begin
+                if (is_ready_jump) begin
+                    next_pc<=next_pc_jump;
+                end else 
               next_pc<=next_pc+2'd2;
         end
     end
-    always @(posedge clk ) begin
+
+    always @(posedge clk) begin
         pc<=next_pc;
+    end
+    
+    always @(op_code) begin
+        case (op_code)
+           action_code :en_action<=enabled;
+           jump_code:en_jump<=enabled;
+           wait_code:en_wait<=enabled;
+           game_code:en_game<=enabled; 
+            default: begin en_action<=disabled; en_game<=disabled;en_jump<=disabled;en_wait<=disabled; end
+        endcase
     end
 endmodule

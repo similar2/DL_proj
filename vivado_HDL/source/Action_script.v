@@ -3,12 +3,12 @@ module action(
     input [7:0] i_num,
     input [1:0] func,
     input clk,
-    input [7:0] feedbak_sig,//current state in the kitchen
+    input [7:0] feedback_sig,//current state in the kitchen
     output [4:0] control_data //control when to do the movement i.e. get put etc
 );
     // Define parameters
 
-wire move_ready = feedbak_sig[2]; //whether the chef is in front of the target machine
+wire move_ready = feedback_sig[2]; //whether the chef is in front of the target machine
     // Logic for enabling wires based on func
     //when the chef is in front of the target machine, u can continue ur movement
     wire get_en = (en == ENABLED)&&(move_ready == ENABLED) && (func == GET);

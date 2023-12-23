@@ -6,7 +6,8 @@ module jump(
     input clk,
     input [7:0] current_pc,
     input [7:0] feedback_sig,  // Current state in the kitchen
-    output reg [7:0] next_pc  // Changed to reg since we're assigning it in an always block
+    output reg [7:0] next_pc , // Changed to reg since we're assigning it in an always block
+output reg is_ready// turns to 1 if finish and 
 );
 
 // Operation modes and their format:
@@ -41,13 +42,17 @@ always @(posedge clk) begin
         endcase
     end
 end
+always @(posedge en) begin
+    is_ready<= 1'b0;
+end
 
 always @(posedge clk) begin
     if (en) begin
         next_pc <= current_pc + (2'd2 * i_num) * (signal ^ mode);
+        is_ready <= 1'b1;
     end else begin
-        next_pc <= current_pc;  // Maintain current PC if not enabled
+        next_pc <= current_pc;
+        is_ready <= 1'b0;
     end
 end
-
 endmodule
