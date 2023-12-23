@@ -157,6 +157,7 @@ wire dataIn_ready_unscript;
     
     // receive feedback data of UART
     ReceiveUnScriptData rd(
+      .script_mode(script_mode),
       .data_valid(dataOut_valid),
       .data_receive(dataOut_bits),
       .uart_clk(uart_clk_16),
