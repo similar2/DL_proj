@@ -8,9 +8,7 @@ module DemoTop(
     output [7:0] led2,
 //two buttons for script 
 
-    input res,//reset pc connected to R11
-    input btn_step,//move forward pc  connected to R17
-    input debug_mode,//a switch for script connected to P5 
+
     input clk,
     input rx,
     output tx
@@ -32,7 +30,7 @@ module DemoTop(
         wire [15:0] script;
 // The wire above is useful~
 
-        wire uart_reset = 1'b0; // 没想好是否需要复�???,应该不用
+        wire uart_reset = 1'b0; // 没想好是否需要复�????,应该不用
 wire dataIn_ready_script;
 wire dataIn_bits_script;
 wire dataIn_bits_unscript;
@@ -174,7 +172,9 @@ wire  [7:0]data_target_script;
 wire  [7:0]data_game_state_script;
 wire  [7:0]data_operate_script;
 wire  [7:0]data_operate_verified_script;
-
+    wire  res = button[4];//reset pc connected to R11
+wire  btn_step = button[1];//move forward pc  connected to R17
+wire  debug_mode = switches[7];//a switch for script connected to P5 
 AnalyseScript AS(
   .script(script),
   .clk(uart_clk_16),
@@ -198,8 +198,8 @@ SendData sd_script(
       .data_target(data_target_script),
       .data_game_state(data_game_state_script),
       .uart_clk(uart_clk_16),
-      .data_ready(dataIn_ready_unscript),
-      .data_send(dataIn_bits_unscript)
+      .data_ready(dataIn_ready_script),
+      .data_send(dataIn_bits_script)
 );    
     // verified operate data if available
     VerifyIfOperateDataCorrect vod_script(

@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Dec 23 19:13:31 2023
-# Process ID: 44164
+# Start of session at: Sat Dec 23 19:37:20 2023
+# Process ID: 36112
 # Current directory: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1
 # Command line: vivado.exe -log DemoTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
 # Log file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.vds
@@ -15,7 +15,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 44780 
+INFO: Helper process launched with PID 32400 
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/Define.v:2]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/Define.v:3]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/Define.v:6]
@@ -56,15 +56,15 @@ WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K m
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/Define.v:84]
 WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/TravelerTargetMachine.v:17]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 415.297 ; gain = 111.738
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 414.770 ; gain = 111.477
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DemoTop' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:3]
 INFO: [Synth 8-638] synthesizing module 'mux_script_unscript' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/MUX_script.v:1]
 INFO: [Synth 8-256] done synthesizing module 'mux_script_unscript' (1#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/MUX_script.v:1]
-WARNING: [Synth 8-689] width (8) of port connection 'dataIn_bits' does not match port width (1) of module 'mux_script_unscript' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:47]
+WARNING: [Synth 8-689] width (8) of port connection 'dataIn_bits' does not match port width (1) of module 'mux_script_unscript' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:45]
 INFO: [Synth 8-638] synthesizing module 'ScriptMem' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/ScriptMem.v:6]
-INFO: [Synth 8-638] synthesizing module 'inst_ram' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-44164-Miller/realtime/inst_ram_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'inst_ram' (2#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-44164-Miller/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'inst_ram' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-36112-Miller/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'inst_ram' (2#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-36112-Miller/realtime/inst_ram_stub.v:6]
 WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (7) of module 'inst_ram' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/ScriptMem.v:34]
 WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (8) of module 'inst_ram' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/ScriptMem.v:37]
 INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (3#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/ScriptMem.v:6]
@@ -78,7 +78,7 @@ INFO: [Synth 8-638] synthesizing module 'DivideClock' [E:/project/DigitalDesign/
 INFO: [Synth 8-256] done synthesizing module 'DivideClock' (7#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DivideClock.v:2]
 INFO: [Synth 8-638] synthesizing module 'GameStateChange' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/GameStateChange.v:2]
 INFO: [Synth 8-256] done synthesizing module 'GameStateChange' (8#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/GameStateChange.v:2]
-WARNING: [Synth 8-350] instance 'gsc' of module 'GameStateChange' requires 5 connections, but only 4 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:105]
+WARNING: [Synth 8-350] instance 'gsc' of module 'GameStateChange' requires 5 connections, but only 4 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:103]
 INFO: [Synth 8-638] synthesizing module 'TravelerOperateMachine' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/TravelerOperateMachine.v:3]
 INFO: [Synth 8-256] done synthesizing module 'TravelerOperateMachine' (9#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/TravelerOperateMachine.v:3]
 INFO: [Synth 8-638] synthesizing module 'VerifyIfOperateDataCorrect' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/VerifyOperateData.v:1]
@@ -91,15 +91,15 @@ INFO: [Synth 8-256] done synthesizing module 'VerifyIfOperateDataCorrect' (10#1)
 INFO: [Synth 8-638] synthesizing module 'TravelerTargetMachine' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/TravelerTargetMachine.v:2]
 WARNING: [Synth 8-567] referenced signal 'select_switches' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/TravelerTargetMachine.v:12]
 INFO: [Synth 8-256] done synthesizing module 'TravelerTargetMachine' (11#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/TravelerTargetMachine.v:2]
-WARNING: [Synth 8-689] width (6) of port connection 'select_switches' does not match port width (5) of module 'TravelerTargetMachine' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:140]
+WARNING: [Synth 8-689] width (6) of port connection 'select_switches' does not match port width (5) of module 'TravelerTargetMachine' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:138]
 INFO: [Synth 8-638] synthesizing module 'SendData' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:3]
 INFO: [Synth 8-155] case statement is not full and has no default [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:23]
 WARNING: [Synth 8-567] referenced signal 'data_game_state' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:22]
 WARNING: [Synth 8-567] referenced signal 'data_target' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:22]
 WARNING: [Synth 8-567] referenced signal 'data_operate_verified' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:22]
 INFO: [Synth 8-256] done synthesizing module 'SendData' (12#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:3]
-WARNING: [Synth 8-689] width (1) of port connection 'data_send' does not match port width (8) of module 'SendData' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:153]
-WARNING: [Synth 8-350] instance 'sd' of module 'SendData' requires 7 connections, but only 6 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:146]
+WARNING: [Synth 8-689] width (1) of port connection 'data_send' does not match port width (8) of module 'SendData' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:151]
+WARNING: [Synth 8-350] instance 'sd' of module 'SendData' requires 7 connections, but only 6 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:144]
 INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/ReceiveUnScriptData.v:1]
 INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (13#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/ReceiveUnScriptData.v:1]
 INFO: [Synth 8-638] synthesizing module 'AnalyseScript' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/AnalyseScript.v:5]
@@ -124,9 +124,8 @@ WARNING: [Synth 8-3848] Net target_machine in module/entity AnalyseScript does n
 INFO: [Synth 8-256] done synthesizing module 'AnalyseScript' (19#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/AnalyseScript.v:5]
 WARNING: [Synth 8-689] width (1) of port connection 'data_send' does not match port width (8) of module 'SendData' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:202]
 WARNING: [Synth 8-350] instance 'sd_script' of module 'SendData' requires 7 connections, but only 6 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:196]
-WARNING: [Synth 8-3848] Net dataIn_ready_script in module/entity DemoTop does not have driver. [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:36]
-WARNING: [Synth 8-3848] Net dataIn_bits_script in module/entity DemoTop does not have driver. [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:37]
-WARNING: [Synth 8-3848] Net dataIn_ready_unscript in module/entity DemoTop does not have driver. [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:39]
+WARNING: [Synth 8-3848] Net dataIn_ready_script in module/entity DemoTop does not have driver. [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:34]
+WARNING: [Synth 8-3848] Net dataIn_ready_unscript in module/entity DemoTop does not have driver. [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:37]
 INFO: [Synth 8-256] done synthesizing module 'DemoTop' (20#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:3]
 WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port uart_clk
 WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[7]
@@ -178,7 +177,7 @@ WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
 WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
 WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 449.836 ; gain = 146.277
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 450.203 ; gain = 146.910
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-3352] multi-driven net led2[7] with 1st driver pin 'GND' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/VerifyOperateData.v:1]
 CRITICAL WARNING: [Synth 8-3352] multi-driven net led2[7] with 2nd driver pin 'GND' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/VerifyOperateData.v:1]
@@ -208,19 +207,18 @@ WARNING: [Synth 8-3295] tying undriven pin TTM:select_switches[3] to constant 0 
 WARNING: [Synth 8-3295] tying undriven pin TTM:select_switches[2] to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/AnalyseScript.v:75]
 WARNING: [Synth 8-3295] tying undriven pin TTM:select_switches[1] to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/AnalyseScript.v:75]
 WARNING: [Synth 8-3295] tying undriven pin TTM:select_switches[0] to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/AnalyseScript.v:75]
-WARNING: [Synth 8-3295] tying undriven pin mux:dataIn_ready_script to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:40]
-WARNING: [Synth 8-3295] tying undriven pin mux:dataIn_bits_script to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:40]
-WARNING: [Synth 8-3295] tying undriven pin mux:dataIn_ready_unscript to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:40]
+WARNING: [Synth 8-3295] tying undriven pin mux:dataIn_ready_script to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:38]
+WARNING: [Synth 8-3295] tying undriven pin mux:dataIn_ready_unscript to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/DemoTop.v:38]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 449.836 ; gain = 146.277
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 450.203 ; gain = 146.910
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-44164-Miller/dcp2/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
-Finished Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-44164-Miller/dcp2/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-36112-Miller/dcp2/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
+Finished Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/.Xil/Vivado-36112-Miller/dcp2/inst_ram_in_context.xdc] for cell 'script_mem_module/ram_module'
 Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
 Finished Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
@@ -230,23 +228,23 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 785.289 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 786.492 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 785.289 ; gain = 481.730
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 786.492 ; gain = 483.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 785.289 ; gain = 481.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 786.492 ; gain = 483.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for script_mem_module/ram_module. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 785.289 ; gain = 481.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 786.492 ; gain = 483.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "script_size" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/ScriptMem.v:19]
@@ -275,7 +273,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'en_jump_reg' [E:/project/Di
 WARNING: [Synth 8-327] inferring latch for variable 'en_action_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/AnalyseScript.v:106]
 WARNING: [Synth 8-327] inferring latch for variable 'en_wait_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/AnalyseScript.v:115]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 785.289 ; gain = 481.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 786.492 ; gain = 483.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -526,11 +524,6 @@ WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
 WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_module/tx/data_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/TOM/prev_buttons_reg[4] )
-INFO: [Synth 8-3886] merging instance 'tom/data_operate_reg[1]' (FDE) to 'tom/data_operate_reg[7]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tom/data_operate_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tom/data_operate_reg[0] )
-INFO: [Synth 8-3886] merging instance 'ttm/data_target_reg[1]' (LD) to 'ttm/data_target_reg[0]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ttm/data_target_reg[0] )
 INFO: [Synth 8-3886] merging instance 'AS/TTM/data_target_reg[4]' (LD) to 'AS/TTM/data_target_reg[2]'
 INFO: [Synth 8-3886] merging instance 'AS/TTM/data_target_reg[7]' (LD) to 'AS/TTM/data_target_reg[2]'
 INFO: [Synth 8-3886] merging instance 'AS/TTM/data_target_reg[2]' (LD) to 'AS/TTM/data_target_reg[3]'
@@ -544,6 +537,11 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/TOM/d
 INFO: [Synth 8-3886] merging instance 'AS/TTM/data_target_reg[1]' (LD) to 'AS/TTM/data_target_reg[0]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/TTM/data_target_reg[0] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/state/game_state_reg[0] )
+INFO: [Synth 8-3886] merging instance 'tom/data_operate_reg[1]' (FDE) to 'tom/data_operate_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tom/data_operate_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tom/data_operate_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ttm/data_target_reg[1]' (LD) to 'ttm/data_target_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ttm/data_target_reg[0] )
 INFO: [Synth 8-3886] merging instance 'uart_module/tx/data_reg[6]' (FDE) to 'uart_module/tx/data_reg[5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_module/tx/data_reg[5] )
 INFO: [Synth 8-3886] merging instance 'uart_module/tx/data_reg[5]' (FDE) to 'uart_module/tx/data_reg[4]'
@@ -677,7 +675,7 @@ WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[12]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[13]) is unused and will be removed from module DemoTop.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 785.289 ; gain = 481.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 786.492 ; gain = 483.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -689,13 +687,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 785.289 ; gain = 481.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 786.492 ; gain = 483.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 785.289 ; gain = 481.730
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 786.492 ; gain = 483.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -707,7 +705,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -731,22 +729,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dataIn_bits_unscript with 1st driver pin 'sd_script/data_send_reg[0]/Q' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:25]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dataIn_bits_unscript with 2nd driver pin 'sd/data_send_reg[0]/Q' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/source/SendData.v:25]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -758,25 +754,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -798,10 +794,10 @@ Report Cell Usage:
 |3     |CARRY4   |     1|
 |4     |LUT1     |     5|
 |5     |LUT2     |    18|
-|6     |LUT3     |     7|
+|6     |LUT3     |     8|
 |7     |LUT4     |    31|
-|8     |LUT5     |     8|
-|9     |LUT6     |     7|
+|8     |LUT5     |    10|
+|9     |LUT6     |     5|
 |10    |FDRE     |    75|
 |11    |FDSE     |     1|
 |12    |LD       |     6|
@@ -814,22 +810,22 @@ Report Instance Areas:
 +------+--------------------+--------------------+------+
 |      |Instance            |Module              |Cells |
 +------+--------------------+--------------------+------+
-|1     |top                 |                    |   188|
+|1     |top                 |                    |   189|
 |2     |  dc                |DivideClock         |    26|
 |3     |  rd                |ReceiveUnScriptData |     5|
 |4     |  script_mem_module |ScriptMem           |    49|
 |5     |  sd                |SendData            |     8|
-|6     |  sd_script         |SendData_0          |     8|
+|6     |  sd_script         |SendData_0          |     9|
 |7     |  uart_module       |UART                |    71|
 |8     |    rx              |UARTReceiver        |    38|
 |9     |    tx              |UARTTransmitter     |    12|
 +------+--------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 800.602 ; gain = 497.309
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 23 critical warnings and 332 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 804.438 ; gain = 165.426
-Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 804.438 ; gain = 500.879
+Synthesis finished with 0 errors, 21 critical warnings and 332 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 800.602 ; gain = 161.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 800.602 ; gain = 497.309
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -840,12 +836,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-104 Infos, 268 Warnings, 39 Critical Warnings and 0 Errors encountered.
+104 Infos, 266 Warnings, 37 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 804.438 ; gain = 512.391
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 801.473 ; gain = 509.691
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
 INFO: [Common 17-1381] The checkpoint 'E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 804.438 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 23 19:13:56 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 801.473 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 23 19:37:47 2023...

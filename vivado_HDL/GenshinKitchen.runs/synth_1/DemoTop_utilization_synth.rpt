@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sat Dec 23 19:13:56 2023
+| Date         : Sat Dec 23 19:37:47 2023
 | Host         : Miller running 64-bit major release  (build 9200)
 | Command      : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
 | Design       : DemoTop
@@ -150,10 +150,10 @@ Table of Contents
 | LUT4     |   31 |                 LUT |
 | LUT2     |   18 |                 LUT |
 | OBUF     |   14 |                  IO |
-| LUT5     |    8 |                 LUT |
-| LUT6     |    7 |                 LUT |
-| LUT3     |    7 |                 LUT |
+| LUT5     |   10 |                 LUT |
+| LUT3     |    8 |                 LUT |
 | LDCE     |    6 |        Flop & Latch |
+| LUT6     |    5 |                 LUT |
 | LUT1     |    5 |                 LUT |
 | OBUFT    |    3 |                  IO |
 | IBUF     |    2 |                  IO |

@@ -1,0 +1,79 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sat Dec 23 19:38:15 2023
+| Host         : Miller running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DemoTop_control_sets_placed.rpt
+| Design       : DemoTop
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              14 |            4 |
+| Yes          | No                    | No                     |              25 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              13 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+------------------------------------+-----------------------------------+------------------+----------------+
+|              Clock Signal              |            Enable Signal           |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------------------------------+------------------------------------+-----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                         |                                    |                                   |                1 |              1 |
+|  uart_clk_16_BUFG                      | uart_module/dataOut_valid          | uart_module/led_mode_reg          |                1 |              1 |
+|  sd/data_send_reg[0]_i_2_n_0           |                                    |                                   |                1 |              3 |
+|  sd_script/data_send_reg[0]_i_2__0_n_0 |                                    |                                   |                1 |              3 |
+|  uart_clk_16_BUFG                      |                                    | uart_module/rx/spacing[3]_i_1_n_0 |                1 |              4 |
+|  uart_clk_16_BUFG                      | uart_module/rx/state[3]_i_1_n_0    |                                   |                1 |              4 |
+|  uart_clk_16_BUFG                      | uart_module/dataOut_valid          | uart_module/feedback_leds_reg[0]  |                1 |              4 |
+|  uart_clk_16_BUFG                      | uart_module/tx/state[3]_i_1__0_n_0 |                                   |                1 |              5 |
+|  uart_clk_16_BUFG                      | uart_module/rx/tick                |                                   |                1 |              8 |
+|  uart_clk_16_BUFG                      | uart_module/script_cnt             | uart_module/script_size           |                3 |              8 |
+|  uart_clk_16_BUFG                      | uart_module/script_size            |                                   |                2 |              8 |
+|  clk_IBUF_BUFG                         |                                    | dc/uart_clk_cnt[9]_i_1_n_0        |                3 |             10 |
+|  uart_clk_16_BUFG                      |                                    |                                   |                5 |             23 |
++----------------------------------------+------------------------------------+-----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 3      |                     2 |
+| 4      |                     3 |
+| 5      |                     1 |
+| 8      |                     3 |
+| 10     |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+
