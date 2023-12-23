@@ -32,7 +32,7 @@ module DemoTop(
         wire [15:0] script;
 // The wire above is useful~
 
-        wire uart_reset = 1'b0; // 没想好是否需要复�???,应该不用
+        wire uart_reset = 1'b0; // 没想好是否需要复�???,应该不用
 wire dataIn_ready_script;
 wire dataIn_bits_script;
 wire dataIn_bits_unscript;
