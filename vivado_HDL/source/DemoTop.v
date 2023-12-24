@@ -147,19 +147,6 @@ reg  en_manual = 0;
       .data_send(dataIn_bits)
     );    
     // receive feedback data of UART
-    // ReceiveUnScriptData rd(
-    //   .data_valid(dataOut_valid),
-    //   .data_receive(dataOut_bits),
-    //   .uart_clk(uart_clk_16),
-    //   .clk(clk),
-    //   .sig_front(sig_front),
-    //   .sig_hand(sig_hand),
-    //   .sig_processing(sig_processing),
-    //   .sig_machine(sig_machine),
-    //   .feedback_leds(led[3:0]),    // right - 4 led show data
-    //   .led_mode(led[7])           // left - 1 led show data
-
-    // );
         ReceiveUnScriptData rd(
       .data_valid(dataOut_valid),
       .data_receive(dataOut_bits),
