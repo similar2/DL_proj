@@ -31,10 +31,10 @@ module DemoTop(
 // The wire above is useful~
 reg  mode_interpret_script = 0;//set to 1 when interpreting scripts and 0 when manual control or loading scripts
 wire [7:0]script_num ;
-    wire uart_reset = 1'b0; // 没想好是否需要复�????????,应该不用
+    wire uart_reset = 1'b0; // 没想好是否需要复�?????????,应该不用
 //we control the datain_bits through the enable sig of senddata module
-wire en_script = 1'b1;
-wire en_manual = 1'b0;
+reg  en_script = 1;
+reg  en_manual = 0; 
 //wire en_script = mode_interpret_script;
 //wire en_manual = mode_interpret_script;
 
@@ -125,7 +125,7 @@ wire en_manual = 1'b0;
       .sig_machine(sig_machine),
       .data_operate_verified(data_operate_verified),
       .data_cusine_finish_num(cusine_finish_num),
-      .test_led(led2)
+      .test_led()
     );
 
     // set data of target machine
@@ -145,23 +145,22 @@ wire en_manual = 1'b0;
       .uart_clk(uart_clk_16),
       .data_ready(dataIn_ready),
       .data_send(dataIn_bits)
-    );
-    // // send data to UART module
-    // SendData sd(
-    //   // .data_operate_verified(data_operate),
-    //   .data_operate_verified(data_operate_verified),
-    //   .data_target(data_target),
-    //   .data_game_state(data_game_state),
-    //   .uart_clk(uart_clk_16),
-    //   .data_ready(dataIn_ready_unscript),
-    //   .data_send(dataIn_bits_unscript)
-    // );
-
-
-
-    
+    );    
     // receive feedback data of UART
-    ReceiveUnScriptData rd(
+    // ReceiveUnScriptData rd(
+    //   .data_valid(dataOut_valid),
+    //   .data_receive(dataOut_bits),
+    //   .uart_clk(uart_clk_16),
+    //   .clk(clk),
+    //   .sig_front(sig_front),
+    //   .sig_hand(sig_hand),
+    //   .sig_processing(sig_processing),
+    //   .sig_machine(sig_machine),
+    //   .feedback_leds(led[3:0]),    // right - 4 led show data
+    //   .led_mode(led[7])           // left - 1 led show data
+
+    // );
+        ReceiveUnScriptData rd(
       .data_valid(dataOut_valid),
       .data_receive(dataOut_bits),
       .uart_clk(uart_clk_16),
@@ -170,8 +169,8 @@ wire en_manual = 1'b0;
       .sig_hand(sig_hand),
       .sig_processing(sig_processing),
       .sig_machine(sig_machine),
-      .feedback_leds(led[3:0]),    // right - 4 led show data
-      .led_mode(led[7])           // left - 1 led show data
+      .feedback_leds(),    // right - 4 led show data
+      .led_mode()           // left - 1 led show data
 
     );
     
@@ -194,45 +193,24 @@ AnalyseScript AS(
   .btn_step(btn_step),//use a button to move pc forward
   .millisecond_clk(millisecond_clk),
   .pc(pc),
-  .debug_mode(1'b1),
+  .debug_mode(debug_mode),
  .data_operate_script(data_operate_script),
    .data_target_script(data_target_script),
-    .data_game_state_script(data_game_state_script)
+    .data_game_state_script(data_game_state_script),
+    .led2(led)
 );
-// AnalyseScript AS(
-//   .script(script),
-//   .clk(uart_clk_16),
-//   .res(res),//pc reset sig
-//   .sig_front(sig_front),
-//   .sig_hand(sig_hand),
-//   .sig_machine(sig_machine),
-//   .sig_processing(sig_processing),
-//   .btn_step(btn_step),//use a button to move pc forward
-//   .millisecond_clk(millisecond_clk),
-//   .pc(pc),
-//   .debug_mode(debug_mode),
-//  .data_operate_script(data_operate_script),
-//    .data_target_script(data_target_script),
-//     .data_game_state_script(data_game_state_script)
-// );
+
 //wires for sccript mode
 SendData sd_script(
   .enable(en_script),
-      .data_operate_verified(data_operate_script),
+      .data_operate_verified(data_operate_verified_script),
       .data_target(data_target_script),
       .data_game_state(data_game_state_script),
       .uart_clk(uart_clk_16),
       .data_ready(dataIn_ready),
       .data_send(dataIn_bits)
 );    
-// SendData sd_script(
-//       .data_operate_verified(data_operate_verified_script),
-//       .data_target(data_target_script),
-//       .data_game_state(data_game_state_script),
-//       .uart_clk(uart_clk_16),
-//       .data_ready(dataIn_ready_script),
-//       .data_send(dataIn_bits_script)
-// );    
+
     // verified operate data if available
     VerifyIfOperateDataCorrect vod_script(
       .uart_clk(uart_clk_16),
@@ -245,7 +223,7 @@ SendData sd_script(
       .sig_machine(sig_machine),
       .data_operate_verified(data_operate_verified_script),
       .data_cusine_finish_num(cusine_finish_num),
-      .test_led(led2)
+      .test_led()
     );
 
 endmodule

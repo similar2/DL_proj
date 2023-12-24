@@ -15,13 +15,15 @@ module AnalyseScript(
     input millisecond_clk,//used by wait     
     input debug_mode,//if this is 1 then we use a button to force pc move forward connected to a switch
     output reg [7:0]pc = 8'b0000_0000,
+        output reg [7:0] led2,
     output  [7:0] data_operate_script,
     output [7:0]data_target_script,
     output [7:0]data_game_state_script
 );
-//debounced button sig
-wire next_step;
+
+wire next_step;//debounced button sig
 wire rst;//debounced reset sig
+
 //define feedback sig
 //data[7:6]	data[5:2]	data[1:0]	Description
 //00	   xxxx	         01	        Traveler targeting on specific machine with ID xxxxxx.
@@ -48,7 +50,7 @@ wire [7:0]data_game;
 //wires for action module
 wire [3:0]control_data ;//output of action module consist of 4 enable signal for operate machine
 wire sig_move,sig_throw,sig_get,sig_interact,sig_put;
-wire [7:0]target_data;
+reg [7:0]target_data;
 wire [7:0] operation_data;
 //wire for jump
 wire is_ready_jump;
@@ -106,16 +108,15 @@ jump jump(
     .feedback_sig(feedback_sig),
     .current_pc(pc)
 );
-    action act (
-        .en(en_action),
-        .i_num(i_num),
-        .func(func),
-        .clk(clk),
-        .rst(rst),
-        .move_ready(sig_front),
-        .target_machine(target_data),
-        .control_data(control_data)
-    );
+     action act (
+         .en(en_action),
+         .i_num(i_num),
+         .func(func),
+         .clk(clk),
+         .rst(rst),
+         .move_ready(sig_front),
+         .control_data(control_data)
+     );
     
 Wait wt(
         .en(en_wait),
@@ -150,10 +151,12 @@ game_state state(
        end
    end
 
-    
+    always @(posedge clk ) begin
+        led2<={script[7:0]};
+    end
     always @(op_code) begin
         case (op_code)
-           action_code :begin en_action<=enabled; en_game<=disabled;en_jump<=disabled;en_wait<=disabled; end
+           action_code :begin en_action<=enabled; en_game<=disabled;en_jump<=disabled;en_wait<=disabled;target_data<=i_num; end
            jump_code:begin en_jump<=enabled;en_action<=disabled;en_game<=disabled;en_wait<=disabled; end
            wait_code:begin en_wait<=enabled;en_action<=disabled; en_game<=disabled;en_jump<=disabled;end
            game_code:begin en_game<=enabled; en_action<=disabled; en_jump<=disabled;en_wait<=disabled; end
