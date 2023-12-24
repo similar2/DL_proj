@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sat Dec 23 19:38:15 2023
+| Date         : Sun Dec 24 15:03:38 2023
 | Host         : Miller running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file DemoTop_control_sets_placed.rpt
 | Design       : DemoTop
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    13 |
-| Unused register locations in slices containing registers |    46 |
+| Number of unique control sets                            |    43 |
+| Unused register locations in slices containing registers |   233 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,47 +33,79 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              30 |            8 |
-| No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              14 |            4 |
-| Yes          | No                    | No                     |              25 |            5 |
+| No           | No                    | No                     |              35 |           12 |
+| No           | No                    | Yes                    |              22 |           17 |
+| No           | Yes                   | No                     |             119 |           37 |
+| Yes          | No                    | No                     |              50 |           14 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              13 |            5 |
+| Yes          | Yes                   | No                     |               5 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------+------------------------------------+-----------------------------------+------------------+----------------+
-|              Clock Signal              |            Enable Signal           |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+----------------------------------------+------------------------------------+-----------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG                         |                                    |                                   |                1 |              1 |
-|  uart_clk_16_BUFG                      | uart_module/dataOut_valid          | uart_module/led_mode_reg          |                1 |              1 |
-|  sd/data_send_reg[0]_i_2_n_0           |                                    |                                   |                1 |              3 |
-|  sd_script/data_send_reg[0]_i_2__0_n_0 |                                    |                                   |                1 |              3 |
-|  uart_clk_16_BUFG                      |                                    | uart_module/rx/spacing[3]_i_1_n_0 |                1 |              4 |
-|  uart_clk_16_BUFG                      | uart_module/rx/state[3]_i_1_n_0    |                                   |                1 |              4 |
-|  uart_clk_16_BUFG                      | uart_module/dataOut_valid          | uart_module/feedback_leds_reg[0]  |                1 |              4 |
-|  uart_clk_16_BUFG                      | uart_module/tx/state[3]_i_1__0_n_0 |                                   |                1 |              5 |
-|  uart_clk_16_BUFG                      | uart_module/rx/tick                |                                   |                1 |              8 |
-|  uart_clk_16_BUFG                      | uart_module/script_cnt             | uart_module/script_size           |                3 |              8 |
-|  uart_clk_16_BUFG                      | uart_module/script_size            |                                   |                2 |              8 |
-|  clk_IBUF_BUFG                         |                                    | dc/uart_clk_cnt[9]_i_1_n_0        |                3 |             10 |
-|  uart_clk_16_BUFG                      |                                    |                                   |                5 |             23 |
-+----------------------------------------+------------------------------------+-----------------------------------+------------------+----------------+
++-------------------------------------+------------------------------------+------------------------------------+------------------+----------------+
+|             Clock Signal            |            Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-------------------------------------+------------------------------------+------------------------------------+------------------+----------------+
+|  script_mem_module/next_pc_reg[6]_P |                                    | script_mem_module/next_pc_reg[6]_C |                1 |              1 |
+|  script_mem_module/next_pc_reg[2]_P |                                    | script_mem_module/next_pc_reg[2]_C |                1 |              1 |
+|  script_mem_module/next_pc_reg[3]_P |                                    | script_mem_module/next_pc_reg[3]_C |                1 |              1 |
+|  script_mem_module/next_pc_reg[4]_P |                                    | script_mem_module/next_pc_reg[4]_C |                1 |              1 |
+|  script_mem_module/next_pc_reg[5]_P |                                    | script_mem_module/next_pc_reg[5]_C |                1 |              1 |
+|  btn_output_reg_i_2_n_0             | AS/db_rst/btn_output_i_1__0_n_0    |                                    |                1 |              1 |
+|  script_mem_module/next_pc_reg[1]_P |                                    | script_mem_module/next_pc_reg[1]_C |                1 |              1 |
+|  script_mem_module/next_pc_reg[0]_P |                                    | script_mem_module/next_pc_reg[0]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[0]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[3]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[2]_C |                1 |              1 |
+|  btn_output_reg_i_2_n_0             | AS/db_step/btn_output_i_1_n_0      |                                    |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[4]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[1]_P |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[0]_P |                1 |              1 |
+|  uart_clk_16_BUFG                   | uart_module/dataOut_valid          | uart_module/led_mode1_out          |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[5]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[1]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[2]_P |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[3]_P |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[4]_P |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/en_jump          |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[5]_P |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[6]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[6]_P |                1 |              1 |
+|  clk_IBUF_BUFG                      |                                    |                                    |                2 |              2 |
+|  uart_clk_16_BUFG                   | uart_module/rx/state[3]_i_1_n_0    |                                    |                1 |              4 |
+|  uart_clk_16_BUFG                   |                                    | uart_module/rx/spacing[3]_i_1_n_0  |                2 |              4 |
+|  uart_clk_16_BUFG                   | AS/TOM/prev_buttons[3]_i_1_n_0     |                                    |                1 |              4 |
+|  uart_clk_16_BUFG                   | AS/TOM/data_operate[6]_i_1_n_0     |                                    |                1 |              4 |
+|  uart_clk_16_BUFG                   | uart_module/dataOut_valid          | uart_module/feedback_leds_reg[0]   |                1 |              4 |
+|  uart_clk_16_BUFG                   |                                    | sd_script/data_send[6]_i_1_n_0     |                1 |              5 |
+|  AS/db_step/btn_output              |                                    | AS/db_rst/AR[0]                    |                2 |              7 |
+|  uart_clk_16_BUFG                   | uart_module/rx/tick                |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | uart_module/E[0]                   |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | uart_module/script_cnt_reg[7][0]   |                                    |                4 |              8 |
+|  clk_IBUF_BUFG                      |                                    | dc/uart_clk_cnt[9]_i_1_n_0         |                3 |             10 |
+|  uart_clk_16_BUFG                   | uart_module/tx/state[3]_i_1__0_n_0 |                                    |                2 |             12 |
+|  btn_output_reg_i_2_n_0             |                                    | AS/db_rst/counter[0]_i_1__0_n_0    |                5 |             20 |
+|  btn_output_reg_i_2_n_0             |                                    | AS/db_step/counter[0]_i_1_n_0      |                5 |             20 |
+|  uart_clk_16_BUFG                   |                                    | AS/TOM/prev_buttons[3]_i_1_n_0     |                6 |             21 |
+|  clk_IBUF_BUFG                      |                                    | dc/millisecond_clk_cnt[0]_i_1_n_0  |                8 |             32 |
+|  uart_clk_16_BUFG                   |                                    |                                    |               10 |             33 |
++-------------------------------------+------------------------------------+------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     2 |
-| 3      |                     2 |
-| 4      |                     3 |
+| 1      |                    25 |
+| 2      |                     1 |
+| 4      |                     5 |
 | 5      |                     1 |
+| 7      |                     1 |
 | 8      |                     3 |
 | 10     |                     1 |
-| 16+    |                     1 |
+| 12     |                     1 |
+| 16+    |                     5 |
 +--------+-----------------------+
 
 

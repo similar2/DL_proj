@@ -42,11 +42,9 @@ always @(posedge clk) begin
         endcase
     end
 end
-always @(posedge en) begin
-    is_ready<= 1'b0;
-end
 
-always @(posedge clk) begin
+
+always @(posedge clk,posedge en) begin
     if (en) begin
         next_pc <= current_pc + (2'd2 * i_num) * (signal ^ mode);
         is_ready <= 1'b1;

@@ -49,7 +49,7 @@ parameter if_mode = 2'b00, ifn_mode = 2'b01,
           target_ready = 3'd2, target_hasitem = 3'd3;
 
 
-parameter DEBOUNCE_TIME = 1000000;  // Set the debounce time threshold
+parameter DEBOUNCE_TIME = 10;  // Set the debounce time threshold 10ms would be fine
     parameter GET = 2'b00, PUT = 2'b01, INTERACT = 2'b10, THROW = 2'b11;
 parameter ENABLED = 1'b1, DISABLED = 1'b0;
 

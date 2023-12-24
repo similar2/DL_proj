@@ -3,23 +3,35 @@ module action(
     input [7:0] i_num,
     input [1:0] func,
     input clk,
-    input [7:0] feedback_sig,//current state in the kitchen
-    output [4:0] control_data //control when to do the movement i.e. get put etc
+    input  rst, 
+    input move_ready,
+    output reg [7:0] target_machine,
+    output reg [4:0] control_data // {move, throw, interact, put, get}
 );
-    // Define parameters
 
-wire move_ready = feedback_sig[2]; //whether the chef is in front of the target machine
-    // Logic for enabling wires based on func
-    //when the chef is in front of the target machine, u can continue ur movement
-    wire get_en = (en == ENABLED)&&(move_ready == ENABLED) && (func == GET);
-    wire put_en = (en == ENABLED)&&(move_ready == ENABLED) && (func == PUT);
-    wire interact_en = (en == ENABLED) &&(move_ready == ENABLED)&& (func == INTERACT);
-    wire throw_en = (en == ENABLED) &&(move_ready == ENABLED)&& (func == THROW);
-    //be 1 only when other 4 signals are 0 
-    wire move_en =(en ==ENABLED)&&~(get_en|put_en|interact_en|throw_en);
-//control when and whether to move traveler to the target machine(only when set target machine to i_num and move only once)
-//therefore, this sig will be set to 0 when traveller has moved
-
-assign control_data = {move_en,get_en, put_en, interact_en, throw_en};
-
+    always @(posedge clk) begin
+        if (rst) begin
+            // Reset logic
+            control_data <= 5'b00000;
+            target_machine <= 8'b0000_0000;
+        end else if (en) begin
+            target_machine <= i_num;
+            case (func)
+                GET, PUT, INTERACT: begin
+                    control_data <= 5'b10000; // Move
+                    if (move_ready) begin
+                        case (func)
+                            GET: control_data <= 5'b00001;
+                            PUT: control_data <= 5'b00010;
+                            INTERACT: control_data <= 5'b00100;
+                        endcase
+                    end
+                end
+                THROW: control_data <= 5'b01000; // Throw
+                default: control_data <= 5'b00000; // No action
+            endcase
+        end else begin
+            control_data <= 5'b00000; // No action if not enabled
+        end
+    end
 endmodule

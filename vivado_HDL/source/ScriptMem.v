@@ -11,13 +11,14 @@ module ScriptMem(
   
   output       script_mode,  // If script_mode is 1, you should ignore the dataOut_bits from UART module
   input [7:0] pc,      //program counter.
-  output [15:0] script //instructions from pc.
+  output [15:0] script, //instructions from pc.
+output [7:0] script_num
 );
     
     reg [7:0] script_cnt = 0;
     reg [7:0] script_size = 0;
     assign script_mode = script_cnt < script_size;
-    
+    assign script_num=script_size;
     always@(posedge clock) begin
         if(dataOut_valid) begin
             if(script_mode) begin

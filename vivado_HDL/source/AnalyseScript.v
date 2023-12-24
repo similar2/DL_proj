@@ -14,13 +14,14 @@ module AnalyseScript(
     input btn_step,//connnect to a button, every time it get pressed pc will move forward one step
     input millisecond_clk,//used by wait     
     input debug_mode,//if this is 1 then we use a button to force pc move forward connected to a switch
-    output reg [7:0]pc,
+    output reg [7:0]pc = 8'b0000_0000,
     output  [7:0] data_operate_script,
     output [7:0]data_target_script,
     output [7:0]data_game_state_script
 );
 //debounced button sig
 wire next_step;
+wire rst;//debounced reset sig
 //define feedback sig
 //data[7:6]	data[5:2]	data[1:0]	Description
 //00	   xxxx	         01	        Traveler targeting on specific machine with ID xxxxxx.
@@ -31,7 +32,6 @@ wire next_step;
 // data[5] - Set(1) when target machine has item, otherwise Reset(0).
 wire [7:0] feedback_sig = {2'b00, sig_machine, sig_processing, sig_hand, sig_front, 2'b01};
 
-reg [7:0]next_pc;//next pc address 
 //divide 16 bit scirpt to 4 parts
 wire [7:0] i_num;assign i_num = script[15:8];
 wire [2:0] i_sign;assign i_sign = script[7:5];
@@ -48,7 +48,6 @@ wire [7:0]data_game;
 //wires for action module
 wire [3:0]control_data ;//output of action module consist of 4 enable signal for operate machine
 wire sig_move,sig_throw,sig_get,sig_interact,sig_put;
-wire [4:0]target_machine;
 wire [7:0]target_data;
 wire [7:0] operation_data;
 //wire for jump
@@ -61,19 +60,24 @@ wire is_ready_wait;
 wire [7:0] game_state;
 //divide control data to 5 parts
 assign sig_move = control_data[4];
-assign sig_get = control_data[3];
-assign sig_put = control_data[2];
-assign sig_interact=control_data[1];
-assign  sig_throw = control_data[0];
+assign sig_throw = control_data[3];
+assign sig_interact = control_data[2];
+assign sig_put=control_data[1];
+assign  sig_get = control_data[0];
 //instantiate debouncer
-Debouncer db(
-    .clk(clk),
+Debouncer db_step(
+    .clk(millisecond_clk),//wait 10ms to debounce
     .btn_input(btn_step),
     .btn_output(next_step)
 );
-    // Instantiate TravelerTargetMachine
+Debouncer db_rst(
+    .clk(millisecond_clk),
+    .btn_input(res),
+    .btn_output(rst)
+);   
+   // Instantiate TravelerTargetMachine
     TravelerTargetMachine TTM (
-        .select_switches(target_machine), // Connect the lower 5 bits of i_num
+        .select_switches(target_data), // Connect the lower 5 bits of i_num
         .uart_clk(clk),
         .data_target(data_target_script)
     );
@@ -107,7 +111,9 @@ jump jump(
         .i_num(i_num),
         .func(func),
         .clk(clk),
-        .feedback_sig(feedback_sig),
+        .rst(rst),
+        .move_ready(sig_front),
+        .target_machine(target_data),
         .control_data(control_data)
     );
     
@@ -130,30 +136,27 @@ game_state state(
 );
 
 //the button is active-high res is active-low
-    always @(posedge next_step,posedge res) begin
-        if (res) begin
-           pc <= 8'b0000_0000; // Reset value of pc
-            next_pc<=8'b0000_0000;
-        end
-        else
-        if (debug_mode) begin
-                if (is_ready_jump) begin
-                    next_pc<=next_pc_jump;
-                end else 
-              next_pc<=next_pc+2'd2;
-        end
-    end
+   always @(posedge next_step,posedge rst) begin
+       if (rst) begin
+          pc <= 8'b0000_0000; // Reset value of pc
+       end
+       else
+       if (debug_mode) begin
+               if (is_ready_jump) begin
+                   pc<=next_pc_jump;
+               end 
+               else 
+             pc<=pc+2'd2;
+       end
+   end
 
-    always @(posedge clk) begin
-        pc<=next_pc;
-    end
     
     always @(op_code) begin
         case (op_code)
-           action_code :en_action<=enabled;
-           jump_code:en_jump<=enabled;
-           wait_code:en_wait<=enabled;
-           game_code:en_game<=enabled; 
+           action_code :begin en_action<=enabled; en_game<=disabled;en_jump<=disabled;en_wait<=disabled; end
+           jump_code:begin en_jump<=enabled;en_action<=disabled;en_game<=disabled;en_wait<=disabled; end
+           wait_code:begin en_wait<=enabled;en_action<=disabled; en_game<=disabled;en_jump<=disabled;end
+           game_code:begin en_game<=enabled; en_action<=disabled; en_jump<=disabled;en_wait<=disabled; end
             default: begin en_action<=disabled; en_game<=disabled;en_jump<=disabled;en_wait<=disabled; end
         endcase
     end

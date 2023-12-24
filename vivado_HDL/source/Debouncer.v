@@ -4,7 +4,6 @@ module Debouncer(
     output reg btn_output  // Debounced button output
 );
 
-// Parameter definition
 reg [19:0] counter = 0;             // 20-bit counter for debounce timing
 
 // Debounce logic
