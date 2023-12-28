@@ -3,7 +3,6 @@ module ReceiveUnScriptData(
     input data_valid,
     input [7:0] data_receive,
     input uart_clk,
-    input clk,
     output reg sig_front,
     output reg sig_hand,
     output reg sig_processing,

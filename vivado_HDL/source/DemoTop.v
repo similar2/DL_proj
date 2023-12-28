@@ -31,7 +31,7 @@ module DemoTop(
 // The wire above is useful~
 reg  mode_interpret_script = 0;//set to 1 when interpreting scripts and 0 when manual control or loading scripts
 wire [7:0]script_num ;
-    wire uart_reset = 1'b0; // 没想好是否需要复�?????????,应该不用
+    wire uart_reset = 1'b0; // reset signal
 //we control the datain_bits through the enable sig of senddata module
 reg  en_script = 1;
 reg  en_manual = 0; 
@@ -92,13 +92,10 @@ reg  en_manual = 0;
     wire sig_processing;     // feedback of if target machine is processing
     wire sig_machine;          // feedback of if target machine has item
 
-    wire [2:0] cusine_finish_num;       // variable to memory how many cusines finish
-
     // set data of the state of game
     GameStateChange gsc(  
       .switch(switches[7]),             // left-one switch
       .data_game_state(data_game_state),
-      .cusine_finish_num(cusine_finish_num),
       .uart_clk(uart_clk_16)
     );
 
@@ -123,9 +120,7 @@ reg  en_manual = 0;
       .sig_hand(sig_hand),
       .sig_processing(sig_processing),
       .sig_machine(sig_machine),
-      .data_operate_verified(data_operate_verified),
-      .data_cusine_finish_num(cusine_finish_num),
-      .test_led()
+      .data_operate_verified(data_operate_verified)
     );
 
     // set data of target machine
@@ -151,7 +146,6 @@ reg  en_manual = 0;
       .data_valid(dataOut_valid),
       .data_receive(dataOut_bits),
       .uart_clk(uart_clk_16),
-      .clk(clk),
       .sig_front(sig_front),
       .sig_hand(sig_hand),
       .sig_processing(sig_processing),
@@ -165,7 +159,7 @@ reg  en_manual = 0;
 wire  [7:0]data_target_script;
 wire  [7:0]data_game_state_script;
 wire  [7:0]data_operate_script;
-wire  [7:0]data_operate_verified_script;
+wire  [7:0]data_operate_verified_script;  
     wire  res= button[4];//reset pc connected to R11
 wire  btn_step= button[1];//move forward pc  connected to R17
 wire  debug_mode = switches[7];//a switch for script connected to P5 
@@ -189,7 +183,7 @@ AnalyseScript AS(
 
 //wires for sccript mode
 SendData sd_script(
-  .enable(en_script),
+      .enable(en_script),
       .data_operate_verified(data_operate_verified_script),
       .data_target(data_target_script),
       .data_game_state(data_game_state_script),
@@ -208,9 +202,7 @@ SendData sd_script(
       .sig_hand(sig_hand),
       .sig_processing(sig_processing),
       .sig_machine(sig_machine),
-      .data_operate_verified(data_operate_verified_script),
-      .data_cusine_finish_num(cusine_finish_num),
-      .test_led()
+      .data_operate_verified(data_operate_verified_script)
     );
 
 endmodule
