@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Dec 14 17:34:38 2023
-# Process ID: 18844
-# Current directory: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1
+# Start of session at: Tue Dec 26 19:14:17 2023
+# Process ID: 12752
+# Current directory: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1
 # Command line: vivado.exe -log inst_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inst_ram.tcl
-# Log file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.vds
-# Journal file: C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1\vivado.jou
+# Log file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.vds
+# Journal file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1\vivado.jou
 #-----------------------------------------------------------
 source inst_ram.tcl -notrace
 Command: synth_design -top inst_ram -part xc7a35tcsg324-1 -mode out_of_context
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 37352 
+INFO: Helper process launched with PID 29168 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 341.512 ; gain = 99.910
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 403.246 ; gain = 99.344
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'inst_ram' [c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/synth/inst_ram.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'inst_ram' [e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/synth/inst_ram.vhd:69]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -49,8 +49,8 @@ INFO: [Synth 8-638] synthesizing module 'inst_ram' [c:/Users/Lenovo/Desktop/Digi
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
 	Parameter C_WRITE_DEPTH_A bound to: 128 - type: integer 
 	Parameter C_READ_DEPTH_A bound to: 128 - type: integer 
 	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
@@ -63,8 +63,8 @@ INFO: [Synth 8-638] synthesizing module 'inst_ram' [c:/Users/Lenovo/Desktop/Digi
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
-	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
 	Parameter C_WRITE_DEPTH_B bound to: 128 - type: integer 
 	Parameter C_READ_DEPTH_B bound to: 128 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 7 - type: integer 
@@ -92,9 +92,9 @@ INFO: [Synth 8-638] synthesizing module 'inst_ram' [c:/Users/Lenovo/Desktop/Digi
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.3883 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/synth/inst_ram.vhd:232]
-INFO: [Synth 8-256] done synthesizing module 'inst_ram' (9#1) [c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/synth/inst_ram.vhd:69]
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.7211 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/synth/inst_ram.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'inst_ram' (9#1) [e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/synth/inst_ram.vhd:69]
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRA
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRB
@@ -153,10 +153,20 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ECC
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ram_rstram_b
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ram_rstreg_b
 WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port RSTA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[1]
 WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[1]
 WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
 WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[15]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[14]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[13]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[12]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[11]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[10]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[8]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[7]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[6]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[5]
@@ -185,19 +195,9 @@ WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port WEB[0]
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[6]
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[5]
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[4]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[3]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[2]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[1]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[0]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[7]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[6]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[5]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[4]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[3]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:55 . Memory (MB): peak = 598.109 ; gain = 356.508
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:01:21 . Memory (MB): peak = 661.688 ; gain = 357.785
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -207,7 +207,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:55 . Memory (MB): peak = 598.109 ; gain = 356.508
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:21 . Memory (MB): peak = 661.688 ; gain = 357.785
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -216,35 +216,35 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/dont_touch.xdc]
+Parsing XDC File [e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 646.031 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 705.465 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:01:05 . Memory (MB): peak = 646.031 ; gain = 404.430
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 705.465 ; gain = 401.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:01:05 . Memory (MB): peak = 646.031 ; gain = 404.430
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 705.465 ; gain = 401.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  {C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/dont_touch.xdc}, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:01:05 . Memory (MB): peak = 646.031 ; gain = 404.430
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 705.465 ; gain = 401.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:01:05 . Memory (MB): peak = 646.031 ; gain = 404.430
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 705.465 ; gain = 401.562
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -279,7 +279,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:01:06 . Memory (MB): peak = 646.031 ; gain = 404.430
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 705.465 ; gain = 401.562
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,13 +291,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:01:12 . Memory (MB): peak = 705.570 ; gain = 463.969
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:42 . Memory (MB): peak = 760.953 ; gain = 457.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:01:12 . Memory (MB): peak = 705.715 ; gain = 464.113
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:42 . Memory (MB): peak = 761.172 ; gain = 457.270
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -309,7 +309,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:01:12 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:01:42 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,7 +333,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -346,7 +346,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -358,25 +358,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -408,11 +408,11 @@ Report Instance Areas:
 |7     |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper |     1|
 +------+---------------------------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 146 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:01:07 . Memory (MB): peak = 715.789 ; gain = 426.266
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 715.789 ; gain = 474.188
+Synthesis finished with 0 errors, 0 critical warnings and 162 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:01:36 . Memory (MB): peak = 770.762 ; gain = 423.082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:43 . Memory (MB): peak = 770.762 ; gain = 466.859
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -424,11 +424,11 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 17 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:01:14 . Memory (MB): peak = 725.316 ; gain = 495.199
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram.xci
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:45 . Memory (MB): peak = 782.750 ; gain = 490.383
+INFO: [Common 17-1381] The checkpoint 'E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/ip/inst_ram/inst_ram.xci
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1/inst_ram.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file inst_ram_utilization_synth.rpt -pb inst_ram_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 725.316 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 14 17:35:57 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 782.750 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 19:16:09 2023...

@@ -152,7 +152,7 @@ game_state state(
    end
 
     always @(posedge clk ) begin
-        led2<={script[7:0]};
+        led2<={script[15:8]};
     end
     always @(op_code) begin
         case (op_code)

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Dec 28 14:28:46 2023
+# Process ID: 34944
+# Current directory: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.sim/sim_1/behav/xsim/xsim.dir/ScriptMem_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.sim/sim_1/behav/xsim/xsim.dir/ScriptMem_tb_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sun Dec 24 18:49:43 2023
+| Date         : Fri Dec 29 21:10:43 2023
 | Host         : Miller running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file DemoTop_control_sets_placed.rpt
 | Design       : DemoTop
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    38 |
-| Unused register locations in slices containing registers |   211 |
+| Number of unique control sets                            |   167 |
+| Unused register locations in slices containing registers |   219 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,60 +33,189 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              40 |           14 |
+| No           | No                    | No                     |              47 |           19 |
 | No           | No                    | Yes                    |              15 |           15 |
 | No           | Yes                   | No                     |              93 |           29 |
-| Yes          | No                    | No                     |              38 |            9 |
-| Yes          | No                    | Yes                    |               7 |            2 |
-| Yes          | Yes                   | No                     |               4 |            1 |
+| Yes          | No                    | No                     |            1066 |          450 |
+| Yes          | No                    | Yes                    |              18 |            8 |
+| Yes          | Yes                   | No                     |              14 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------+------------------------------------+-----------------------------------------+------------------+----------------+
-|             Clock Signal            |            Enable Signal           |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
-+-------------------------------------+------------------------------------+-----------------------------------------+------------------+----------------+
-|  script_mem_module/next_pc_reg[4]_P |                                    | script_mem_module/next_pc_reg[4]_C      |                1 |              1 |
-|  script_mem_module/next_pc_reg[6]_P |                                    | script_mem_module/next_pc_reg[6]_C      |                1 |              1 |
-|  script_mem_module/next_pc_reg[2]_P |                                    | script_mem_module/next_pc_reg[2]_C      |                1 |              1 |
-|  script_mem_module/next_pc_reg[3]_P |                                    | script_mem_module/next_pc_reg[3]_C      |                1 |              1 |
-|  script_mem_module/next_pc_reg[1]_P |                                    | script_mem_module/next_pc_reg[1]_C      |                1 |              1 |
-|  script_mem_module/next_pc_reg[5]_P |                                    | script_mem_module/next_pc_reg[5]_C      |                1 |              1 |
-|  script_mem_module/next_pc_reg[0]_P |                                    | script_mem_module/next_pc_reg[0]_C      |                1 |              1 |
-|  btn_output_reg_i_2_n_0             | AS/db_step/btn_output_i_1_n_0      |                                         |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/en_jump               |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[0]_C      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[4]_P      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[6]_P      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[5]_C      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[2]_P      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[6]_C      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[3]_P      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[1]_P      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[5]_P      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[0]_P      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[3]_C      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[4]_C      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[1]_C      |                1 |              1 |
-|  uart_clk_16_BUFG                   |                                    | script_mem_module/next_pc_reg[2]_C      |                1 |              1 |
-|  btn_output_reg_i_2_n_0             | AS/db_rst/btn_output_i_1__0_n_0    |                                         |                1 |              1 |
-|  clk_IBUF_BUFG                      |                                    |                                         |                2 |              2 |
-|  uart_clk_16_BUFG                   | uart_module/script_cnt             |                                         |                1 |              4 |
-|  uart_clk_16_BUFG                   | uart_module/script_cnt             | script_mem_module/script_cnt[3]_i_1_n_0 |                1 |              4 |
-|  uart_clk_16_BUFG                   |                                    | uart_module/rx/spacing                  |                1 |              4 |
-|  uart_clk_16_BUFG                   | uart_module/rx/state[3]_i_1_n_0    |                                         |                1 |              4 |
-|  AS/db_step/btn_output              | switches_IBUF[7]                   | AS/db_rst/AR[0]                         |                2 |              7 |
-|  uart_clk_16_BUFG                   | uart_module/rx/tick                |                                         |                1 |              8 |
-|  uart_clk_16_BUFG                   | uart_module/E[0]                   |                                         |                2 |              8 |
-|  clk_IBUF_BUFG                      |                                    | dc/uart_clk_cnt[9]_i_1_n_0              |                3 |             10 |
-|  uart_clk_16_BUFG                   | uart_module/tx/state[3]_i_1__0_n_0 |                                         |                2 |             12 |
-|  btn_output_reg_i_2_n_0             |                                    | AS/db_rst/counter[0]_i_1__0_n_0         |                5 |             20 |
-|  btn_output_reg_i_2_n_0             |                                    | AS/db_step/counter[0]_i_1_n_0           |                5 |             20 |
-|  clk_IBUF_BUFG                      |                                    | dc/millisecond_clk_cnt[0]_i_1_n_0       |                8 |             32 |
-|  uart_clk_16_BUFG                   |                                    |                                         |               12 |             38 |
-+-------------------------------------+------------------------------------+-----------------------------------------+------------------+----------------+
++-------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
+|             Clock Signal            |             Enable Signal             |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/next_pc_reg[3]_C |                1 |              1 |
+|  AS/jump/next_pc_reg[5]_LDC_i_1_n_0 |                                       | script_mem_module/next_pc_reg[5]_C |                1 |              1 |
+|  AS/jump/next_pc_reg[6]_LDC_i_1_n_0 |                                       | script_mem_module/next_pc_reg[6]_C |                1 |              1 |
+|  AS/jump/next_pc_reg[0]_LDC_i_1_n_0 |                                       | script_mem_module/next_pc_reg[0]_C |                1 |              1 |
+|  AS/jump/next_pc_reg[1]_LDC_i_1_n_0 |                                       | script_mem_module/next_pc_reg[1]_C |                1 |              1 |
+|  AS/jump/next_pc_reg[2]_LDC_i_1_n_0 |                                       | script_mem_module/next_pc_reg[2]_C |                1 |              1 |
+|  AS/jump/next_pc_reg[3]_LDC_i_1_n_0 |                                       | script_mem_module/next_pc_reg[3]_C |                1 |              1 |
+|  AS/jump/next_pc_reg[4]_LDC_i_1_n_0 |                                       | script_mem_module/next_pc_reg[4]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | AS/jump/next_pc_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | AS/jump/next_pc_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  btn_output_reg_i_2_n_0             | AS/db_rst/btn_output_i_1__0_n_0       |                                    |                1 |              1 |
+|  btn_output_reg_i_2_n_0             | AS/db_step/btn_output_i_1_n_0         |                                    |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/en_jump          |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/next_pc_reg[5]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/next_pc_reg[2]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/next_pc_reg[1]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/next_pc_reg[0]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/next_pc_reg[4]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | script_mem_module/next_pc_reg[6]_C |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | AS/jump/next_pc_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | AS/jump/next_pc_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | AS/jump/next_pc_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | AS/jump/next_pc_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  uart_clk_16_BUFG                   |                                       | AS/jump/next_pc_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                      |                                       |                                    |                2 |              2 |
+|  uart_clk_16_BUFG                   |                                       | uart_module/rx/spacing             |                1 |              4 |
+|  uart_clk_16_BUFG                   | uart_module/rx/state[3]_i_1_n_0       |                                    |                1 |              4 |
+|  uart_clk_16_BUFG                   | uart_module/dataOut_valid             | uart_module/sig_hand_reg           |                1 |              4 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[9][7]_i_1_n_0   |                                    |                8 |              8 |
+|  uart_clk_16_BUFG                   | uart_module/rx/tick                   |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | uart_module/script_size_reg[7]        |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | uart_module/script_cnt                |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[92][7]_i_1_n_0  |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[112][7]_i_1_n_0 |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[108][7]_i_1_n_0 |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[100][7]_i_1_n_0 |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[109][7]_i_1_n_0 |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[10][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[110][7]_i_1_n_0 |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[104][7]_i_1_n_0 |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[111][7]_i_1_n_0 |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[113][7]_i_1_n_0 |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[114][7]_i_1_n_0 |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[115][7]_i_1_n_0 |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[102][7]_i_1_n_0 |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[101][7]_i_1_n_0 |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[0][7]_i_1_n_0   |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[103][7]_i_1_n_0 |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[105][7]_i_1_n_0 |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[106][7]_i_1_n_0 |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[107][7]_i_1_n_0 |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[35][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[31][7]_i_1_n_0  |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[23][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[15][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[36][7]_i_1_n_0  |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[37][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[26][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[38][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[121][7]_i_1_n_0 |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[27][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[39][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[28][7]_i_1_n_0  |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[118][7]_i_1_n_0 |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[22][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[3][7]_i_1_n_0   |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[40][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[41][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[116][7]_i_1_n_0 |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[19][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[11][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[117][7]_i_1_n_0 |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[120][7]_i_1_n_0 |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[122][7]_i_1_n_0 |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[12][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[16][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[126][7]_i_1_n_0 |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[24][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[30][7]_i_1_n_0  |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[32][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[33][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[17][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[124][7]_i_1_n_0 |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[119][7]_i_1_n_0 |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[125][7]_i_1_n_0 |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[13][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[127][7]_i_1_n_0 |                                    |                8 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[14][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[21][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[25][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[29][7]_i_1_n_0  |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[20][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[18][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[2][7]_i_1_n_0   |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[1][7]_i_1_n_0   |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[34][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[123][7]_i_1_n_0 |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[6][7]_i_1_n_0   |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[46][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[48][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[57][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[68][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[69][7]_i_1_n_0  |                                    |                8 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[71][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[44][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[73][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[50][7]_i_1_n_0  |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[63][7]_i_1_n_0  |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[52][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[70][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[58][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[5][7]_i_1_n_0   |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[55][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[74][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[75][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[72][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[59][7]_i_1_n_0  |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[54][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[76][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[61][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[77][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[67][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[60][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[78][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[79][7]_i_1_n_0  |                                    |                8 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[7][7]_i_1_n_0   |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[81][7]_i_1_n_0  |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[42][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[49][7]_i_1_n_0  |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[53][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[47][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[66][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[56][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[51][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[64][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[4][7]_i_1_n_0   |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[45][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[62][7]_i_1_n_0  |                                    |                5 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[65][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[43][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[8][7]_i_1_n_0   |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[83][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[82][7]_i_1_n_0  |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[89][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[88][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[80][7]_i_1_n_0  |                                    |                1 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[90][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[91][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[84][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[85][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[94][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[95][7]_i_1_n_0  |                                    |                6 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[99][7]_i_1_n_0  |                                    |                7 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[87][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[98][7]_i_1_n_0  |                                    |                2 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[97][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[93][7]_i_1_n_0  |                                    |                3 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[86][7]_i_1_n_0  |                                    |                4 |              8 |
+|  uart_clk_16_BUFG                   | script_mem_module/mem[96][7]_i_1_n_0  |                                    |                3 |              8 |
+|  clk_IBUF_BUFG                      |                                       | dc/uart_clk_cnt[9]_i_1_n_0         |                3 |             10 |
+|  uart_clk_16_BUFG                   | script_mem_module/en_action           | AS/db_rst/AR[0]                    |                5 |             10 |
+|  uart_clk_16_BUFG                   | uart_module/tx/state[3]_i_1__0_n_0    |                                    |                2 |             12 |
+|  AS/db_step/btn_output              | switches_IBUF[7]                      | AS/db_rst/AR[0]                    |                8 |             18 |
+|  btn_output_reg_i_2_n_0             |                                       | AS/db_rst/counter[0]_i_1__0_n_0    |                5 |             20 |
+|  btn_output_reg_i_2_n_0             |                                       | AS/db_step/counter[0]_i_1_n_0      |                5 |             20 |
+|  clk_IBUF_BUFG                      |                                       | dc/millisecond_clk_cnt[0]_i_1_n_0  |                8 |             32 |
+|  uart_clk_16_BUFG                   |                                       |                                    |               17 |             45 |
++-------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
@@ -94,12 +223,11 @@ Table of Contents
 +--------+-----------------------+
 | 1      |                    24 |
 | 2      |                     1 |
-| 4      |                     4 |
-| 7      |                     1 |
-| 8      |                     2 |
-| 10     |                     1 |
+| 4      |                     3 |
+| 8      |                   131 |
+| 10     |                     2 |
 | 12     |                     1 |
-| 16+    |                     4 |
+| 16+    |                     5 |
 +--------+-----------------------+
 
 

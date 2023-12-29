@@ -38,7 +38,7 @@ reg  en_manual = 0;
 //wire en_script = mode_interpret_script;
 //wire en_manual = mode_interpret_script;
 
-
+assign led = script[7:0];
     ScriptMem script_mem_module(
       .clock(uart_clk_16),   // please use the same clock as UART module
       .reset(uart_reset),           // please use the same reset as UART module
@@ -184,7 +184,7 @@ AnalyseScript AS(
  .data_operate_script(data_operate_script),
    .data_target_script(data_target_script),
     .data_game_state_script(data_game_state_script),
-    .led2(led)
+    .led2()
 );
 
 //wires for sccript mode

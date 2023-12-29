@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sim_1/new/action_tb.v,1703838939,verilog,,,,action_testbench,,,,,,,,
+E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sim_1/new/mem_tb.v,1703747172,verilog,,,,ScriptMem_tb,,,,,,,,
+E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v,1703838845,verilog,,E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sim_1/new/action_tb.v,,action,,,,,,,,
+E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/new/mem_array.v,1703744653,verilog,,E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sim_1/new/mem_tb.v,,mem_array,,,,,,,,

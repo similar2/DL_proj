@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/TOOL/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/nt64;D:/TOOL/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/nt64:D:/TOOL/Xilinx/Vivado/2017.4/bin
+  PATH=E:/program/SDK/2017.4/bin;E:/program/Vivado/2017.4/ids_lite/ISE/bin/nt64;E:/program/Vivado/2017.4/ids_lite/ISE/lib/nt64:E:/program/Vivado/2017.4/bin
 else
-  PATH=D:/TOOL/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/nt64;D:/TOOL/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/nt64:D:/TOOL/Xilinx/Vivado/2017.4/bin:$PATH
+  PATH=E:/program/SDK/2017.4/bin;E:/program/Vivado/2017.4/ids_lite/ISE/bin/nt64;E:/program/Vivado/2017.4/ids_lite/ISE/lib/nt64:E:/program/Vivado/2017.4/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Lenovo/Desktop/Digital Logic Project/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1'
+HD_PWD='E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/inst_ram_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
