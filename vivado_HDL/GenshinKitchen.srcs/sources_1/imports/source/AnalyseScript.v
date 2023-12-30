@@ -16,8 +16,8 @@ module AnalyseScript(
     input debug_mode,//if this is 1 then we use a button to force pc move forward connected to a switch
     output reg [7:0]pc = 8'b0000_0000,
     output reg [7:0] led,
-    output  [7:0] data_operate_script,
-    output [7:0]data_target_script,
+    output [7:0] data_operate_script,
+    output   [7:0]data_target_script,
     output [7:0]data_game_state_script
 );
 
@@ -45,9 +45,15 @@ reg en_action = disabled,en_jump =disabled,en_wait =disabled,en_game=disabled;
 
 //wires for action module
 wire is_ready_action;
-reg  rst_action;
- reg rst_pulse_action;     // Reset pulse that lasts for only one clock cycle
-   reg rst_action_reg;  // Register to detect the rising edge
+reg rst_action;
+reg rst_jump;
+reg rst_wait;
+
+//these two sig is designed to avoid repeated use of next_pc_jump
+//when cnt_execute_jump < cnt_jump and is_ready_jump, it means that last script is jump and pc should be set to where it jump to 
+reg [10:0]cnt_jump = 0;//how many "jump"  have been encountered so far
+reg [10:0]cnt_execute_jump = 0;//how many times pc jumped so far
+
 //wire for jump
 wire  is_ready_jump;
 wire [7:0]next_pc_jump;//next pc address after jumping
@@ -90,7 +96,7 @@ jump jump(
          .i_num(i_num),
          .func(func),
          .clk(clk),
-         .rst(rst),
+         .rst(rst_action),
          .move_ready(sig_front),
          .control_data(data_operate_script),
          .target_machine(data_target_script)
@@ -114,25 +120,41 @@ game_state state(
     .game_state(data_game_state_script)
 );
 
-//the button is active-high res is active-low
+//the button is active-low res is active-low
+//act when u release the button
    always @(posedge next_step,posedge rst) begin
        if (rst) begin
           pc <= 8'b0000_0000; // Reset value of pc
+          cnt_execute_jump<=0;
+          cnt_jump<=0;
        end
        else
        if (debug_mode) begin
-               if (is_ready_jump) begin
-                   pc<=next_pc_jump;
-               end 
+//               if (is_ready_jump&&cnt_execute_jump<cnt_jump) begin
+//                   pc<=next_pc_jump;
+//                   cnt_execute_jump <=cnt_execute_jump+1;
+//               end 
+        if (is_ready_jump) begin
+                pc<=next_pc_jump;
+                cnt_execute_jump <=cnt_execute_jump+1;
+            end 
                else 
              pc<=pc+2'd2;
        end
+   end
+   always @(next_step) begin
+    //use next_step as reset sig
+    if (debug_mode) begin
+        rst_action = next_step;
+        rst_jump = next_step;
+        rst_wait = next_step;
+    end
    end
 
 always @(op_code) begin
     case (op_code)
        action_code: begin en_action = enabled; en_game = disabled; en_jump = disabled; en_wait = disabled; end
-       jump_code: begin en_jump = enabled; en_action = disabled; en_game = disabled; en_wait = disabled; end
+       jump_code: begin en_jump = enabled; en_action = disabled; en_game = disabled; en_wait = disabled; cnt_jump = cnt_jump +1;end
        wait_code: begin en_wait = enabled; en_action = disabled; en_game = disabled; en_jump = disabled; end
        game_code: begin en_game = enabled; en_action = disabled; en_jump = disabled; en_wait = disabled; end
        default: begin en_action = disabled; en_game = disabled; en_jump = disabled; en_wait = disabled; end

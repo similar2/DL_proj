@@ -35,7 +35,7 @@ module ScriptMem(
 
     reg [7:0] script_cnt = 0;
     reg [7:0] script_size = 0;
-    reg [7:0] mem[127:0];  // Memory array to store script instructions
+    reg [7:0] mem[255:0];  // Memory array to store script instructions
 
     assign script_mode = script_cnt < script_size;
     assign script_num = script_size;

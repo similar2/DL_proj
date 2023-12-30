@@ -31,15 +31,14 @@ module DemoTop(
 // The wire above is useful~
 reg  mode_interpret_script = 0;//set to 1 when interpreting scripts and 0 when manual control or loading scripts
 wire [7:0]script_num ;
-    wire uart_reset = 1'b0; // 没想好是否需要复�???????????,应该不用
-        wire  res= button[4];//reset pc connected to R11
+wire uart_reset = 1'b0; // 没想好是否需要复�???????????,应该不用
+wire  res= button[4];//reset pc connected to R11
 //we control the datain_bits through the enable sig of senddata module
 reg  en_script = 1;
 reg  en_manual = 0; 
 //wire en_script = mode_interpret_script;
 //wire en_manual = mode_interpret_script;
-assign led = data_target_script;
-assign led2 = data_operate_script;
+assign led2 =pc;
     ScriptMem script_mem_module(
       .clock(uart_clk_16),   // please use the same clock as UART module
       .reset(uart_reset),           // please use the same reset as UART module
@@ -157,7 +156,7 @@ assign led2 = data_operate_script;
        .sig_hand(sig_hand),
        .sig_processing(sig_processing),
        .sig_machine(sig_machine),
-       .feedback_leds(),    // right - 4 led show data
+       .feedback_leds(led[3:0]),    // right - 4 led show data
        .led_mode()           // left - 1 led show data
 
      );

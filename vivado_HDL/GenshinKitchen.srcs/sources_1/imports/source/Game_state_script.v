@@ -5,8 +5,6 @@ module game_state (
     output reg [7:0] game_state  // Output should be declared as reg since it's assigned inside an always block
 );
 
-
-
     always @(posedge clk) begin
         if (en) begin
             case (func)
