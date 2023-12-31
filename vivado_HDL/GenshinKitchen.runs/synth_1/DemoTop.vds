@@ -1,0 +1,886 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 30 21:47:39 2023
+# Process ID: 38076
+# Current directory: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1
+# Command line: vivado.exe -log DemoTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
+# Log file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.vds
+# Journal file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DemoTop.tcl -notrace
+Command: synth_design -top DemoTop -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19564 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:2]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:3]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:6]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:9]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:12]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:17]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:21]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:24]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:27]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:30]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:31]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:32]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:33]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:34]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:35]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:36]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:37]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:38]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:39]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:45]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:49]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:52]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:53]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:54]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:57]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:58]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:60]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:61]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:62]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:63]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:67]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:71]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:72]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:73]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:75]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:77]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:84]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:86]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:87]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:17]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 399.480 ; gain = 109.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DemoTop' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:3]
+INFO: [Synth 8-638] synthesizing module 'ScriptMem' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:24]
+WARNING: [Synth 8-5788] Register mem_reg in module ScriptMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (1#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:24]
+INFO: [Synth 8-638] synthesizing module 'UART' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:169]
+INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:218]
+INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (2#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:218]
+INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:261]
+INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (3#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:261]
+INFO: [Synth 8-256] done synthesizing module 'UART' (4#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:169]
+INFO: [Synth 8-638] synthesizing module 'DivideClock' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:2]
+INFO: [Synth 8-256] done synthesizing module 'DivideClock' (5#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:2]
+INFO: [Synth 8-638] synthesizing module 'GameStateChange' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v:2]
+INFO: [Synth 8-256] done synthesizing module 'GameStateChange' (6#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v:2]
+WARNING: [Synth 8-350] instance 'gsc' of module 'GameStateChange' requires 5 connections, but only 4 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:98]
+INFO: [Synth 8-638] synthesizing module 'TravelerOperateMachine' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:3]
+INFO: [Synth 8-256] done synthesizing module 'TravelerOperateMachine' (7#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:3]
+INFO: [Synth 8-638] synthesizing module 'VerifyIfOperateDataCorrect' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:1]
+WARNING: [Synth 8-567] referenced signal 'data_game_state' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:119]
+WARNING: [Synth 8-567] referenced signal 'sig_front' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:119]
+WARNING: [Synth 8-567] referenced signal 'target' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:119]
+WARNING: [Synth 8-567] referenced signal 'sig_hand' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:119]
+WARNING: [Synth 8-567] referenced signal 'sig_machine' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:119]
+INFO: [Synth 8-256] done synthesizing module 'VerifyIfOperateDataCorrect' (8#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerTargetMachine' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:2]
+WARNING: [Synth 8-567] referenced signal 'select_switches' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:12]
+INFO: [Synth 8-256] done synthesizing module 'TravelerTargetMachine' (9#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:2]
+WARNING: [Synth 8-689] width (6) of port connection 'select_switches' does not match port width (5) of module 'TravelerTargetMachine' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:133]
+INFO: [Synth 8-638] synthesizing module 'SendData' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:1]
+INFO: [Synth 8-256] done synthesizing module 'SendData' (10#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:1]
+WARNING: [Synth 8-350] instance 'sd' of module 'SendData' requires 8 connections, but only 7 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:139]
+INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (11#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:1]
+WARNING: [Synth 8-350] instance 'rd' of module 'ReceiveUnScriptData' requires 11 connections, but only 10 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:150]
+INFO: [Synth 8-638] synthesizing module 'AnalyseScript' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:5]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (12#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:1]
+INFO: [Synth 8-638] synthesizing module 'jump' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:40]
+INFO: [Synth 8-256] done synthesizing module 'jump' (13#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:1]
+WARNING: [Synth 8-350] instance 'jump' of module 'jump' requires 10 connections, but only 9 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:83]
+INFO: [Synth 8-638] synthesizing module 'action' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:1]
+INFO: [Synth 8-226] default block is never used [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:24]
+INFO: [Synth 8-256] done synthesizing module 'action' (14#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:1]
+INFO: [Synth 8-638] synthesizing module 'Wait' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:26]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:37]
+INFO: [Synth 8-256] done synthesizing module 'Wait' (15#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:1]
+INFO: [Synth 8-638] synthesizing module 'game_state' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:10]
+INFO: [Synth 8-256] done synthesizing module 'game_state' (16#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:1]
+WARNING: [Synth 8-567] referenced signal 'debug_mode' should be on the sensitivity list [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:145]
+WARNING: [Synth 8-6014] Unused sequential element cnt_execute_jump_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:128]
+WARNING: [Synth 8-6014] Unused sequential element cnt_jump_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:129]
+WARNING: [Synth 8-3848] Net led in module/entity AnalyseScript does not have driver. [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:18]
+INFO: [Synth 8-256] done synthesizing module 'AnalyseScript' (17#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:5]
+WARNING: [Synth 8-350] instance 'AS' of module 'AnalyseScript' requires 15 connections, but only 14 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:172]
+WARNING: [Synth 8-350] instance 'sd_script' of module 'SendData' requires 8 connections, but only 7 given [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:189]
+INFO: [Synth 8-256] done synthesizing module 'DemoTop' (18#1) [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:3]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port uart_clk
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[6]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[5]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[4]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_target[7]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_target[1]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_target[0]
+WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port sig_processing
+WARNING: [Synth 8-3331] design SendData has unconnected port data_ready
+WARNING: [Synth 8-3331] design Wait has unconnected port feedback_sig[7]
+WARNING: [Synth 8-3331] design Wait has unconnected port feedback_sig[6]
+WARNING: [Synth 8-3331] design Wait has unconnected port feedback_sig[1]
+WARNING: [Synth 8-3331] design Wait has unconnected port feedback_sig[0]
+WARNING: [Synth 8-3331] design action has unconnected port i_num[7]
+WARNING: [Synth 8-3331] design action has unconnected port i_num[6]
+WARNING: [Synth 8-3331] design action has unconnected port i_num[5]
+WARNING: [Synth 8-3331] design jump has unconnected port clk
+WARNING: [Synth 8-3331] design jump has unconnected port feedback_sig[7]
+WARNING: [Synth 8-3331] design jump has unconnected port feedback_sig[6]
+WARNING: [Synth 8-3331] design jump has unconnected port feedback_sig[1]
+WARNING: [Synth 8-3331] design jump has unconnected port feedback_sig[0]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[7]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[6]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[5]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[4]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[3]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[2]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[1]
+WARNING: [Synth 8-3331] design AnalyseScript has unconnected port led[0]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[7]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port data_receive[6]
+WARNING: [Synth 8-3331] design ReceiveUnScriptData has unconnected port clk
+WARNING: [Synth 8-3331] design GameStateChange has unconnected port cusine_finish_num[2]
+WARNING: [Synth 8-3331] design GameStateChange has unconnected port cusine_finish_num[1]
+WARNING: [Synth 8-3331] design GameStateChange has unconnected port cusine_finish_num[0]
+WARNING: [Synth 8-3331] design GameStateChange has unconnected port uart_clk
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 453.129 ; gain = 163.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin jump:rst to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:83]
+WARNING: [Synth 8-3295] tying undriven pin rd:script_mode to constant 0 [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:150]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 453.129 ; gain = 163.039
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DemoTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 789.500 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 789.500 ; gain = 499.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 789.500 ; gain = 499.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 789.500 ; gain = 499.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "script_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:40]
+INFO: [Synth 8-5544] ROM "spacing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element spacing_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:274]
+WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:184]
+WARNING: [Synth 8-6014] Unused sequential element uart_clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:16]
+WARNING: [Synth 8-6014] Unused sequential element second_clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:25]
+WARNING: [Synth 8-6014] Unused sequential element millisecond_clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:34]
+INFO: [Synth 8-5546] ROM "data_store" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_operate" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:39]
+INFO: [Synth 8-5544] ROM "data_operate_verified" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "data_target" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:25]
+INFO: [Synth 8-5544] ROM "led_mode" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:18]
+WARNING: [Synth 8-6014] Unused sequential element signal_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:38]
+WARNING: [Synth 8-6014] Unused sequential element time_counter_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:49]
+WARNING: [Synth 8-6014] Unused sequential element pc_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'data_target_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'next_pc_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'is_ready_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'mode_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'signal_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'rst_action_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:99]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 789.500 ; gain = 499.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 267   
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 42    
+	   6 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 7     
+	   7 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 291   
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ScriptMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 258   
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 258   
+Module UARTTransmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module UARTReceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DivideClock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module GameStateChange 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module TravelerOperateMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module VerifyIfOperateDataCorrect 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 16    
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+Module TravelerTargetMachine 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SendData 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module ReceiveUnScriptData 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module Debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module jump 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 3     
+Module action 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Wait 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+Module game_state 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+Module AnalyseScript 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:40]
+INFO: [Synth 8-4471] merging register 'AS/wt/mode_reg' into 'AS/wt/mode_reg' [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:28]
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:28]
+WARNING: [Synth 8-6014] Unused sequential element rd/led_mode_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:31]
+WARNING: [Synth 8-6014] Unused sequential element AS/wt/signal_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:38]
+WARNING: [Synth 8-6014] Unused sequential element AS/wt/mode_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:28]
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:25]
+INFO: [Synth 8-5544] ROM "vod/data_operate_verified" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "ttm/data_target" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element uart_module/rx/spacing_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:274]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:184]
+WARNING: [Synth 8-6014] Unused sequential element dc/uart_clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:16]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:34]
+WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:39]
+WARNING: [Synth 8-6014] Unused sequential element ttm/clk_cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:25]
+WARNING: [Synth 8-6014] Unused sequential element AS/db_step/counter_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
+WARNING: [Synth 8-6014] Unused sequential element AS/db_rst/counter_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
+WARNING: [Synth 8-6014] Unused sequential element AS/act/cnt_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:18]
+WARNING: [Synth 8-6014] Unused sequential element AS/wt/time_counter_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:49]
+WARNING: [Synth 8-6014] Unused sequential element AS/pc_reg was removed.  [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:92]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[7]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[5]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[6]
+WARNING: [Synth 8-3331] design DemoTop has unconnected port switches[5]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ttm/data_target_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/act/target_machine_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/next_send_state_reg[0] )
+INFO: [Synth 8-3886] merging instance 'ttm/data_target_reg[1]' (LD) to 'ttm/data_target_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/state/game_state_reg[1] )
+INFO: [Synth 8-3886] merging instance 'AS/act/target_machine_reg[1]' (FDP) to 'AS/act/target_machine_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd/send_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tom/data_operate_reg[0] )
+INFO: [Synth 8-3886] merging instance 'tom/data_operate_reg[1]' (FDE) to 'tom/data_operate_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tom/data_operate_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ttm/data_target_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/state/game_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/act/control_data_reg[0] )
+INFO: [Synth 8-3886] merging instance 'AS/act/control_data_reg[1]' (FDPE) to 'AS/act/control_data_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/act/control_data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/act/target_machine_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/prev_buttons_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/prev_buttons_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/prev_buttons_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/prev_buttons_reg[1]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/prev_buttons_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[1]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[8]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[9]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[10]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[11]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[12]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[13]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[14]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[15]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[16]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[17]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[18]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[19]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/clk_cnt_reg[20]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/prev_select_switch_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/prev_select_switch_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/prev_select_switch_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/prev_select_switch_reg[1]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/prev_select_switch_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[1]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[8]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[9]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[10]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[11]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[12]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[13]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[14]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[15]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[16]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[17]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[18]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[19]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[20]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[21]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[22]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[23]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[24]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[25]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[26]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[27]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[28]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[29]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (ttm/clk_cnt_reg[30]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sd/next_send_state_reg[1]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sd/next_send_state_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sd/send_state_reg[1]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/act/control_data_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/act/control_data_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/mode_reg) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[10]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[9]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[8]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[4]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[3]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[2]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[1]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/wait_time_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/time_counter_reg[10]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/time_counter_reg[9]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/time_counter_reg[8]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/time_counter_reg[7]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/time_counter_reg[6]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/time_counter_reg[5]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (AS/wt/time_counter_reg[4]) is unused and will be removed from module DemoTop.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 789.500 ; gain = 499.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 810.504 ; gain = 520.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 813.383 ; gain = 523.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[7] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[7] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[6] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[6] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[5] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[5] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[4] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[4] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[3] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[3] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[2] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[2] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[1] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[1] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+INFO: [Synth 8-5966] Removing register instance (\sd/data_send_reg[0] ) from module (DemoTop) as it has self-loop and (\sd_script/data_send_reg[0] ) is actual driver [E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:27]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:39 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     5|
+|2     |CARRY4 |    25|
+|3     |LUT1   |     8|
+|4     |LUT2   |    76|
+|5     |LUT3   |    45|
+|6     |LUT4   |    96|
+|7     |LUT5   |    35|
+|8     |LUT6   |  1345|
+|9     |MUXF7  |   495|
+|10    |MUXF8  |   240|
+|11    |FDCE   |    55|
+|12    |FDRE   |  2232|
+|13    |LD     |     1|
+|14    |LDC    |    11|
+|15    |IBUF   |     5|
+|16    |OBUF   |    13|
+|17    |OBUFT  |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------+------+
+|      |Instance            |Module              |Cells |
++------+--------------------+--------------------+------+
+|1     |top                 |                    |  4691|
+|2     |  AS                |AnalyseScript       |   232|
+|3     |    act             |action              |    59|
+|4     |    db_rst          |Debouncer           |    34|
+|5     |    db_step         |Debouncer_0         |    34|
+|6     |    jump            |jump                |    71|
+|7     |    state           |game_state          |     4|
+|8     |  dc                |DivideClock         |    75|
+|9     |  rd                |ReceiveUnScriptData |    11|
+|10    |  script_mem_module |ScriptMem           |  4228|
+|11    |  sd_script         |SendData            |    16|
+|12    |  uart_module       |UART                |   102|
+|13    |    rx              |UARTReceiver        |    38|
+|14    |    tx              |UARTTransmitter     |    27|
++------+--------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 152 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 849.184 ; gain = 222.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 849.184 ; gain = 559.094
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 777 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'DemoTop' is not ideal for floorplanning, since the cellview 'ScriptMem' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  LD => LDCE: 1 instances
+  LDC => LDCE: 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+188 Infos, 250 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:44 . Memory (MB): peak = 849.184 ; gain = 572.074
+INFO: [Common 17-1381] The checkpoint 'E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 849.184 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 30 21:48:28 2023...

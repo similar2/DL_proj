@@ -1,0 +1,9 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Time =                    0, target_machine = 03, control_data = 82
+Time =                30000, target_machine = 17, control_data = a2
+Time =                70000, target_machine = 17, control_data = 86
+Time =               125000, target_machine = 27, control_data = 86
+Time =               130000, target_machine = 27, control_data = a2
+Time =               210000, target_machine = 27, control_data = 8a
+$finish called at time : 500 ns : File "E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sim_1/new/action_tb.v" Line 93
