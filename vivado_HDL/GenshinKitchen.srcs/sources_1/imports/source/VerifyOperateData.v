@@ -23,7 +23,12 @@ module VerifyIfOperateDataCorrect(input uart_clk,
             data_operate_verified = OPERATE_IGNORE;
             
             end else if ((target == TABLE_9 || target == TABLE_11 || target == TABLE_14 || target == TABLE_17 || target == TABLE_19 || target == TRASH_BIN_20) && data_operate == OPERATE_THROW) begin
-            data_operate_verified = data_operate;
+            if (sig_hand) begin
+                data_operate_verified = data_operate;
+                end else begin
+                data_operate_verified = OPERATE_IGNORE;
+            end
+            
             
             
             end else if (data_operate != OPERATE_MOVE && !sig_front) begin
