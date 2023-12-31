@@ -15,13 +15,13 @@ module action(input rst,                       // Reset input
                     control_data <= 5'b10000; // Move
                     if (move_ready) begin
                         case (func)
-                            GET: control_data      <= 5'b00001;
-                            PUT: control_data      <= 5'b00010;
+                            GET: control_data <= 5'b00001;
+                            PUT: control_data <= 5'b00010;
                             INTERACT: control_data <= 5'b00100;
                         endcase
                     end
                 end
-                THROW: control_data   <= 5'b01000; // Throw
+                THROW: control_data <= 5'b01000;   // Throw
                 default: control_data <= 5'b00000; // No action
             endcase
             end else begin

@@ -17,13 +17,13 @@ module Wait(input en,
     
     reg mode, signal;
     reg [10:0] time_counter = 0;  // Initialized to 0
-    reg [10:0] wait_time    = 0;  // Initialized to 0
+    reg [10:0] wait_time = 0;     // Initialized to 0
     
     always @(posedge clk) begin
         if (en) begin
             case(func)
                 waituntil_mode: begin
-                    mode      <= 1'b1;
+                    mode <= 1'b1;
                     wait_time <= i_num * 8'd100;
                 end
                 wait_mode: mode <= 1'b0;
@@ -33,9 +33,9 @@ module Wait(input en,
     always @(posedge clk) begin
         if (en) begin
             case (i_sign)
-                player_ready: signal   <= feedback_sig[2];
+                player_ready: signal <= feedback_sig[2];
                 player_hasitem: signal <= feedback_sig[3];
-                target_ready: signal   <= feedback_sig[4];
+                target_ready: signal <= feedback_sig[4];
                 target_hasitem: signal <= feedback_sig[5];
             endcase
         end

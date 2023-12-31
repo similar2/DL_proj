@@ -70,14 +70,14 @@ module VerifyIfOperateDataCorrect(input uart_clk,
         case(data_operate)
             OPERATE_THROW , OPERATE_PUT: begin
                 case(sig_hand)
-                    TRUE:data_operate_verified    = data_operate;
+                    TRUE:data_operate_verified = data_operate;
                     default:data_operate_verified = OPERATE_IGNORE;
                 endcase
             end
             OPERATE_GET: begin
                 case({sig_hand,sig_machine})
                     {FALSE,TRUE}:data_operate_verified = data_operate;
-                    default:data_operate_verified      = OPERATE_IGNORE;
+                    default:data_operate_verified = OPERATE_IGNORE;
                 endcase
             end
             default:data_operate_verified = data_operate;
@@ -90,14 +90,14 @@ module VerifyIfOperateDataCorrect(input uart_clk,
         OPERATE_THROW:data_operate_verified = OPERATE_IGNORE;
         OPERATE_PUT: begin
             case(sig_hand)
-                TRUE:data_operate_verified    = data_operate;
+                TRUE:data_operate_verified = data_operate;
                 default:data_operate_verified = OPERATE_IGNORE;
             endcase
         end
         OPERATE_GET: begin
             case({sig_hand,sig_machine})
                 {FALSE,TRUE}:data_operate_verified = data_operate;
-                default:data_operate_verified      = OPERATE_IGNORE;
+                default:data_operate_verified = OPERATE_IGNORE;
             endcase
         end
         default:data_operate_verified = data_operate;
@@ -110,7 +110,7 @@ module VerifyIfOperateDataCorrect(input uart_clk,
         OPERATE_GET , OPERATE_THROW , OPERATE_INTERACT: data_operate_verified = OPERATE_IGNORE;
         OPERATE_PUT: begin
             case(sig_hand)
-                TRUE:data_operate_verified    = data_operate;
+                TRUE:data_operate_verified = data_operate;
                 default:data_operate_verified = OPERATE_IGNORE;
             endcase
         end

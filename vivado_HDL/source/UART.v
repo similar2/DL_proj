@@ -11,7 +11,7 @@ module UART(input clock,                       // uart clock. Please use 16 x Ba
             output reg [7:0] io_dataOut_bits); // (b) byte from GenshinKitchen = > DevelopmentBoard, only available if io_dataOut_valid = 1
     
     wire io_dataIn_valid = (io_dataIn_bits[1:0] != 2'b00);
-    reg [3:0] clkCnt     = 0;
+    reg [3:0] clkCnt = 0;
     always @(posedge clock) begin
         if (reset)
             clkCnt <= 4'h0;
@@ -41,7 +41,7 @@ module UART(input clock,                       // uart clock. Please use 16 x Ba
     );
     
     always @(posedge clock) begin
-        io_dataOut_bits  <= io_bits;
+        io_dataOut_bits <= io_bits;
         io_dataOut_valid <= io_valid;
     end
     
@@ -60,8 +60,8 @@ endmodule
         tx
         );
         
-        reg  [3:0] state       = 0;
-        reg  [7:0] data        = 0;
+        reg  [3:0] state = 0;
+        reg  [7:0] data = 0;
         wire       _io_ready_T = state == 4'h1;
         always @(posedge clock) begin
             if (reset)
@@ -90,7 +90,7 @@ endmodule
                 
                 end // always @(posedge)
                 assign io_ready = tick & _io_ready_T;
-                assign tx       = (|(state[3:2])) ? data[0] : ~_io_ready_T;
+                assign tx = (|(state[3:2])) ? data[0] : ~_io_ready_T;
                 endmodule
                 
                 module UARTReceiver(
@@ -101,37 +101,37 @@ endmodule
                     output [7:0] io_bits
                     );
                     
-                    reg  [2:0] cnt     = 0;
-                    reg        sync_r  = 0;
-                    reg        sync    = 0;
-                    reg        bit_0   = 0;
+                    reg  [2:0] cnt = 0;
+                    reg        sync_r = 0;
+                    reg        sync = 0;
+                    reg        bit_0 = 0;
                     reg  [3:0] spacing = 0;
-                    wire       tick    = spacing == 4'hA;
-                    reg  [3:0] state   = 0;
-                    reg        data_0  = 0;
-                    reg        data_1  = 0;
-                    reg        data_2  = 0;
-                    reg        data_3  = 0;
-                    reg        data_4  = 0;
-                    reg        data_5  = 0;
-                    reg        data_6  = 0;
-                    reg        data_7  = 0;
+                    wire       tick = spacing == 4'hA;
+                    reg  [3:0] state = 0;
+                    reg        data_0 = 0;
+                    reg        data_1 = 0;
+                    reg        data_2 = 0;
+                    reg        data_3 = 0;
+                    reg        data_4 = 0;
+                    reg        data_5 = 0;
+                    reg        data_6 = 0;
+                    reg        data_7 = 0;
                     always @(posedge clock) begin
                         if (reset) begin
-                            cnt     <= 3'h6;
-                            bit_0   <= 1'h1;
+                            cnt <= 3'h6;
+                            bit_0 <= 1'h1;
                             spacing <= 4'h0;
-                            state   <= 4'h0;
+                            state <= 4'h0;
                         end
                         else begin
                             if (sync & ~(&cnt))
                                 cnt <= cnt + 3'h1;
                             else if (~sync & (|cnt))
-                                cnt   <= cnt - 3'h1;
+                                cnt <= cnt - 3'h1;
                                 bit_0 <= (&cnt) | (|cnt) & bit_0;
                                 if (state == 4'h0) begin
                                     spacing <= 4'h0;
-                                    state   <= {3'h0, ~bit_0};
+                                    state <= {3'h0, ~bit_0};
                                 end
                                 else begin
                                     spacing <= spacing + 4'h1;
@@ -158,7 +158,7 @@ endmodule
                                 end
                                 end
                                 sync_r <= rx;
-                                sync   <= sync_r;
+                                sync <= sync_r;
                                 if (tick) begin
                                     data_0 <= bit_0;
                                     data_1 <= data_0;
@@ -171,7 +171,7 @@ endmodule
                                 end
                                 end // always @(posedge)
                                 assign io_valid = state == 4'h2 & tick;
-                                assign io_bits  = {data_0, data_1, data_2, data_3, data_4, data_5, data_6, data_7};
+                                assign io_bits = {data_0, data_1, data_2, data_3, data_4, data_5, data_6, data_7};
                             
                             
                             endmodule
@@ -188,7 +188,7 @@ endmodule
                             //);
                             
                             //  wire io_dataIn_valid = (io_dataIn_bits[1:0] != 2'b00);
-                            //  reg [3:0] clkCnt     = 0;
+                            //  reg [3:0] clkCnt = 0;
                             //  always @(posedge clock) begin
                             //    if (reset)
                             //      clkCnt <= 4'h0;
@@ -216,7 +216,7 @@ endmodule
                             //  );
                             
                             //  always @(posedge clock) begin
-                            //    io_dataOut_bits  = io_bits;
+                            //    io_dataOut_bits = io_bits;
                             //    io_dataOut_valid = io_valid;
                             //  end
                             

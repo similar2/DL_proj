@@ -9,7 +9,7 @@ module game_state (input en,
         if (en) begin
             case (func)
                 game_start: game_state <= GAME_START;
-                game_end: game_state   <= GAME_STOP;
+                game_end: game_state <= GAME_STOP;
             endcase
         end
     end

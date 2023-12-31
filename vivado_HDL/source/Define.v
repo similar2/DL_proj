@@ -28,16 +28,16 @@ target_ready = 3'd2, target_hasitem = 3'd3;
 
 
 parameter DEBOUNCE_TIME = 10;  // Set the debounce time threshold 10ms would be fine
-parameter GET           = 2'b00, PUT           = 2'b01, INTERACT           = 2'b10, THROW           = 2'b11;
-parameter ENABLED       = 1'b1, DISABLED       = 1'b0;
+parameter GET = 2'b00, PUT = 2'b01, INTERACT = 2'b10, THROW = 2'b11;
+parameter ENABLED = 1'b1, DISABLED = 1'b0;
 
 // Operation codes
 parameter game_start = 2'b01, game_end = 2'b10;
-parameter MAX        = 15;
+parameter MAX = 15;
 
-parameter FEEDBACK       = 2'b01;
-parameter UARTCNT        = 325;
-parameter SECONDCNT      = 50000000;
+parameter FEEDBACK = 2'b01;
+parameter UARTCNT = 325;
+parameter SECONDCNT = 50000000;
 parameter MILLISECONDCNT = 50000;
 
 
@@ -46,8 +46,8 @@ parameter GAME_STATE_STOP = 2'b10;
 
 
 parameter SELECT_DATA_IGNORE = 8'b000000_11;
-parameter SELECT_VALUE_MAX   = 20;
-parameter CHANNEL_TARGET     = 2'b11;
+parameter SELECT_VALUE_MAX = 20;
+parameter CHANNEL_TARGET = 2'b11;
 
 parameter SEND_NULL = 2'b00 , SEND_GAMESTATE = 2'b01 , SEND_TARGET = 2'b10 , SEND_OPERATE = 2'b11;
 

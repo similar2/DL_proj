@@ -17,7 +17,7 @@ module Debouncer(input clk,              // Clock input
                 end else begin
                 // If the threshold is reached, update the button state
                 btn_output <= btn_input;
-                counter    <= 0; // Reset the counter for the next debounce
+                counter <= 0; // Reset the counter for the next debounce
             end
         end
     end
