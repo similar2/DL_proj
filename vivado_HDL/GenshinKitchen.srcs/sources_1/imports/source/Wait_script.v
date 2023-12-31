@@ -1,4 +1,4 @@
-module Wait(
+module WaitDebug(
     input en,
     input [7:0] i_num,
     input [1:0] func,

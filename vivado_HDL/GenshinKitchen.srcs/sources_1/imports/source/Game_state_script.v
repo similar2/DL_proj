@@ -1,4 +1,4 @@
-module game_state (
+module game_stateDebug (
     input en,
     input [1:0] func,
     input clk,

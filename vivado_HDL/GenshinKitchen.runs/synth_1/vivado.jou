@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Dec 30 21:47:39 2023
-# Process ID: 38076
-# Current directory: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1
+# Start of session at: Sun Dec 31 20:15:55 2023
+# Process ID: 22644
+# Current directory: E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.runs/synth_1
 # Command line: vivado.exe -log DemoTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoTop.tcl
-# Log file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.vds
-# Journal file: E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1\vivado.jou
+# Log file: E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.vds
+# Journal file: E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source DemoTop.tcl -notrace

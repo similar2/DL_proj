@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
+verilog xil_defaultlib "E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v" --include "../../../../GenshinKitchen.srcs/sources_1/imports/source" \
 "../../../../GenshinKitchen.srcs/sources_1/imports/source/Action_script.v" \
 "../../../../GenshinKitchen.srcs/sim_1/new/action_tb.v" \
 

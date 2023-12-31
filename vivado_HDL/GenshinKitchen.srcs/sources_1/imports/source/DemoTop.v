@@ -31,11 +31,10 @@ module DemoTop(
 // The wire above is useful~
 reg  mode_interpret_script = 0;//set to 1 when interpreting scripts and 0 when manual control or loading scripts
 wire [7:0]script_num ;
-wire uart_reset = 1'b0; // 没想好是否需要复�???????????,应该不用
+wire uart_reset = 1'b0; // 没想好是否需要复�????????????,应该不用
 wire  res= button[4];//reset pc connected to R11
 //we control the datain_bits through the enable sig of senddata module
-reg  en_script = 1;
-reg  en_manual = 0; 
+wire  en_script;assign en_script = switches[7];
 //wire en_script = mode_interpret_script;
 //wire en_manual = mode_interpret_script;
 assign led2 =pc;
@@ -96,7 +95,7 @@ assign led2 =pc;
 
     // set data of the state of game
     GameStateChange gsc(  
-      .switch(switches[7]),             // left-one switch
+      .switch(switches[5]),             // left-one switch
       .data_game_state(data_game_state),
       .cusine_finish_num(cusine_finish_num),
       .uart_clk(uart_clk_16)
@@ -104,11 +103,11 @@ assign led2 =pc;
 
     // set data of operate (not verified)
     TravelerOperateMachine tom(
-      .button_up(button[3]),
-      .button_down(button[1]),
-      .button_center(button[2]),
-      .button_left(button[0]),
-      .button_right(button[4]),
+      .button_up(button[3]&!en_script),
+      .button_down(button[1]&!en_script),
+      .button_center(button[2]&!en_script),
+      .button_left(button[0]&!en_script),
+      .button_right(button[4]&!en_script),
       .uart_clk(uart_clk_16),
       .data_operate(data_operate)
     );
@@ -130,7 +129,7 @@ assign led2 =pc;
 
     // set data of target machine
     TravelerTargetMachine ttm(
-        .select_switches(switches[5:0]),  // right 5 switches
+        .select_switches(switches[4:0]),  // right 5 switches
         .data_target(data_target),
         .uart_clk(uart_clk_16)
     );
@@ -138,10 +137,9 @@ assign led2 =pc;
     // send data to UART module
     SendData sd(
       // .data_operate_verified(data_operate),
-      .enable(en_manual),
-      .data_operate_verified(data_operate_verified),
-      .data_target(data_target),
-      .data_game_state(data_game_state),
+      .data_operate_verified(en_script?data_operate_verified_script:data_operate_verified),
+      .data_target(en_script?data_target_script:data_target),
+      .data_game_state(en_script?data_game_state_script:data_game_state),
       .uart_clk(uart_clk_16),
       .data_ready(dataIn_ready),
       .data_send(dataIn_bits)
@@ -156,7 +154,7 @@ assign led2 =pc;
        .sig_hand(sig_hand),
        .sig_processing(sig_processing),
        .sig_machine(sig_machine),
-       .feedback_leds(led[3:0]),    // right - 4 led show data
+       .feedback_leds(),    // right - 4 led show data
        .led_mode()           // left - 1 led show data
 
      );
@@ -167,8 +165,9 @@ wire  [7:0]data_game_state_script;
 wire  [7:0]data_operate_script;
 wire  [7:0]data_operate_verified_script;
 
-wire  btn_step= button[1];//move forward pc  connected to R17
-wire  debug_mode = switches[7];//a switch for script connected to P5 
+wire  btn_step= button[1]&en_script;//move forward pc  connected to R17
+wire  debug_mode = switches[6]&en_script;//a switch for script connected to P5 
+//assign led[7] = debug_mode;
 AnalyseScript AS(
   .script(script),
   .clk(uart_clk_16),
@@ -183,18 +182,14 @@ AnalyseScript AS(
   .debug_mode(debug_mode),
  .data_operate_script(data_operate_script),
    .data_target_script(data_target_script),
-    .data_game_state_script(data_game_state_script));
+    .data_game_state_script(data_game_state_script),
+    .led5(),
+    .led6(led[6]),
+    .led7(led[7]),
+    .led50(led[5:0])
+);
 
-//wires for sccript mode
-SendData sd_script(
-  .enable(en_script),
-      .data_operate_verified(data_operate_verified_script),
-      .data_target(data_target_script),
-      .data_game_state(data_game_state_script),
-      .uart_clk(uart_clk_16),
-      .data_ready(dataIn_ready),
-      .data_send(dataIn_bits)
-);    
+
 
     // verified operate data if available
     VerifyIfOperateDataCorrect vod_script(

@@ -1,5 +1,4 @@
 module SendData(
-    input enable,                   // Enable signal for controlling the FSM
     input [7:0] data_target,        // Data of target machine
     input [7:0] data_game_state,    // Data of game state
     input [7:0] data_operate_verified, // Data of verified operation
@@ -15,13 +14,13 @@ reg [1:0] next_send_state = SEND_TARGET;
 
 // send FSM (may add script data)
 always @(posedge uart_clk) begin
-    if (enable) begin
+    
         send_state <= next_send_state;
-    end
+    
 end
 
 always @(posedge uart_clk) begin
-    if (enable) begin
+    
         case(send_state)
             SEND_GAMESTATE: begin
                 data_send = data_game_state;
@@ -44,7 +43,7 @@ always @(posedge uart_clk) begin
                 next_send_state = SEND_GAMESTATE;
             end
         endcase
-    end
+    
 end
 
 endmodule

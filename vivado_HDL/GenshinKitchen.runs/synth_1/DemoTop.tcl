@@ -22,30 +22,30 @@ create_project -in_memory -part xc7a35tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.cache/wt [current_project]
-set_property parent.project_path E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.xpr [current_project]
+set_property webtalk.parent_dir E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.cache/wt [current_project]
+set_property parent.project_path E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.cache/ip [current_project]
+set_property ip_output_repo e:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v
-  E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -55,8 +55,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc
-set_property used_in_implementation false [get_files E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+read_xdc E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc
+set_property used_in_implementation false [get_files E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
 
 
 synth_design -top DemoTop -part xc7a35tcsg324-1

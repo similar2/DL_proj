@@ -1,4 +1,21 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module action
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/sim_1/new/action_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module action_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v" into library xil_defaultlib
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:2]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:3]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:6]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:9]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:12]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:14]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:17]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:21]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:24]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:27]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:30]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:31]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:32]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:33]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:34]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:35]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:36]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:37]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:38]
+INFO: [#UNDEF] Sorry, too many errors..

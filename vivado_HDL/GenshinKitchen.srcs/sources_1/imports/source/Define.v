@@ -85,3 +85,5 @@ parameter MAX = 15;
 
 parameter cnt = 3'b111;
 parameter  IDLE = 0, MOVE = 1, ACTION = 2;
+
+parameter SCRIPT_IDLE = 0, SCRIPT_WAITING = 1, SCRIPT_MOVING = 2,SCRIPT_DOING = 3,SCRIPT_DONE = 4;

@@ -69,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.cache/wt [current_project]
-  set_property parent.project_path E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.xpr [current_project]
-  set_property ip_output_repo E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.cache/wt [current_project]
+  set_property parent.project_path E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.xpr [current_project]
+  set_property ip_output_repo E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp
-  read_xdc E:/project/DigitalDesign/verilog_proj/gitee/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc
+  add_files -quiet E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp
+  read_xdc E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc
   link_design -top DemoTop -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

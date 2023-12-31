@@ -14,11 +14,15 @@ module AnalyseScript(
     input btn_step,//connnect to a button, every time it get pressed pc will move forward one step
     input millisecond_clk,//used by wait     
     input debug_mode,//if this is 1 then we use a button to force pc move forward connected to a switch
-    output reg [7:0]pc = 8'b0000_0000,
+    output reg [7:0]pc = 8'b1111_1111,
     output reg [7:0] led,
     output [7:0] data_operate_script,
     output   [7:0]data_target_script,
-    output [7:0]data_game_state_script
+    output [7:0]data_game_state_script,
+    output led5,
+    output  led6,
+    output reg led7,
+    output [5:0]led50
 );
 
 wire next_step;//debounced button sig
@@ -40,26 +44,28 @@ wire [2:0] i_sign;assign i_sign = script[7:5];
 wire [1:0] func;assign func = script[4:3];
 wire [2:0] op_code;assign op_code = script[2:0];
 //choose which module to use
-reg en_action = disabled,en_jump =disabled,en_wait =disabled,en_game=disabled;
+reg en_action_debug = disabled,en_jump_debug =disabled,en_wait_debug =disabled,en_game_debug=disabled;
+
 
 
 //wires for action module
-wire is_ready_action;
-reg rst_action;
-reg rst_jump;
-reg rst_wait;
+wire is_ready_action_debug;
+reg rst_action_debug;
+reg rst_jump_debug;
+reg rst_wait_debug;
+reg rst_game_debug;
 
 //these two sig is designed to avoid repeated use of next_pc_jump
 //when cnt_execute_jump < cnt_jump and is_ready_jump, it means that last script is jump and pc should be set to where it jump to 
-reg [10:0]cnt_jump = 0;//how many "jump"  have been encountered so far
-reg [10:0]cnt_execute_jump = 0;//how many times pc jumped so far
+reg [10:0]cnt_jump_debug = 0;//how many "jump"  have been encountered so far
+reg [10:0]cnt_execute_jump_debug = 0;//how many times pc jumped so far
 
 //wire for jump
-wire  is_ready_jump;
-wire [7:0]next_pc_jump;//next pc address after jumping
+wire  is_ready_jump_debug;
+wire [7:0]next_pc_jump_debug;//next pc address after jumping
 
 //wire for wait
-wire  is_ready_wait;
+wire  is_ready_wait_debug;
 //wire for game state change 
 wire [7:0] game_state;
 
@@ -76,89 +82,137 @@ Debouncer db_rst(
 );   
 
 
-   
+wire actionDone,stateDone;
+
+
 /*if u finish jump module rather than other module, next_pc
  should be the value jump provided (next_pc_jump)
  */
-jump jump(
-    .en(en_jump),
+jumpDebug jump(
+    .en(en_jump_debug),
     .clk(clk),
     .i_num(i_num),
     .i_sign(i_sign),
-    .next_pc(next_pc_jump),
+    .next_pc(next_pc_jump_debug),
     .func(func),
-    .is_ready(is_ready_jump),
+    .is_ready(is_ready_jump_debug),
     .feedback_sig(feedback_sig),
     .current_pc(pc)
 );
-     action act (
-         .en(en_action),
-         .i_num(i_num),
-         .func(func),
-         .clk(clk),
-         .rst(rst_action),
-         .move_ready(sig_front),
-         .control_data(data_operate_script),
-         .target_machine(data_target_script)
-     );
+actionDebug act (
+    .en(en_action_debug),
+    .i_num(i_num),
+    .func(func),
+    .clk(clk),
+    .rst(rst_action_debug),
+    .move_ready(sig_front),
+    .control_data(data_operate_script),
+    .target_machine(data_target_script)
+);
     
-Wait wt(
-        .en(en_wait),
-        .i_num(i_num),
-        .func(func),
-        .i_sign(i_sign),
-        .millisecond_clk(millisecond_clk),
-        .clk(clk),
-        .feedback_sig(feedback_sig),
-        .is_ready(is_ready_wait)
-    );
+WaitDebug wt(
+    .en(en_wait_debug),
+    .i_num(i_num),
+    .func(func),
+    .i_sign(i_sign),
+    .millisecond_clk(millisecond_clk),
+    .clk(clk),
+    .feedback_sig(feedback_sig),
+    .is_ready(is_ready_wait_debug)
+);
 
-game_state state(
-    .en(en_game),
+game_stateDebug state(
+    .en(en_game_debug),
     .func(func),
     .clk(clk),
     .game_state(data_game_state_script)
 );
 
+
+
 //the button is active-low res is active-low
-//act when u release the button
-   always @(posedge next_step,posedge rst) begin
-       if (rst) begin
-          pc <= 8'b0000_0000; // Reset value of pc
-          cnt_execute_jump<=0;
-          cnt_jump<=0;
-       end
-       else
-       if (debug_mode) begin
-//               if (is_ready_jump&&cnt_execute_jump<cnt_jump) begin
-//                   pc<=next_pc_jump;
-//                   cnt_execute_jump <=cnt_execute_jump+1;
-//               end 
-        if (is_ready_jump) begin
-                pc<=next_pc_jump;
-                cnt_execute_jump <=cnt_execute_jump+1;
-            end 
-               else 
-             pc<=pc+2'd2;
-       end
-   end
-   always @(next_step) begin
-    //use next_step as reset sig
-    if (debug_mode) begin
-        rst_action = next_step;
-        rst_jump = next_step;
-        rst_wait = next_step;
+
+// always @(posedge clk)begin
+//     if(rst_action)begin
+//         led6<=1;
+//     end else begin
+//         if(led6==1)begin
+//             cnttemp1<=cnttemp1+1;
+//         end
+//         if(cnttemp1>100000)begin
+//             led6<=0;
+//             cnttemp1 <=0;
+//         end
+//     end
+
+// end
+//assign led6 = rst_action;
+//assign led7 = actionDone;
+
+
+reg [7:0]nextpcNormal = 8'b0000_0000;
+reg [7:0]nextpcDebug = 8'b1111_1110;
+
+assign led50 = nextpcNormal[5:0];
+
+always @(posedge clk or posedge rst) begin
+    if(rst) begin
+        pc <= 8'b1111_1110; // 使用非阻塞�?�赋值和复位信号
+    end else if (debug_mode) begin
+        pc <= nextpcDebug;  // 请确认debug_mode是正确的，并且是同步�??????
+    end else begin
+        pc <= nextpcNormal;
     end
-   end
+
+end
+
+always @(posedge clk or posedge rst) begin   // 确保使用相同的时钟信�?????? `clk`
+    if(rst) begin
+        nextpcDebug <= 8'b1111_1110;//in debug mode start after click
+        nextpcNormal <= 8'b0000_0000;//in normal mode auto start
+    end else if (debug_mode && next_step && !next_step_last) begin // 确认实际进入了调试模�??????
+        if (is_ready_jump_debug) begin
+            nextpcDebug <= next_pc_jump_debug;
+            cnt_execute_jump_debug <= cnt_execute_jump_debug + 1;
+        end else nextpcDebug <= pc + 2'd2;
+    end
+end
+
+reg next_step_last; // 用来存储debugModeNextStep的前�??????个状�??????
+
+always @(posedge clk or posedge rst) begin
+    if (rst) begin
+        next_step_last <= 1'b0;
+    end else begin
+        next_step_last <= next_step;
+    end
+end
+
+
+always @(next_step) begin
+    if(next_step)begin
+        rst_action_debug = 1;
+        rst_jump_debug = 1;
+        rst_wait_debug = 1;
+        rst_game_debug = 1;
+    end else begin
+        rst_action_debug = 0;
+        rst_jump_debug = 0;
+        rst_wait_debug = 0;
+        rst_game_debug = 0;
+    end
+end
 
 always @(op_code) begin
-    case (op_code)
-       action_code: begin en_action = enabled; en_game = disabled; en_jump = disabled; en_wait = disabled; end
-       jump_code: begin en_jump = enabled; en_action = disabled; en_game = disabled; en_wait = disabled; cnt_jump = cnt_jump +1;end
-       wait_code: begin en_wait = enabled; en_action = disabled; en_game = disabled; en_jump = disabled; end
-       game_code: begin en_game = enabled; en_action = disabled; en_jump = disabled; en_wait = disabled; end
-       default: begin en_action = disabled; en_game = disabled; en_jump = disabled; en_wait = disabled; end
-    endcase
+    if(debug_mode)begin
+        case (op_code)
+            action_code: begin en_action_debug = enabled; en_game_debug = disabled; en_jump_debug = disabled; en_wait_debug = disabled; end
+            jump_code: begin en_jump_debug = enabled; en_action_debug = disabled; en_game_debug = disabled; en_wait_debug = disabled; cnt_jump_debug = cnt_jump_debug +1;end
+            wait_code: begin en_wait_debug = enabled; en_action_debug = disabled; en_game_debug = disabled; en_jump_debug = disabled; end
+            game_code: begin en_game_debug = enabled; en_action_debug = disabled; en_jump_debug = disabled; en_wait_debug = disabled; end
+            default: begin en_action_debug = disabled; en_game_debug = disabled; en_jump_debug = disabled; en_wait_debug = disabled; end
+        endcase
+    end
 end
 
 endmodule

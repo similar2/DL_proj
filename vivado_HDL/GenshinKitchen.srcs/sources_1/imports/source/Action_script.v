@@ -1,4 +1,4 @@
-module action(
+module actionDebug(
     input rst,                // Reset input
     input en,
     input [7:0] i_num,

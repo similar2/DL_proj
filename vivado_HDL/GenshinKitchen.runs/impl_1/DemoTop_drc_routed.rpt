@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sat Dec 30 21:49:26 2023
-| Host         : Miller running 64-bit major release  (build 9200)
+| Date         : Sun Dec 31 20:17:10 2023
+| Host         : DESKTOP-ONGO7GJ running 64-bit major release  (build 9200)
 | Command      : report_drc -file DemoTop_drc_routed.rpt -pb DemoTop_drc_routed.pb -rpx DemoTop_drc_routed.rpx
 | Design       : DemoTop
 | Device       : xc7a35tcsg324-1
@@ -29,8 +29,7 @@ Table of Contents
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 4          |
-| PLCK-12  | Warning  | Clock Placer Checks                                 | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 5          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -50,33 +49,27 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net AS/jump/next_pc_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin AS/jump/next_pc_reg[7]_i_2/O, cell AS/jump/next_pc_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AS/debug_mode is a gated clock net sourced by a combinational pin AS/en_jump_debug_reg_i_1/O, cell AS/en_jump_debug_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net script_mem_module/mode1_out is a gated clock net sourced by a combinational pin script_mem_module/mode_reg_i_2/O, cell script_mem_module/mode_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AS/jump/mode1_out is a gated clock net sourced by a combinational pin AS/jump/mode_reg_i_2/O, cell AS/jump/mode_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net script_mem_module/pc_reg[0]_rep__6 is a gated clock net sourced by a combinational pin script_mem_module/is_ready_reg_i_1/O, cell script_mem_module/is_ready_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AS/jump/next_pc_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin AS/jump/next_pc_reg[7]_i_2/O, cell AS/jump/next_pc_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net script_mem_module/signal0_out is a gated clock net sourced by a combinational pin script_mem_module/signal_reg_i_2/O, cell script_mem_module/signal_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AS/jump/signal0_out is a gated clock net sourced by a combinational pin AS/jump/signal_reg_i_2/O, cell AS/jump/signal_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
-PLCK-12#1 Warning
-Clock Placer Checks  
-Poor placement for routing between an IO pin and BUFG. 
-Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
- This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
-
-	switches_IBUF[7]_inst (IBUF.O) is locked to P5
-	switches_IBUF_BUFG[7]_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y4
-
+PDRC-153#5 Warning
+Gated clock check  
+Net ttm/data_target_reg[6]_i_2_n_0 is a gated clock net sourced by a combinational pin ttm/data_target_reg[6]_i_2/O, cell ttm/data_target_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 
