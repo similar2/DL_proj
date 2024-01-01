@@ -31,7 +31,7 @@ wire rst;      //debounced reset sig
 // data[5] - Set(1) when target machine has item, otherwise Reset(0).
 wire [7:0] feedback_sig = {2'b00, sig_machine, sig_processing, sig_hand, sig_front, 2'b01};
 
-//divide 16 bit scirpt to 4 parts
+//divide 16 bit script to 4 parts
 wire [7:0] i_num;assign i_num = script[15:8];
 wire [2:0] i_sign;assign i_sign = script[7:5];
 wire [1:0] func;assign func = script[4:3];

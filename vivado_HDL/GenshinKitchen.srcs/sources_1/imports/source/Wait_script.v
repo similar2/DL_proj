@@ -21,7 +21,7 @@ reg mode, signal;
 reg [10:0] time_counter = 0;  // Initialized to 0
 reg [10:0] wait_time = 0;  // Initialized to 0
 
-always @(posedge clk ) begin
+always @(posedge clk) begin
    if (en) begin
         case(func) 
             waituntil_mode: begin 

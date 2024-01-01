@@ -31,13 +31,13 @@ module DemoTop(
 // The wire above is useful~
 reg  mode_interpret_script = 0;//set to 1 when interpreting scripts and 0 when manual control or loading scripts
 wire [7:0]script_num ;
-wire uart_reset = 1'b0; // 没想好是否需要复�????????????,应该不用
+wire uart_reset = 1'b0; // 没想好是否需要复�????????????????,应该不用
 wire  res= button[4];//reset pc connected to R11
 //we control the datain_bits through the enable sig of senddata module
 wire  en_script;assign en_script = switches[7];
 //wire en_script = mode_interpret_script;
 //wire en_manual = mode_interpret_script;
-assign led2 =pc;
+
     ScriptMem script_mem_module(
       .clock(uart_clk_16),   // please use the same clock as UART module
       .reset(uart_reset),           // please use the same reset as UART module
@@ -142,7 +142,8 @@ assign led2 =pc;
       .data_game_state(en_script?data_game_state_script:data_game_state),
       .uart_clk(uart_clk_16),
       .data_ready(dataIn_ready),
-      .data_send(dataIn_bits)
+      .data_send(dataIn_bits),
+      .led()
     );    
     // receive feedback data of UART
          ReceiveUnScriptData rd(
@@ -156,22 +157,32 @@ assign led2 =pc;
        .sig_machine(sig_machine),
        .feedback_leds(),    // right - 4 led show data
        .led_mode()           // left - 1 led show data
-
      );
     
+//leds
+assign led[7] = en_script;
+assign led[6] = debug_mode;
+assign led[5] = switches[5]; 
+assign led[3:0] = {sig_front,sig_hand,sig_processing,sig_machine}; 
+assign led2 = en_script?pc:8'b0;
+
 //script loading part
 wire  [7:0]data_target_script;
 wire  [7:0]data_game_state_script;
 wire  [7:0]data_operate_script;
 wire  [7:0]data_operate_verified_script;
 
+
 wire  btn_step= button[1]&en_script;//move forward pc  connected to R17
-wire  debug_mode = switches[6]&en_script;//a switch for script connected to P5 
+wire  debug_mode = switches[6]&en_script;//a switch for script connected to P5
+wire  switch_stop = switches[5]&en_script;
+
 //assign led[7] = debug_mode;
 AnalyseScript AS(
   .script(script),
   .clk(uart_clk_16),
   .res(res),//pc reset sig
+  .stop(switch_stop),
   .sig_front(sig_front),
   .sig_hand(sig_hand),
   .sig_machine(sig_machine),
@@ -180,15 +191,10 @@ AnalyseScript AS(
   .millisecond_clk(millisecond_clk),
   .pc(pc),
   .debug_mode(debug_mode),
- .data_operate_script(data_operate_script),
-   .data_target_script(data_target_script),
-    .data_game_state_script(data_game_state_script),
-    .led5(),
-    .led6(led[6]),
-    .led7(led[7]),
-    .led50(led[5:0])
+  .data_operate_script(data_operate_script),
+  .data_target_script(data_target_script),
+  .data_game_state_script(data_game_state_script)
 );
-
 
 
     // verified operate data if available

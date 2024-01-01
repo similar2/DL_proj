@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1704024954">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1704109429">
   <File Type="PWROPT-DCP" Name="DemoTop_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="DemoTop_power_routed.rpt"/>
   <File Type="PA-TCL" Name="DemoTop.tcl"/>
@@ -88,6 +88,13 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/source/AnalyseScript.v"/>
         <Attr Name="ImportTime" Val="1703582990"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/source/AutoScriptHandler.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -214,6 +221,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/source/DemoTop.v"/>
         <Attr Name="ImportTime" Val="1703584258"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/source/ScriptHandler.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

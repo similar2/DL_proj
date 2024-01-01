@@ -17,6 +17,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,6 +33,7 @@ read_verilog -library xil_defaultlib {
   E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v
   E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v
   E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v
+  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v
   E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v
   E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v
   E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v
