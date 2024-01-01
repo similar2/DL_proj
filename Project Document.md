@@ -8,7 +8,7 @@
 
 ### (2)Team Roles
 - **施米乐: 33%** -- **Script Debug Mode**
-- **范升泰: 33%**
+- **范升泰: 33%** -- **Script Auto Mode and bonus 1, 2**
 - **王玺华: 33% -- Manual mode**
 
 ### (3)Development plan
@@ -18,7 +18,7 @@
 	- [x] Test Manual Mode		_12.20 (By  王玺华 )_
 	- [x] Finish Script Mode    _12.25(By 施米乐&范升泰)_
 	- [x] Test Script Mode		_12.25 (By 施米乐&范升泰)_
-	- [x] Finish Part Bonus		_12.29_
+	- [x] Finish Part Bonus		_12.29 (By 范升泰)_
 	
 ## 1. System Function List
 
@@ -148,7 +148,7 @@
       - second_clk
       - millisecond_clk
 
-	#### 4. SendData (1)
+	#### 4. SendData
 	- ##### In
       - en_manual
       - data_operate_verified
@@ -164,7 +164,7 @@
 	  - switches
 	  - uart_clk_16
 	-  ##### Out
-      -  data_game_state
+   		- data_game_state
 
 	#### 6. TravelerTargetMachine
 	- ##### In
@@ -247,20 +247,6 @@
   	- **sig_machine** : feedback data of if machine has item
   	- **\[3:0\] feedback_leds** : show feedback data on leds
   	- **led_mode** : show current mode
-
-- ### SendData
-  - #### Function : 
-  	**send data to Client**
-  - #### Inputs :
-  	- **enable** : Enable signal for controlling the FSM
-  	- **\[7:0\] data_target** : Data of target machine
-  	- **\[7:0\] data_game_state** : Data of game state
-  	- **\[7:0\] data_operate_verified** : Data of verified operation
-  	- **uart_clk** : UART clock
-  	- **data_ready** : Mark of data send finish
-  - #### Output Regs
-  	- **\[7:0\] data_send** : Data to send to client
-
 - ### TravelerOperateMachine
   - #### Function : 
   	**get origin operate data from buttons**
@@ -309,6 +295,7 @@
       - **[15:0] script**: script need to be processed
       - **clk**: uart_clk
       - **res**: reset sig before debounced
+      - **stop**: pause the game
       - **sig _front, sig_hand, sig_processing, sig_machine**: feedback sigs
       - **btn_step**: only work during debug mode, increment pc by 2 bytes
       - **millisecond_clk**: another clock sig whose period is 1ms
