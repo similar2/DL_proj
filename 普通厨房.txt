@@ -1,0 +1,9 @@
+game start
+get 1
+put 10
+get 3
+put 10
+wait 4
+get 10
+put 18
+game end

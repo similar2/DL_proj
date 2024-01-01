@@ -1,0 +1,22 @@
+game start
+put 10
+jumpifnot target_hasitem 7
+get 10
+throw 20
+put 10
+jumpifnot target_hasitem 3
+get 10
+throw 20
+put 1
+waituntil target_hasitem
+get 1
+put 10
+put 3
+waituntil target_hasitem
+get 3
+put 10
+waituntil target_ready
+get 10
+put 18
+
+game end
