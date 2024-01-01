@@ -545,6 +545,6 @@
 
 	-   **Pathway Planning**: The script plans the shortest and most direct routes to ensure time expenditure are kept to a minimum. 
 
-	My script's best time to make three dishes (香嫩椒椒鸡、树莓水馒头、冷肉拼盘) is 12.54 seconds . (avg. 13 second)
+	My script's best time to make three dishes (香嫩椒椒鸡、树莓水馒头、冷肉拼盘) is 12.54 seconds . (avg 13 seconds)
 	
 ## 6. Summary
