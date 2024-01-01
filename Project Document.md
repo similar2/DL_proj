@@ -547,4 +547,4 @@
 
 	My script's best time to make three dishes (香嫩椒椒鸡、树莓水馒头、冷肉拼盘) is 12.54 seconds . (avg. 13 second)
 	
-## 6. Added two bonuses
+## 6. Summary
