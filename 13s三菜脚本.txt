@@ -1,0 +1,82 @@
+get 1
+throw 11
+get 2
+put 8
+interact 8
+get 5
+put 10
+
+wait 2
+get 8
+put 10
+get 11
+put 8
+interact 8
+get 6
+throw 11
+get 4
+throw 17
+
+wait 2
+get 8
+put 10
+get 11
+put 8
+interact 8
+
+wait 2
+get 10
+put 18
+
+
+get 8
+throw 17
+get 2
+put 8
+interact 8
+get 6
+put 7
+interact 7
+
+waituntil target_ready
+get 7
+put 10
+
+
+get 8
+put 16
+get 17
+put 16
+get 17
+put 16
+interact 16
+get 3
+throw 11
+get 3
+put 8
+interact 8
+get 6
+throw 11
+
+wait 1
+get 8
+put 12
+
+
+get 16
+put 12
+interact 12
+get 11
+put 10
+get 11
+put 10
+
+get 12
+throw 17
+
+wait 1
+get 10
+put 18
+get 17
+put 18
+
