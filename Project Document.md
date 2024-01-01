@@ -164,7 +164,8 @@
 	  - switches
 	  - uart_clk_16
 	-  ##### Out
-   		- data_game_state
+		-  data_game_state
+
 
 	#### 6. TravelerTargetMachine
 	- ##### In
@@ -178,7 +179,7 @@
 	  - button
 	  - uart_clk_16
 	- ##### Out
-	  - data_operate
+		- data_operate
 
 	#### 8. VerifyIfOperateDataCorrect
 	- ##### In
@@ -203,6 +204,24 @@
 	  - sig_processing
 	  - sig_machine
 	  - led
+	 
+	#### 10. AnalyseScript
+	- ##### In
+		- script
+		- clk
+		- res
+		- stop
+		- sig_front
+		- sig_hand
+		- sig_processing
+		- sig_machine
+		- btn_step
+		- milisecont_clk
+		- debug_mode
+	- ##### Out
+		- pc
+		- data_operate_script
+		- data_game_state_script  
 	  ​	
 	  ​		
 ## 4. Sub module Function Description
@@ -310,81 +329,222 @@
 
     
 
-    *following 4 modules is designed to interpret specific kind of scripts*
+    *following 4 modules is designed to interpret specific kind of scripts for debug*
 
-- ### **action**
+	- #### **actionDebug**
 
-    - #### **Function:**
+		- ##### **Function:**
 
-        interpret action scripts
+			interpret action scripts
 
-    - #### **Inputs:**
+		- ##### **Inputs:**
 
-        - **rst**: reset sig
-        - **en**: enable sig
-        - **[7:0] i_num**: index of target machine
-        - **[1:0]func**: which action to take
-        - **clk**: clock sig
+			- **rst**: reset sig
+			- **en**: enable sig
+			- **[7:0] i_num**: index of target machine
+			- **[1:0]func**: which action to take
+			- **clk**: clock sig
 
-    - #### **Outputs:**
+		- ##### **Outputs:**
 
-        - **move_ready**: is player in front of target machine or not
-        - **[7:0] target_machine**: sig to change target machine
-        - **[7:0] control_data**: sig to control operation 
+			- **move_ready**: is player in front of target machine or not
+			- **[7:0] target_machine**: sig to change target machine
+			- **[7:0] control_data**: sig to control operation 
 
-- ### **Wait**
+	- #### **WaitDebug**
 
-    - #### **Function**: 
+		- ##### **Function**: 
 
-        wait until sig turns 1 or wait a certain amount of time
+			wait until sig turns 1 or wait a certain amount of time
 
-    - #### **Inputs:**
+		- ##### **Inputs:**
 
-        - **en**: enable sig
-        - **[7:0] i_num**:  number of ms to wait
-        - **[1:0] func**: func
-        - **[2:0] i_sign**: to determine which sig to wait
-        - **millisecond_clk**: because the unit of waiting time is ms, we introduce this clock to help
-        - **clk**: uart_clk
-        - **[7:0] feedback_sig**: feedback sig from client
+			- **en**: enable sig
+			- **[7:0] i_num**:  number of ms to wait
+			- **[1:0] func**: func
+			- **[2:0] i_sign**: to determine which sig to wait
+			- **millisecond_clk**: because the unit of waiting time is ms, we introduce this clock to help
+			- **clk**: uart_clk
+			- **[7:0] feedback_sig**: feedback sig from client
 
-    - #### **Output**:
+		- ##### **Output**:
 
-        - **is_ready**: finish waiting and ready for next script
+			- **is_ready**: finish waiting and ready for next script
 
-- ### **Jump**
+	- #### **jumpDebug**
 
-    - #### **Function**
+		- ##### **Function**
 
-        if satisfy certain condition, jump some lines of script by incrementing pc
+			if satisfy certain condition, jump some lines of script by incrementing pc
 
-    - #### **Inputs**
+		- ##### **Inputs**
 
-        - **en**: enable sig
-        - **[7:0]i_num**: amount of lines to skip
-        - **[1:0] func**: define "if" or "ifnot" mode
-        - **rst**: reset sig
-        - **clk**: clock sig 
-        - **[7:0]Current_pc**: pc of this jump script
-        - **[7:0] feedback_sig**: feedback sig from client
+			- **en**: enable sig
+			- **[7:0]i_num**: amount of lines to skip
+			- **[1:0] func**: define "if" or "ifnot" mode
+			- **rst**: reset sig
+			- **clk**: clock sig 
+			- **[7:0]Current_pc**: pc of this jump script
+			- **[7:0] feedback_sig**: feedback sig from client
 
-    - #### **Outputs**
+		- ##### **Outputs**
 
-        - **next_pc**: where pc should go to
-        - **is_ready**: set 1 when finish one script
+			- **next_pc**: where pc should go to
+			- **is_ready**: set 1 when finish one script
 
-- ### **Game state**
+	- #### **game_stateDebug**
 
-    - #### **Function**
+		- ##### **Function**
 
-        change game state
+			change game state
 
-    - #### **Input**
+		- ##### **Input**
 
-        - **en**: enable sig
-        - **[1:0]func**: determine to start or end a game
-        - **clk**: clock sig
+			- **en**: enable sig
+			- **[1:0]func**: determine to start or end a game
+			- **clk**: clock sig
 
-    - #### **Output**
+		- ##### **Output**
 
-        - **game_state**: data to control game state
+			- **[7:0]game_state**: data to control game state
+
+	
+	*following 4 modules is designed to interpret specific kind of scripts*
+	
+	- #### **auto_action**
+		
+		- ##### **Function**
+
+			interpret action scripts
+			
+		- ##### **Input**
+			
+			- **clk**: clock sig
+			-  **enable**:  enable sig
+			-  **[7:0]i_num**: index of target machine
+			-  **[1:0]func**: which action to take
+			-  **[7:0]pc**: when it changes, the script state is reset
+			-   **sig_front**: to check if the move is complete
+			-   **sig_hand**: to check if the get, put, or throw action is complete
+			-   **sig_processing**: to check if the interact has started
+			-   **sig_machine** : It is non-functional but included in the input list to enhance the aesthetic appeal XD
+		
+		- ##### **Output**
+			
+			- **[7:0] target_machine**: sig to change target machine
+			- **[7:0] op_data**: sig to control operation 
+			- **scriptDonePulse**: pulse sig indicating script has finished
+
+
+	- #### **auto_game_state**
+		
+		- ##### **Function**
+
+			change game state
+			
+		- ##### **Input**
+			
+			- **clk**: clock sig
+			-  **enable**:  enable sig
+			-  **[1:0]func**:  determine to start or end a game
+			-  **[7:0]pc**: when it changes, the script state is reset
+		
+		- ##### **Output**
+			
+			- **[7:0]game_state**: data to control game state
+			- **scriptDonePulse**: pulse sig indicating script has finished
+	
+
+	- #### **auto_wait**
+		
+		- ##### **Function**
+
+			wait until sig turns 1 or wait a certain amount of time
+			
+		- ##### **Input**
+			
+			- **clk**: uart_clk
+			-  **enable**:  enable sig
+			- **[7:0] i_num**:  number of ms to wait
+			- **[1:0] func**: func
+			- **[2:0] i_sign**: to determine which sig to wait
+			- **millisecond_clk**: because the unit of waiting time is ms, we introduce this clock to help
+			-   **sig_front**: sig to wait
+			-   **sig_hand**: sig to wait
+			-   **sig_processing**: sig to wait
+			-   **sig_machine**: sig to wait
+		
+		- ##### **Output**
+			- **scriptDonePulse**: pulse sig indicating script has finished
+
+
+	- #### **auto_jump**
+		
+		- ##### **Function**
+
+			if satisfy certain condition, jump some lines of script by incrementing pc
+			
+		- ##### **Input**
+			
+			- **clk**: clock sig
+			-  **enable**:  enable sig
+			-  **[7:0]pc**: when it changes, the script state is reset
+			- **[7:0]i_num**: amount of lines to skip
+			- **[1:0] func**: define "if" or "ifnot" mode
+			-   **sig_front**: sig to check if jump or not
+			-   **sig_hand**: sig to check if jump or not
+			-   **sig_processing**: sig to check if jump or not
+			-   **sig_machine** : sig to check if jump or not
+		
+		- ##### **Output**
+			
+			- **[7:0]jump_num**: number of lines that need to jump
+			- **scriptDonePulse**: pulse sig indicating script has finished
+
+	*following 1 modules is designed to prevent the script from executing too quickly.*
+	
+	- #### **delay_by_twenty_mili_second**
+		- ##### **Function**
+			
+			delay the command by 20 miliseconds to prevent the script from executing too quickly
+			
+		- ##### **Input**
+			
+			- **clk**: clock sig
+			- **reset**: reset sig
+			-  **pulse_in**: input pulse sig
+		- ##### **Output**
+
+			- **pulse_out**: the pulse signal delayed by 20 milliseconds
+
+## 5. Added two bonuses
+
+- ### 5.1 Error Handling
+
+	- **Pick Command Fix**: It checks if you're holding something before picking up a new item. If so, it drops the current item first. 
+
+		- **Implementation method**:
+			Before picking up a new item, the script checks if the player is already holding something by evaluating the "player_hasitem" flag. If this is set to 1, indicating an item is being held, it sends a command to throw the current item into the trash can. It then waits for the "player_hasitem" flag to return to 0 before transitioning into the move state and picking up the new item.
+		
+	
+	- **Smart Throw Command**: If an item can't be thrown, the system moves and places it instead of throwing. 
+
+		- **Implementation method**:
+			Before entering the "SCRIPT_DOING" state, the script evaluates if the current "target_machine" is one of the following: "STONE_MILL", "CUTTING_MACHINE", "STOVE", "OVEN", "WORKBENCH", "MIXER" , or "CUSTOMER". If the "target_machine" matches any of these, the script sets the "PUTChangeFlag" to 1 and transitions to the "SCRIPT_STARTMOVING" state. 
+			
+			Furthermore, within the "SCRIPT_DOING" state, the script checks the status of "PUTChangeFlag". If it is set to 1, it will execute the same actions as the "PUT" command would.
+	
+- ### 5.2 Efficient Scripting
+
+	-  **Automation Utilization**: Wherever possible, the script leverages automated machines such as cutting machines, mixers, stoves, and ovens to free up the player's time. 
+
+
+	-  **Throw Optimization**: To reduce the time spent by the player in movement, the script capitalizes on the 'throw' functionality whenever feasible. 
+
+
+
+	-   **Pathway Planning**: The script plans the shortest and most direct routes to ensure time expenditure are kept to a minimum. 
+
+	My script's best time to make three dishes (香嫩椒椒鸡、树莓水馒头、冷肉拼盘) is 12.54 seconds . (avg. 13 second)
+	
+## 6. Added two bonuses
