@@ -1,4 +1,4 @@
-# Project Document
+# 	Project Document
 
 ## 0. Introduction
 
@@ -166,10 +166,9 @@
 	-  ##### Out
 		-  data_game_state
 
-
-	#### 6. TravelerTargetMachine
+    #### 6. TravelerTargetMachine
 	- ##### In
-  	  - switches
+      - switches
 	  - uart_clk_16
 	- ##### Out
 	  - data_target
@@ -204,7 +203,7 @@
 	  - sig_processing
 	  - sig_machine
 	  - led
-	 
+	
 	#### 10. AnalyseScript
 	- ##### In
 		- script
@@ -435,7 +434,6 @@
 			- **[7:0] op_data**: sig to control operation 
 			- **scriptDonePulse**: pulse sig indicating script has finished
 
-
 	- #### **auto_game_state**
 		
 		- ##### **Function**
@@ -476,7 +474,6 @@
 		
 		- ##### **Output**
 			- **scriptDonePulse**: pulse sig indicating script has finished
-
 
 	- #### **auto_jump**
 		
@@ -526,10 +523,9 @@
 		- **Implementation method**:
 			Before picking up a new item, the script checks if the player is already holding something by evaluating the "player_hasitem" flag. If this is set to 1, indicating an item is being held, it sends a command to throw the current item into the trash can. It then waits for the "player_hasitem" flag to return to 0 before transitioning into the move state and picking up the new item.
 		
-	
 	- **Smart Throw Command**: If an item can't be thrown, the system moves and places it instead of throwing. 
-
-		- **Implementation method**:
+	
+	- **Implementation method**:
 			Before entering the "SCRIPT_DOING" state, the script evaluates if the current "target_machine" is one of the following: "STONE_MILL", "CUTTING_MACHINE", "STOVE", "OVEN", "WORKBENCH", "MIXER" , or "CUSTOMER". If the "target_machine" matches any of these, the script sets the "PUTChangeFlag" to 1 and transitions to the "SCRIPT_STARTMOVING" state. 
 			
 			Furthermore, within the "SCRIPT_DOING" state, the script checks the status of "PUTChangeFlag". If it is set to 1, it will execute the same actions as the "PUT" command would.
@@ -538,13 +534,23 @@
 
 	-  **Automation Utilization**: Wherever possible, the script leverages automated machines such as cutting machines, mixers, stoves, and ovens to free up the player's time. 
 
-
 	-  **Throw Optimization**: To reduce the time spent by the player in movement, the script capitalizes on the 'throw' functionality whenever feasible. 
-
-
 
 	-   **Pathway Planning**: The script plans the shortest and most direct routes to ensure time expenditure are kept to a minimum. 
 
 	My script's best time to make three dishes (香嫩椒椒鸡、树莓水馒头、冷肉拼盘) is 12.54 seconds . (avg 13 seconds)
 	
 ## 6. Summary
+
+### 1. Introduction
+We chose Genshin Kitchen as our final project , since We think this project is both interesting and challenging. We may learn more about verilog and FPGA due to the process of completing this project. Deepen our understanding of the discipline of digital logic
+### 2. Project Objective
+Our project objective is to finish all basic task in rating requirements and complete bonus part as much as possible. And we succeeded in achieving that.
+### 3. Design method
+Our team members worked together to complete this project. We separated Genshin Kitchen's manual mode and script mode to complete this project. During the process of writing code, we adopted a top-down design approach. We have completed many different functional modules. Each module completes its independent functions which forming a low coupling and high cohesion pattern. This has improved the scalability and manageability of our project and make it more convenient to add new features.
+### 4. Important features and implementation
+For mannual mode ,  we processed game state change , operate machine and change selected machine separately. Using three modules , we successfully. We have achieved the switching from the machine's level signal to the data signal. Also , by adjusting clock division, through UART module , we sent it to the client in binary data format. Successfully achieved interaction between client and FPGA in manual mode. Also, we also validated the FPGA operate data in an independent module to prevent sending illegal data to clients.
+### 5. Result analysis
+We successfully finish all basic and bonus part of the project. And the project also passed out test , which means that it can interact with client normally and finish the game of Genshin Kitchen
+### 6. summary]
+Under the cooperation of group members , we successfully finish our project. Some issues that arose during the completion of the project were also resolved through our joint efforts. Each member of the group has improved their abilities in Verilog and FPGA during this task.
