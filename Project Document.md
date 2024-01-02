@@ -528,6 +528,7 @@
 	- **Implementation method**:
 			Before entering the "SCRIPT_DOING" state, the script evaluates if the current "target_machine" is one of the following: "STONE_MILL", "CUTTING_MACHINE", "STOVE", "OVEN", "WORKBENCH", "MIXER" , or "CUSTOMER". If the "target_machine" matches any of these, the script sets the "PUTChangeFlag" to 1 and transitions to the "SCRIPT_STARTMOVING" state. 
 			
+		
 			Furthermore, within the "SCRIPT_DOING" state, the script checks the status of "PUTChangeFlag". If it is set to 1, it will execute the same actions as the "PUT" command would.
 	
 - ### 5.2 Efficient Scripting
@@ -550,7 +551,25 @@ Our project objective is to finish all basic task in rating requirements and com
 Our team members worked together to complete this project. We separated Genshin Kitchen's manual mode and script mode to complete this project. During the process of writing code, we adopted a top-down design approach. We have completed many different functional modules. Each module completes its independent functions which forming a low coupling and high cohesion pattern. This has improved the scalability and manageability of our project and make it more convenient to add new features.
 ### 4. Important features and implementation
 For mannual mode ,  we processed game state change , operate machine and change selected machine separately. Using three modules , we successfully. We have achieved the switching from the machine's level signal to the data signal. Also , by adjusting clock division, through UART module , we sent it to the client in binary data format. Successfully achieved interaction between client and FPGA in manual mode. Also, we also validated the FPGA operate data in an independent module to prevent sending illegal data to clients.
+
+Moreover, for script mode, we implemented two mode, debug mode and auto mode, which corresponding to executing scripts step by step and automatically. In this section, we properly use `enable` and `reset` signal to prevent errors. Besides, *finite-state-machine* also helps to construct our design.
+
+In our design, we use *blocking assignment* and *non-blocking assignment* appropriately  and reuse our code to avoid duplication and improve maintainability. Also, necessary comments and document are added to help understanding and promote collaboration. All parameters are defined in a head file named `Define.v` , following the instruction pretty well.
+
 ### 5. Result analysis
 We successfully finish all basic and bonus part of the project. And the project also passed out test , which means that it can interact with client normally and finish the game of Genshin Kitchen
-### 6. summary]
+### 6. Summary
 Under the cooperation of group members , we successfully finish our project. Some issues that arose during the completion of the project were also resolved through our joint efforts. Each member of the group has improved their abilities in Verilog and FPGA during this task.
+
+### 7. Proposal for Next Project
+
+**Combination Lock** could be an option. Students should use BlueTooth to connect to client on pc or mobile platform and  input pre-configured password on it, whose output will be presented on board.
+
+possible tasks:
+
+- **Verify Password**: after 3 times of wrong input, the board will be locked for 1 min.
+- **Reset Password**: after logging in by right password, you could reset password.
+- **Display Output**: output what you input by digital tubes and count down when the board is locked.
+
+Reference: *FPGA-Based Bluetooth Password Lock with EGO1 Development Board: Wireless Control, Unlocking, Password Modification, and Theft Protection. (FPGA-Jīyú EGO1 kāifā bǎn de lán yá mìmǎ suǒ wúxiàn kòngzhì kāisuǒ xiūgǎi mìmǎ fángdào bǎohù)(2023, December 28). CSDN Blog. https://blog.csdn.net/sirlhh/article/details/125598103*
+
