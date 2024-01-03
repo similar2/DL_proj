@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6bf56228a5c649ff9546cb7f4f01d313"/>
@@ -162,6 +162,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/source/ShowGenshin.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/source/TravelerOperateMachine.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/source/TravelerOperateMachine.v"/>
@@ -216,7 +223,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/ScriptHandler.v">
+      <File Path="$PSRCDIR/sources_1/new/mem_array.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -224,7 +231,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/mem_array.v">
+      <File Path="$PSRCDIR/sources_1/imports/source/ScriptHandler.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Mon Jan  1 19:45:20 2024
-| Host             : DESKTOP-ONGO7GJ running 64-bit major release  (build 9200)
+| Date             : Wed Jan  3 19:19:48 2024
+| Host             : LAPTOP-6GMAV85C running 64-bit major release  (build 9200)
 | Command          : report_power -file DemoTop_power_routed.rpt -pb DemoTop_power_summary_routed.pb -rpx DemoTop_power_routed.rpx
 | Design           : DemoTop
 | Device           : xc7a35tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 29.966 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 83.902 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 29.480                           |
+| Dynamic (W)              | 83.416                           |
 | Device Static (W)        | 0.486                            |
 | Effective TJA (C/W)      | 4.8                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     7.060 |     5265 |       --- |             --- |
-|   LUT as Logic |     6.075 |     1778 |     20800 |            8.55 |
-|   F7/F8 Muxes  |     0.753 |      784 |     32600 |            2.40 |
+| Slice Logic    |     7.390 |     5295 |       --- |             --- |
+|   LUT as Logic |     6.382 |     1782 |     20800 |            8.57 |
+|   F7/F8 Muxes  |     0.755 |      784 |     32600 |            2.40 |
 |   CARRY4       |     0.107 |       48 |      8150 |            0.59 |
+|   Register     |     0.076 |     2498 |     41600 |            6.00 |
 |   BUFG         |     0.069 |        3 |        32 |            9.38 |
-|   Register     |     0.056 |     2478 |     41600 |            5.96 |
-|   Others       |     0.000 |       44 |       --- |             --- |
-| Signals        |     9.872 |     3474 |       --- |             --- |
-| I/O            |    12.548 |       32 |       210 |           15.24 |
+|   Others       |     0.000 |       46 |       --- |             --- |
+| Signals        |    10.283 |     3502 |       --- |             --- |
+| I/O            |    65.742 |       56 |       210 |           26.67 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    29.966 |          |           |                 |
+| Total          |    83.902 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    17.328 |      16.988 |      0.341 |
-| Vccaux    |       1.800 |     0.511 |       0.458 |      0.053 |
-| Vcco33    |       3.300 |     3.537 |       3.536 |      0.001 |
+| Vccint    |       1.000 |    18.070 |      17.729 |      0.341 |
+| Vccaux    |       1.800 |     2.460 |       2.407 |      0.053 |
+| Vcco33    |       3.300 |    18.593 |      18.592 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,27 +139,28 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| DemoTop             |    29.480 |
-|   AS                |     6.309 |
-|     aact            |     0.125 |
-|     act             |     0.065 |
-|     ags             |     0.101 |
-|     aj              |     0.010 |
-|     awt             |     0.109 |
+| DemoTop             |    83.416 |
+|   AS                |     6.342 |
+|     aact            |     0.112 |
+|     act             |     0.072 |
+|     ags             |     0.079 |
+|     aj              |     0.015 |
+|     awt             |     0.113 |
 |     db_rst          |     0.022 |
 |     db_step         |     0.019 |
-|     delay           |     0.083 |
-|     jump            |     0.742 |
-|     state           |     0.007 |
-|   dc                |     0.137 |
-|   rd                |     0.025 |
-|   script_mem_module |     9.137 |
-|   sd                |     0.022 |
-|   tom               |     0.115 |
-|   ttm               |     0.141 |
-|   uart_module       |     0.390 |
-|     rx              |     0.168 |
-|     tx              |     0.021 |
+|     delay           |     0.079 |
+|     jump            |     0.713 |
+|     state           |     0.012 |
+|   dc                |     0.143 |
+|   rd                |     0.019 |
+|   script_mem_module |     9.300 |
+|   sd                |     0.019 |
+|   sg                |     0.475 |
+|   tom               |     0.116 |
+|   ttm               |     0.153 |
+|   uart_module       |     0.365 |
+|     rx              |     0.165 |
+|     tx              |     0.022 |
 +---------------------+-----------+
 
 

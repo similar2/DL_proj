@@ -14,141 +14,150 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9088 
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:2]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:3]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:6]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:9]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:12]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:14]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:17]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:21]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:24]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:27]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:30]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:31]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:32]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:33]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:34]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:35]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:36]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:37]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:38]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:39]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:45]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:49]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:52]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:53]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:54]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:57]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:58]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:60]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:61]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:62]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:63]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:67]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:71]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:72]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:73]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:75]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:77]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:84]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:86]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:87]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:89]
-WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:17]
-WARNING: [Synth 8-992] data_target_script is already implicitly declared earlier [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:170]
-WARNING: [Synth 8-992] data_game_state_script is already implicitly declared earlier [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:171]
-WARNING: [Synth 8-992] data_operate_verified_script is already implicitly declared earlier [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:173]
+INFO: Helper process launched with PID 32052 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:2]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:3]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:6]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:9]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:12]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:17]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:21]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:24]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:27]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:30]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:31]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:32]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:33]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:34]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:35]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:36]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:37]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:38]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:39]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:45]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:49]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:52]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:53]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:54]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:57]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:58]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:60]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:61]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:62]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:63]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:67]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:71]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:72]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:73]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:75]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:77]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:84]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:86]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:87]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v:89]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:17]
+WARNING: [Synth 8-992] data_target_script is already implicitly declared earlier [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:176]
+WARNING: [Synth 8-992] data_game_state_script is already implicitly declared earlier [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:177]
+WARNING: [Synth 8-992] data_operate_verified_script is already implicitly declared earlier [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:179]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 342.480 ; gain = 112.504
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 342.371 ; gain = 112.949
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'DemoTop' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:3]
-INFO: [Synth 8-638] synthesizing module 'ScriptMem' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:24]
+INFO: [Synth 8-638] synthesizing module 'DemoTop' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:3]
+INFO: [Synth 8-638] synthesizing module 'ScriptMem' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:24]
 WARNING: [Synth 8-5788] Register mem_reg in module ScriptMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
 WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
 RAM "mem_reg" dissolved into registers
-INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (1#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:24]
-INFO: [Synth 8-638] synthesizing module 'UART' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:169]
-INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:218]
-INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (2#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:218]
-INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:261]
-INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (3#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:261]
-INFO: [Synth 8-256] done synthesizing module 'UART' (4#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:169]
-INFO: [Synth 8-638] synthesizing module 'DivideClock' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:2]
-INFO: [Synth 8-256] done synthesizing module 'DivideClock' (5#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:2]
-INFO: [Synth 8-638] synthesizing module 'GameStateChange' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v:2]
-INFO: [Synth 8-256] done synthesizing module 'GameStateChange' (6#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v:2]
-WARNING: [Synth 8-350] instance 'gsc' of module 'GameStateChange' requires 5 connections, but only 4 given [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:97]
-INFO: [Synth 8-638] synthesizing module 'TravelerOperateMachine' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:3]
-INFO: [Synth 8-256] done synthesizing module 'TravelerOperateMachine' (7#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:3]
-INFO: [Synth 8-638] synthesizing module 'VerifyIfOperateDataCorrect' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:1]
-WARNING: [Synth 8-567] referenced signal 'data_game_state' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
-WARNING: [Synth 8-567] referenced signal 'target' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
-WARNING: [Synth 8-567] referenced signal 'sig_hand' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
-WARNING: [Synth 8-567] referenced signal 'sig_front' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
-WARNING: [Synth 8-567] referenced signal 'sig_machine' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
-INFO: [Synth 8-256] done synthesizing module 'VerifyIfOperateDataCorrect' (8#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:1]
-INFO: [Synth 8-638] synthesizing module 'TravelerTargetMachine' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:2]
-WARNING: [Synth 8-567] referenced signal 'select_switches' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:12]
-INFO: [Synth 8-256] done synthesizing module 'TravelerTargetMachine' (9#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:2]
-INFO: [Synth 8-638] synthesizing module 'SendData' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:21]
-WARNING: [Synth 8-567] referenced signal 'data_game_state' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:20]
-WARNING: [Synth 8-567] referenced signal 'data_target' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:20]
-WARNING: [Synth 8-567] referenced signal 'data_operate_verified' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:20]
-WARNING: [Synth 8-3848] Net led in module/entity SendData does not have driver. [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:8]
-INFO: [Synth 8-256] done synthesizing module 'SendData' (10#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:1]
-INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:1]
-INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (11#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:1]
-WARNING: [Synth 8-350] instance 'rd' of module 'ReceiveUnScriptData' requires 11 connections, but only 10 given [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:149]
-INFO: [Synth 8-638] synthesizing module 'AnalyseScript' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:5]
-INFO: [Synth 8-638] synthesizing module 'Debouncer' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:1]
-INFO: [Synth 8-256] done synthesizing module 'Debouncer' (12#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:1]
-INFO: [Synth 8-638] synthesizing module 'jumpDebug' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:36]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:40]
-INFO: [Synth 8-256] done synthesizing module 'jumpDebug' (13#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:1]
-WARNING: [Synth 8-350] instance 'jump' of module 'jumpDebug' requires 10 connections, but only 9 given [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:96]
-INFO: [Synth 8-638] synthesizing module 'actionDebug' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:1]
-INFO: [Synth 8-226] default block is never used [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:24]
-INFO: [Synth 8-256] done synthesizing module 'actionDebug' (14#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:1]
-INFO: [Synth 8-638] synthesizing module 'WaitDebug' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:26]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:37]
-INFO: [Synth 8-256] done synthesizing module 'WaitDebug' (15#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:1]
-INFO: [Synth 8-638] synthesizing module 'game_stateDebug' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:10]
-INFO: [Synth 8-256] done synthesizing module 'game_stateDebug' (16#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:1]
-INFO: [Synth 8-638] synthesizing module 'auto_game_state' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:100]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:124]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:119]
-INFO: [Synth 8-256] done synthesizing module 'auto_game_state' (17#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:100]
-INFO: [Synth 8-638] synthesizing module 'auto_action' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:29]
-INFO: [Synth 8-256] done synthesizing module 'auto_action' (18#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:1]
-INFO: [Synth 8-638] synthesizing module 'auto_wait' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:146]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:193]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:191]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:186]
-INFO: [Synth 8-256] done synthesizing module 'auto_wait' (19#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:146]
-INFO: [Synth 8-638] synthesizing module 'auto_jump' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:224]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:257]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:265]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:255]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:250]
-INFO: [Synth 8-256] done synthesizing module 'auto_jump' (20#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:224]
-WARNING: [Synth 8-689] width (8) of port connection 'pc' does not match port width (1) of module 'auto_jump' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:191]
-INFO: [Synth 8-638] synthesizing module 'delay_by_three_mili_second' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:288]
+INFO: [Synth 8-256] done synthesizing module 'ScriptMem' (1#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:24]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:169]
+INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:218]
+INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (2#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:218]
+INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:261]
+INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (3#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:261]
+INFO: [Synth 8-256] done synthesizing module 'UART' (4#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:169]
+INFO: [Synth 8-638] synthesizing module 'ShowGenshin' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ShowGenshin.v:1]
+	Parameter BCD_NUM bound to: 4 - type: integer 
+	Parameter BCD_LETTER_G bound to: 8'b11110110 
+	Parameter BCD_LETTER_H bound to: 8'b00101110 
+	Parameter BCD_LETTER_E bound to: 8'b10011110 
+	Parameter BCD_LETTER_I bound to: 8'b01100000 
+	Parameter BCD_LETTER_N bound to: 8'b11101100 
+	Parameter BCD_LETTER_S bound to: 8'b10110110 
+INFO: [Synth 8-256] done synthesizing module 'ShowGenshin' (5#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ShowGenshin.v:1]
+INFO: [Synth 8-638] synthesizing module 'DivideClock' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:2]
+INFO: [Synth 8-256] done synthesizing module 'DivideClock' (6#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:2]
+INFO: [Synth 8-638] synthesizing module 'GameStateChange' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v:2]
+INFO: [Synth 8-256] done synthesizing module 'GameStateChange' (7#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v:2]
+WARNING: [Synth 8-350] instance 'gsc' of module 'GameStateChange' requires 5 connections, but only 4 given [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:103]
+INFO: [Synth 8-638] synthesizing module 'TravelerOperateMachine' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:3]
+INFO: [Synth 8-256] done synthesizing module 'TravelerOperateMachine' (8#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:3]
+INFO: [Synth 8-638] synthesizing module 'VerifyIfOperateDataCorrect' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:1]
+WARNING: [Synth 8-567] referenced signal 'data_game_state' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
+WARNING: [Synth 8-567] referenced signal 'target' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
+WARNING: [Synth 8-567] referenced signal 'sig_hand' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
+WARNING: [Synth 8-567] referenced signal 'sig_front' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
+WARNING: [Synth 8-567] referenced signal 'sig_machine' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:19]
+INFO: [Synth 8-256] done synthesizing module 'VerifyIfOperateDataCorrect' (9#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v:1]
+INFO: [Synth 8-638] synthesizing module 'TravelerTargetMachine' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:2]
+WARNING: [Synth 8-567] referenced signal 'select_switches' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:12]
+INFO: [Synth 8-256] done synthesizing module 'TravelerTargetMachine' (10#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:2]
+INFO: [Synth 8-638] synthesizing module 'SendData' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:21]
+WARNING: [Synth 8-567] referenced signal 'data_game_state' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:20]
+WARNING: [Synth 8-567] referenced signal 'data_target' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:20]
+WARNING: [Synth 8-567] referenced signal 'data_operate_verified' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:20]
+WARNING: [Synth 8-3848] Net led in module/entity SendData does not have driver. [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SendData' (11#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:1]
+INFO: [Synth 8-638] synthesizing module 'ReceiveUnScriptData' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ReceiveUnScriptData' (12#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:1]
+WARNING: [Synth 8-350] instance 'rd' of module 'ReceiveUnScriptData' requires 11 connections, but only 10 given [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:155]
+INFO: [Synth 8-638] synthesizing module 'AnalyseScript' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:5]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (13#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:1]
+INFO: [Synth 8-638] synthesizing module 'jumpDebug' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:40]
+INFO: [Synth 8-256] done synthesizing module 'jumpDebug' (14#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:1]
+WARNING: [Synth 8-350] instance 'jump' of module 'jumpDebug' requires 10 connections, but only 9 given [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:96]
+INFO: [Synth 8-638] synthesizing module 'actionDebug' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:24]
+INFO: [Synth 8-256] done synthesizing module 'actionDebug' (15#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:1]
+INFO: [Synth 8-638] synthesizing module 'WaitDebug' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:26]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:37]
+INFO: [Synth 8-256] done synthesizing module 'WaitDebug' (16#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:1]
+INFO: [Synth 8-638] synthesizing module 'game_stateDebug' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:10]
+INFO: [Synth 8-256] done synthesizing module 'game_stateDebug' (17#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v:1]
+INFO: [Synth 8-638] synthesizing module 'auto_game_state' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:100]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:124]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:119]
+INFO: [Synth 8-256] done synthesizing module 'auto_game_state' (18#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:100]
+INFO: [Synth 8-638] synthesizing module 'auto_action' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:29]
+INFO: [Synth 8-256] done synthesizing module 'auto_action' (19#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:1]
+INFO: [Synth 8-638] synthesizing module 'auto_wait' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:146]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:193]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:186]
+INFO: [Synth 8-256] done synthesizing module 'auto_wait' (20#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:146]
+INFO: [Synth 8-638] synthesizing module 'auto_jump' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:224]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:257]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:265]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:255]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:250]
+INFO: [Synth 8-256] done synthesizing module 'auto_jump' (21#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:224]
+WARNING: [Synth 8-689] width (8) of port connection 'pc' does not match port width (1) of module 'auto_jump' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:191]
+INFO: [Synth 8-638] synthesizing module 'delay_by_three_mili_second' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:288]
 	Parameter DELAY_COUNT bound to: 3000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay_by_three_mili_second' (21#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:288]
-WARNING: [Synth 8-350] instance 'delay' of module 'delay_by_three_mili_second' requires 4 connections, but only 3 given [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:205]
-WARNING: [Synth 8-567] referenced signal 'debug_mode' should be on the sensitivity list [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:274]
-WARNING: [Synth 8-6014] Unused sequential element cnt_execute_jump_debug_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:246]
-INFO: [Synth 8-256] done synthesizing module 'AnalyseScript' (22#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:5]
-INFO: [Synth 8-256] done synthesizing module 'DemoTop' (23#1) [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:3]
+INFO: [Synth 8-256] done synthesizing module 'delay_by_three_mili_second' (22#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:288]
+WARNING: [Synth 8-350] instance 'delay' of module 'delay_by_three_mili_second' requires 4 connections, but only 3 given [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:205]
+WARNING: [Synth 8-567] referenced signal 'debug_mode' should be on the sensitivity list [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:274]
+WARNING: [Synth 8-6014] Unused sequential element cnt_execute_jump_debug_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:246]
+INFO: [Synth 8-256] done synthesizing module 'AnalyseScript' (23#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:5]
+INFO: [Synth 8-256] done synthesizing module 'DemoTop' (24#1) [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:3]
 WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port uart_clk
 WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[7]
 WARNING: [Synth 8-3331] design VerifyIfOperateDataCorrect has unconnected port data_game_state[6]
@@ -194,7 +203,7 @@ WARNING: [Synth 8-3331] design GameStateChange has unconnected port cusine_finis
 WARNING: [Synth 8-3331] design GameStateChange has unconnected port uart_clk
 WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 398.637 ; gain = 168.660
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 399.535 ; gain = 170.113
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -203,78 +212,78 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin jump:rst to constant 0 [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:96]
-WARNING: [Synth 8-3295] tying undriven pin delay:reset to constant 0 [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:205]
-WARNING: [Synth 8-3295] tying undriven pin rd:script_mode to constant 0 [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:149]
+WARNING: [Synth 8-3295] tying undriven pin jump:rst to constant 0 [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:96]
+WARNING: [Synth 8-3295] tying undriven pin delay:reset to constant 0 [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:205]
+WARNING: [Synth 8-3295] tying undriven pin rd:script_mode to constant 0 [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v:155]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 398.637 ; gain = 168.660
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 399.535 ; gain = 170.113
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
-Finished Parsing XDC File [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
+Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DemoTop_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/DemoTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 733.895 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 736.121 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 733.895 ; gain = 503.918
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 736.121 ; gain = 506.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 733.895 ; gain = 503.918
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 736.121 ; gain = 506.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 733.895 ; gain = 503.918
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 736.121 ; gain = 506.699
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "script_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:40]
+WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:40]
 INFO: [Synth 8-5544] ROM "spacing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element spacing_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:274]
-WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:184]
-WARNING: [Synth 8-6014] Unused sequential element uart_clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:16]
-WARNING: [Synth 8-6014] Unused sequential element second_clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:25]
-WARNING: [Synth 8-6014] Unused sequential element millisecond_clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:34]
+WARNING: [Synth 8-6014] Unused sequential element spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:274]
+WARNING: [Synth 8-6014] Unused sequential element clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:184]
+WARNING: [Synth 8-6014] Unused sequential element uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:16]
+WARNING: [Synth 8-6014] Unused sequential element second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:25]
+WARNING: [Synth 8-6014] Unused sequential element millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:34]
 INFO: [Synth 8-5546] ROM "data_store" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_operate" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:39]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:39]
 INFO: [Synth 8-5544] ROM "data_operate_verified" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "data_target" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:25]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:25]
 INFO: [Synth 8-5544] ROM "led_mode" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:18]
-WARNING: [Synth 8-6014] Unused sequential element signal_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:38]
-WARNING: [Synth 8-6014] Unused sequential element time_counter_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:49]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:18]
+WARNING: [Synth 8-6014] Unused sequential element signal_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:38]
+WARNING: [Synth 8-6014] Unused sequential element time_counter_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:49]
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'auto_action'
 INFO: [Synth 8-5546] ROM "PUTChangeFlag" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "target_machine" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:172]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:172]
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element nextpcNormal_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:233]
-WARNING: [Synth 8-6014] Unused sequential element nextpcDebug_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:242]
-WARNING: [Synth 8-327] inferring latch for variable 'data_target_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:15]
-WARNING: [Synth 8-327] inferring latch for variable 'data_send_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:23]
-WARNING: [Synth 8-327] inferring latch for variable 'next_send_state_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:24]
-WARNING: [Synth 8-327] inferring latch for variable 'next_pc_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:32]
-WARNING: [Synth 8-327] inferring latch for variable 'is_ready_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'mode_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:31]
-WARNING: [Synth 8-327] inferring latch for variable 'signal_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:30]
+WARNING: [Synth 8-6014] Unused sequential element nextpcNormal_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:233]
+WARNING: [Synth 8-6014] Unused sequential element nextpcDebug_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:242]
+WARNING: [Synth 8-327] inferring latch for variable 'data_target_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'data_send_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'next_send_state_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'next_pc_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'is_ready_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'mode_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'signal_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v:30]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -285,16 +294,16 @@ WARNING: [Synth 8-327] inferring latch for variable 'signal_reg' [E:/digital-log
                   iSTATE |                              100 |                             0100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'auto_action'
-WARNING: [Synth 8-327] inferring latch for variable 'en_jump_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:285]
-WARNING: [Synth 8-327] inferring latch for variable 'en_action_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:157]
-WARNING: [Synth 8-327] inferring latch for variable 'en_wait_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:173]
-WARNING: [Synth 8-327] inferring latch for variable 'en_game_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:147]
-WARNING: [Synth 8-327] inferring latch for variable 'en_jump_debug_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:97]
-WARNING: [Synth 8-327] inferring latch for variable 'en_action_debug_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:108]
-WARNING: [Synth 8-327] inferring latch for variable 'en_game_debug_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:130]
-WARNING: [Synth 8-327] inferring latch for variable 'en_wait_debug_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'en_jump_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:285]
+WARNING: [Synth 8-327] inferring latch for variable 'en_action_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:157]
+WARNING: [Synth 8-327] inferring latch for variable 'en_wait_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:173]
+WARNING: [Synth 8-327] inferring latch for variable 'en_game_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:147]
+WARNING: [Synth 8-327] inferring latch for variable 'en_jump_debug_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'en_action_debug_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:108]
+WARNING: [Synth 8-327] inferring latch for variable 'en_game_debug_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:130]
+WARNING: [Synth 8-327] inferring latch for variable 'en_wait_debug_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:119]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 733.895 ; gain = 503.918
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 736.121 ; gain = 506.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -314,40 +323,42 @@ Detailed RTL Component Info :
 	   3 Input      8 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	               20 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
 	               10 Bit    Registers := 1     
-	                8 Bit    Registers := 274   
+	                8 Bit    Registers := 276   
 	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 16    
-	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
+	                4 Bit    Registers := 17    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 36    
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 45    
+	   4 Input      8 Bit        Muxes := 8     
 	   6 Input      8 Bit        Muxes := 2     
 	   3 Input      8 Bit        Muxes := 7     
-	   4 Input      8 Bit        Muxes := 6     
 	   7 Input      8 Bit        Muxes := 2     
 	   5 Input      8 Bit        Muxes := 1     
 	   7 Input      4 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
 	   3 Input      4 Bit        Muxes := 3     
 	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
 	   5 Input      3 Bit        Muxes := 1     
-	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
 	   8 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 2     
 	   4 Input      2 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 306   
 	   3 Input      1 Bit        Muxes := 7     
-	   4 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 15    
 	   5 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -406,6 +417,20 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
+Module ShowGenshin 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
 Module DivideClock 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -687,33 +712,34 @@ INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too spar
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:40]
-INFO: [Synth 8-4471] merging register 'AS/wt/mode_reg' into 'AS/wt/mode_reg' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:28]
-INFO: [Synth 8-4471] merging register 'AS/aact/last_pc_reg[7:0]' into 'AS/ags/last_pc_reg[7:0]' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:24]
-INFO: [Synth 8-4471] merging register 'AS/awt/last_pc_reg[7:0]' into 'AS/ags/last_pc_reg[7:0]' [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:181]
-WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:28]
-WARNING: [Synth 8-6014] Unused sequential element rd/feedback_leds_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:27]
-WARNING: [Synth 8-6014] Unused sequential element rd/led_mode_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:31]
-WARNING: [Synth 8-6014] Unused sequential element AS/wt/signal_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:38]
-WARNING: [Synth 8-6014] Unused sequential element AS/wt/mode_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:28]
-WARNING: [Synth 8-6014] Unused sequential element AS/aact/last_pc_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:24]
-WARNING: [Synth 8-6014] Unused sequential element AS/awt/last_pc_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:181]
-WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:25]
+WARNING: [Synth 8-6014] Unused sequential element script_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v:40]
+INFO: [Synth 8-4471] merging register 'AS/wt/mode_reg' into 'AS/wt/mode_reg' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:28]
+INFO: [Synth 8-4471] merging register 'AS/aact/last_pc_reg[7:0]' into 'AS/ags/last_pc_reg[7:0]' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:24]
+INFO: [Synth 8-4471] merging register 'AS/awt/last_pc_reg[7:0]' into 'AS/ags/last_pc_reg[7:0]' [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:181]
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:28]
+WARNING: [Synth 8-6014] Unused sequential element rd/feedback_leds_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:27]
+WARNING: [Synth 8-6014] Unused sequential element rd/led_mode_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v:31]
+WARNING: [Synth 8-6014] Unused sequential element AS/wt/signal_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:38]
+WARNING: [Synth 8-6014] Unused sequential element AS/wt/mode_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:28]
+WARNING: [Synth 8-6014] Unused sequential element AS/aact/last_pc_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:24]
+WARNING: [Synth 8-6014] Unused sequential element AS/awt/last_pc_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:181]
+WARNING: [Synth 8-6014] Unused sequential element dc/second_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:25]
 INFO: [Synth 8-5544] ROM "vod/data_operate_verified" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "ttm/data_target" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element uart_module/rx/spacing_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:274]
-WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:184]
-WARNING: [Synth 8-6014] Unused sequential element dc/uart_clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:16]
-WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:34]
-WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:39]
-WARNING: [Synth 8-6014] Unused sequential element ttm/clk_cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:25]
-WARNING: [Synth 8-6014] Unused sequential element AS/db_step/counter_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
-WARNING: [Synth 8-6014] Unused sequential element AS/db_rst/counter_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
-WARNING: [Synth 8-6014] Unused sequential element AS/act/cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:18]
-WARNING: [Synth 8-6014] Unused sequential element AS/wt/time_counter_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:49]
-WARNING: [Synth 8-6014] Unused sequential element AS/awt/cnt_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:172]
-WARNING: [Synth 8-6014] Unused sequential element AS/nextpcNormal_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:233]
-WARNING: [Synth 8-6014] Unused sequential element AS/nextpcDebug_reg was removed.  [E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:242]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/rx/spacing_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:274]
+WARNING: [Synth 8-6014] Unused sequential element uart_module/clkCnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v:184]
+WARNING: [Synth 8-6014] Unused sequential element dc/uart_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:16]
+WARNING: [Synth 8-6014] Unused sequential element dc/millisecond_clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v:34]
+WARNING: [Synth 8-6014] Unused sequential element tom/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v:39]
+WARNING: [Synth 8-6014] Unused sequential element ttm/clk_cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v:25]
+WARNING: [Synth 8-6014] Unused sequential element AS/db_step/counter_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
+WARNING: [Synth 8-6014] Unused sequential element AS/db_rst/counter_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v:13]
+WARNING: [Synth 8-6014] Unused sequential element AS/act/cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v:18]
+WARNING: [Synth 8-6014] Unused sequential element AS/wt/time_counter_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v:49]
+WARNING: [Synth 8-6014] Unused sequential element AS/awt/cnt_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v:172]
+WARNING: [Synth 8-6014] Unused sequential element AS/nextpcNormal_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:233]
+WARNING: [Synth 8-6014] Unused sequential element AS/nextpcDebug_reg was removed.  [C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v:242]
+WARNING: [Synth 8-3917] design DemoTop has port dn1[3] driven by constant 0
 WARNING: [Synth 8-3331] design DemoTop has unconnected port led[4]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/act/target_machine_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/aact/target_machine_reg[7] )
@@ -754,6 +780,13 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/aact/
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ttm/data_target_reg[0] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/state/game_state_reg[0] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AS/ags/game_state_reg[0] )
+INFO: [Synth 8-3886] merging instance 'sg/bcd_cnt_reg[0]' (FD) to 'sg/bcd0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sg/bcd1_reg[0]' (FDE) to 'sg/bcd1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sg/bcd1_reg[2]' (FDE) to 'sg/bcd1_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sg/bcd1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sg/bcd0_reg[0] )
+INFO: [Synth 8-3886] merging instance 'sg/bcd0_reg[1]' (FD) to 'sg/bcd0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sg/bcd0_reg[2]' (FD) to 'sg/bcd0_reg[7]'
 INFO: [Synth 8-3886] merging instance 'AS/awt/script_state_reg[3]' (FD) to 'AS/aj/script_state_reg[3]'
 INFO: [Synth 8-3886] merging instance 'AS/aj/last_state_reg[3]' (FD) to 'AS/awt/last_state_reg[3]'
 INFO: [Synth 8-3886] merging instance 'AS/aj/script_state_reg[3]' (FD) to 'AS/ags/script_state_reg[3]'
@@ -768,6 +801,8 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AS/awt/l
 WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[7]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (ttm/data_target_reg[0]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (AS/en_wait_debug_reg) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sg/bcd0_reg[0]) is unused and will be removed from module DemoTop.
+WARNING: [Synth 8-3332] Sequential element (sg/bcd1_reg[4]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[7]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (tom/data_operate_reg[0]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (AS/ags/next_state_reg[3]) is unused and will be removed from module DemoTop.
@@ -812,8 +847,12 @@ WARNING: [Synth 8-3332] Sequential element (AS/aj/next_state_reg[3]) is unused a
 WARNING: [Synth 8-3332] Sequential element (AS/delay/counter_reg[16]) is unused and will be removed from module DemoTop.
 WARNING: [Synth 8-3332] Sequential element (AS/awt/last_state_reg[3]) is unused and will be removed from module DemoTop.
 INFO: [Synth 8-3886] merging instance 'sd/next_send_state_reg[0]' (LD) to 'sd/data_send_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sg/bcd_cnt_reg[1]' (FD) to 'sg/bcd0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sg/dn1_reg[0]' (FD) to 'sg/dn0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sg/dn1_reg[1]' (FD) to 'sg/dn0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sg/dn1_reg[2]' (FD) to 'sg/dn0_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 733.895 ; gain = 503.918
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 736.121 ; gain = 506.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -825,13 +864,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:35 . Memory (MB): peak = 761.188 ; gain = 531.211
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 766.848 ; gain = 537.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:35 . Memory (MB): peak = 764.441 ; gain = 534.465
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 770.336 ; gain = 540.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -844,7 +883,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (dc/uart_clk_cnt_reg[10]) is unused and will be removed from module DemoTop.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:36 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:38 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -868,7 +907,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -881,7 +920,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -893,25 +932,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -929,22 +968,22 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     3|
 |2     |CARRY4 |    48|
-|3     |LUT1   |    11|
-|4     |LUT2   |   157|
-|5     |LUT3   |    46|
+|3     |LUT1   |    12|
+|4     |LUT2   |   167|
+|5     |LUT3   |    48|
 |6     |LUT4   |   157|
-|7     |LUT5   |    61|
-|8     |LUT6   |  1479|
+|7     |LUT5   |    60|
+|8     |LUT6   |  1475|
 |9     |MUXF7  |   528|
 |10    |MUXF8  |   256|
 |11    |FDCE   |    46|
 |12    |FDPE   |    28|
-|13    |FDRE   |  2367|
+|13    |FDRE   |  2381|
 |14    |FDSE   |     1|
 |15    |LD     |    21|
 |16    |LDC    |    11|
 |17    |IBUF   |    15|
-|18    |OBUF   |    16|
+|18    |OBUF   |    40|
 |19    |OBUFT  |     1|
 +------+-------+------+
 
@@ -952,34 +991,35 @@ Report Instance Areas:
 +------+--------------------+---------------------------+------+
 |      |Instance            |Module                     |Cells |
 +------+--------------------+---------------------------+------+
-|1     |top                 |                           |  5252|
-|2     |  AS                |AnalyseScript              |   524|
-|3     |    aact            |auto_action                |    84|
-|4     |    act             |actionDebug                |    68|
-|5     |    ags             |auto_game_state            |    32|
+|1     |top                 |                           |  5298|
+|2     |  AS                |AnalyseScript              |   523|
+|3     |    aact            |auto_action                |    81|
+|4     |    act             |actionDebug                |    71|
+|5     |    ags             |auto_game_state            |    30|
 |6     |    aj              |auto_jump                  |    27|
 |7     |    awt             |auto_wait                  |    50|
 |8     |    db_rst          |Debouncer                  |    35|
 |9     |    db_step         |Debouncer_0                |    35|
 |10    |    delay           |delay_by_three_mili_second |    34|
 |11    |    jump            |jumpDebug                  |    53|
-|12    |    state           |game_stateDebug            |     3|
+|12    |    state           |game_stateDebug            |     4|
 |13    |  dc                |DivideClock                |    75|
-|14    |  rd                |ReceiveUnScriptData        |     8|
+|14    |  rd                |ReceiveUnScriptData        |     7|
 |15    |  script_mem_module |ScriptMem                  |  4345|
 |16    |  sd                |SendData                   |    18|
-|17    |  tom               |TravelerOperateMachine     |    70|
-|18    |  ttm               |TravelerTargetMachine      |    77|
-|19    |  uart_module       |UART                       |   100|
-|20    |    rx              |UARTReceiver               |    38|
-|21    |    tx              |UARTTransmitter            |    27|
+|17    |  sg                |ShowGenshin                |    24|
+|18    |  tom               |TravelerOperateMachine     |    71|
+|19    |  ttm               |TravelerTargetMachine      |    76|
+|20    |  uart_module       |UART                       |   100|
+|21    |    rx              |UARTReceiver               |    38|
+|22    |    tx              |UARTTransmitter            |    27|
 +------+--------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 813.285 ; gain = 583.863
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 804.840 ; gain = 239.605
-Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 804.840 ; gain = 574.863
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:34 . Memory (MB): peak = 813.285 ; gain = 247.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:40 . Memory (MB): peak = 813.285 ; gain = 583.863
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 879 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -992,10 +1032,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 11 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-242 Infos, 212 Warnings, 0 Critical Warnings and 0 Errors encountered.
+255 Infos, 215 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:40 . Memory (MB): peak = 804.840 ; gain = 579.031
-INFO: [Common 17-1381] The checkpoint 'E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:43 . Memory (MB): peak = 813.285 ; gain = 587.414
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.runs/synth_1/DemoTop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DemoTop_utilization_synth.rpt -pb DemoTop_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 804.840 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Jan  1 19:44:33 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 813.285 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  3 19:18:51 2024...

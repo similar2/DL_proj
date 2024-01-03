@@ -17,37 +17,37 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.cache/wt [current_project]
-set_property parent.project_path E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v
-  E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Define.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Action_script.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AnalyseScript.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/AutoScriptHandler.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Debouncer.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DivideClock.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/GameStateChange.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Game_state_script.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Jump_Script.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ReceiveUnScriptData.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ScriptMem.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/SendData.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/ShowGenshin.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerOperateMachine.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/TravelerTargetMachine.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/UART.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/VerifyOperateData.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/Wait_script.v}
+  {C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/sources_1/imports/source/DemoTop.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -57,8 +57,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc
-set_property used_in_implementation false [get_files E:/digital-logic-project-master/DL_proj/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc]
+read_xdc {{C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Lenovo/Desktop/Digital Project/vivado_HDL/GenshinKitchen.srcs/constrs_1/new/cons.xdc}}]
 
 
 synth_design -top DemoTop -part xc7a35tcsg324-1
