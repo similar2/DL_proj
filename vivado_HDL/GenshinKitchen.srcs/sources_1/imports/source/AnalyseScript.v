@@ -45,21 +45,23 @@ reg en_action_debug = disabled,en_jump_debug =disabled,en_wait_debug =disabled,e
 reg en_action = disabled,en_jump =disabled,en_wait=disabled ,en_game=disabled;
 
 
+//wires for preliminary outputs in debug/auto modes
 wire [7:0]data_operate_script_debug, data_operate_script_auto;
 wire [7:0]data_target_script_debug, data_target_script_auto;
 wire [7:0]data_game_state_script_debug,data_game_state_script_auto;
 
+//Select output data based on game state and debug/auto mode
 assign data_operate_script = (data_game_state_script==GAME_STOP)?OPERATE_IGNORE:((debug_mode)?data_operate_script_debug:data_operate_script_auto);
 assign data_target_script = (data_game_state_script==GAME_STOP)?SELECT_DATA_IGNORE:((debug_mode)?data_target_script_debug:data_target_script_auto);
 assign data_game_state_script = (gameStop)?GAME_STOP:((debug_mode)?data_game_state_script_debug:data_game_state_script_auto);
 
 
-//wires for action module
+//wires for action module in debug mode
 wire is_ready_action_debug;
-reg rst_action_debug;
-reg rst_jump_debug;
-reg rst_wait_debug;
-reg rst_game_debug;
+wire rst_action_debug;
+wire rst_jump_debug;
+wire rst_wait_debug;
+wire rst_game_debug;
 
 //these two sig is designed to avoid repeated use of next_pc_jump
 //when cnt_execute_jump < cnt_jump and is_ready_jump, it means that last script is jump and pc should be set to where it jump to 
@@ -135,11 +137,12 @@ game_stateDebug state(
 
 
 
-
+//wires for auto modules completion pulse signal
 wire agsDonePulse;
 wire aactDonePulse;
 wire awtDonePulse;
 wire ajDonePulse;
+//wires for the number of lines that need to jump in auto mode
 wire [7:0]jumpNum;
 
 
@@ -198,21 +201,25 @@ auto_jump aj(
 );
 
 
-
+//signal indicating that the next step can be performed
 wire autoNext;assign autoNext = (en_game&agsDonePulse)|(en_action&aactDonePulse)|(en_wait&awtDonePulse)|(en_jump&ajDonePulse);
+//for the stability of script execution, we delay the autoNext signal by 20ms
 wire autoNextDelay;
 
-delay_by_three_mili_second delay(
+delay_by_twenty_mili_second delay(
     .clk(clk),
     .pulse_in(autoNext),
     .pulse_out(autoNextDelay)
 );
 
-
+//the next pc in normal(auto) mode, with the initial value 8'b0000_0000.the scripts will auto start
 reg [7:0]nextpcNormal = 8'b0000_0000;
+
+//the next pc in debug mode, with the initial value 8'b1111_1110,the game will start after click the button
 reg [7:0]nextpcDebug = 8'b1111_1110;
 
 
+//define the update logic for pc
 always @(posedge clk or posedge rst or posedge gameStop) begin
     if(rst|gameStop) begin
         pc <= 8'b1111_1110; 
@@ -224,14 +231,12 @@ always @(posedge clk or posedge rst or posedge gameStop) begin
 end
 
 
-//
-
-
-
+//define the update logic for nextpcNormal
 always @(posedge clk or posedge rst)begin
     if(rst)begin
         nextpcNormal <= 8'b0000_0000;
     end else if(!debug_mode && autoNextDelay)begin
+        //when enjump is 1, nextpcNormal will add by jumpNum*2'd2
         nextpcNormal <= nextpcNormal +(en_jump?jumpNum*2'd2:2'd2);
     end
 end
@@ -241,6 +246,7 @@ always @(posedge clk or posedge rst) begin
     if(rst) begin
         nextpcDebug <= 8'b1111_1110;//in debug mode start after click
     end else if (debug_mode && next_step && !next_step_last) begin 
+         //when is_ready_jump_debug is 1, nextpcNormal will stay still until is_ready_jump_debug turns 0
         if (is_ready_jump_debug) begin
             nextpcDebug <= next_pc_jump_debug;
             cnt_execute_jump_debug <= cnt_execute_jump_debug + 1;
@@ -248,6 +254,7 @@ always @(posedge clk or posedge rst) begin
     end
 end
 
+//record the last next_step, in order to judge next_step's rise in the always block 
 reg next_step_last; 
 always @(posedge clk or posedge rst) begin
     if (rst) begin
@@ -257,20 +264,14 @@ always @(posedge clk or posedge rst) begin
     end
 end
 
-always @(next_step) begin
-    if(next_step)begin
-        rst_action_debug = 1;
-        rst_jump_debug = 1;
-        rst_wait_debug = 1;
-        rst_game_debug = 1;
-    end else begin
-        rst_action_debug = 0;
-        rst_jump_debug = 0;
-        rst_wait_debug = 0;
-        rst_game_debug = 0;
-    end
-end
+//in debug mode, if the next button is clicked, the reset signals in debug mode will also be enabled
+assign rst_action_debug = next_step;
+assign rst_jump_debug = next_step;
+assign rst_wait_debug = next_step;
+assign rst_game_debug = next_step;
 
+
+//select the enabled module based on the opcode
 always @(op_code) begin
     if(debug_mode)begin
         case (op_code)
